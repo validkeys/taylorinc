@@ -1,0 +1,55 @@
+h1. Taylor Group Website Redesign
+http://as3.globacore.com/taylor/
+
+
+h2. Department
+
+h3. Fields
+* title
+* slug (SEO)
+* description
+* one to many projects
+* zero to many featured projects (many to many through relationship)
+
+
+h2. Project
+
+h3. Fields
+* title
+* slug
+* client (feeform)
+* description
+* zero or one industry
+* zero or one category
+* one or many departments (many to many through relationship)
+
+
+h2. Category
+
+h3. Fields
+* title
+* slug
+* has many projects (through relationship to support ordering)
+
+
+h2. Industry
+
+h3. Fields
+* title
+* slug
+* has many projects (through relationship to support ordering)
+
+
+h2. Section
+
+h3. Fields
+* title
+* has many pages
+
+
+h2. Page
+
+h3. Fields
+* title
+* body (supports markup)
+* belongs to section

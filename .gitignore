@@ -1,0 +1,9 @@
+log/*.*
+tmp/**/*
+.DS_Store
+db/schema.rb
+db/*.sql
+db/*.bz2
+doc/api
+doc/app
+public/attachments
