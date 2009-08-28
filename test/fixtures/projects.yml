@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  slug: MyString
+  title: MyString
+  client: MyString
+  description: MyText
+  industry: 
+  category: 
+
+two:
+  slug: MyString
+  title: MyString
+  client: MyString
+  description: MyText
+  industry: 
+  category: 
