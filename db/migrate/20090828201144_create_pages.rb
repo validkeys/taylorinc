@@ -1,10 +1,10 @@
 class CreatePages < ActiveRecord::Migration
   def self.up
     create_table :pages do |t|
-      t.references :section
+      t.references :section, :null => :no
       t.integer :position, :null => :no, :default => 1
-      t.string :title
-      t.text :body
+      t.string :title, :null => :no
+      t.text :body, :null => :no
 
       t.timestamps
     end

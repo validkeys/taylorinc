@@ -1,12 +1,11 @@
 class CreateProjects < ActiveRecord::Migration
   def self.up
     create_table :projects do |t|
-      t.string :slug
-      t.string :title
+      t.string :slug, :null => :no
+      t.string :title, :null => :no
       t.string :client
       t.text :description
-      t.references :industry
-      t.references :category
+      t.references :department
 
       t.timestamps
     end
