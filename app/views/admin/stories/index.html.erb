@@ -1,22 +1,11 @@
-<h1>Listing stories</h1>
+<h1>News</h1>
 
 <table>
   <tr>
     <th>Title</th>
-    <th>Body</th>
   </tr>
-
-<% @stories.each do |story| %>
-  <tr>
-    <td><%=h story.title %></td>
-    <td><%=h story.body %></td>
-    <td><%= link_to 'Show', story %></td>
-    <td><%= link_to 'Edit', edit_story_path(story) %></td>
-    <td><%= link_to 'Destroy', story, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+  <%= render :partial => "row", :collection => collection %>
 </table>
 
 <br />
-
-<%= link_to 'New story', new_story_path %>
+<%= link_to "New #{controller.controller_name.humanize.singularize}", new_object_path %>

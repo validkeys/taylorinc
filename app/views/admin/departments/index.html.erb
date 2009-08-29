@@ -1,26 +1,12 @@
-<h1>Listing departments</h1>
+<h1><%= controller.controller_name.humanize %></h1>
 
 <table>
   <tr>
-    <th>Position</th>
-    <th>Slug</th>
     <th>Title</th>
     <th>Description</th>
   </tr>
-
-<% @departments.each do |department| %>
-  <tr>
-    <td><%=h department.position %></td>
-    <td><%=h department.slug %></td>
-    <td><%=h department.title %></td>
-    <td><%=h department.description %></td>
-    <td><%= link_to 'Show', department %></td>
-    <td><%= link_to 'Edit', edit_department_path(department) %></td>
-    <td><%= link_to 'Destroy', department, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+  <%= render :partial => "row", :collection => collection %>
 </table>
 
 <br />
-
-<%= link_to 'New department', new_department_path %>
+<%= link_to "New #{controller.controller_name.humanize.singularize}", new_object_path %>

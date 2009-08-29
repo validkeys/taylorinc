@@ -1,12 +1,11 @@
-<h1>Listing categories</h1>
+<h1><%= controller.controller_name.humanize %></h1>
 
 <table>
   <tr>
     <th>Title</th>
   </tr>
-  <%= render :partial => "row", :collection => @categories %>
+  <%= render :partial => "row", :collection => collection %>
 </table>
 
 <br />
-
-<%= link_to 'New category', new_object_path %>
+<%= link_to "New #{controller.controller_name.humanize.singularize}", new_object_path %>

@@ -1,4 +1,4 @@
-<h1>Listing industries</h1>
+<h1><%= controller.controller_name.humanize %></h1>
 
 <table>
   <tr>
@@ -6,19 +6,8 @@
     <th>Slug</th>
     <th>Title</th>
   </tr>
-
-<% @industries.each do |industry| %>
-  <tr>
-    <td><%=h industry.position %></td>
-    <td><%=h industry.slug %></td>
-    <td><%=h industry.title %></td>
-    <td><%= link_to 'Show', industry %></td>
-    <td><%= link_to 'Edit', edit_industry_path(industry) %></td>
-    <td><%= link_to 'Destroy', industry, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+  <%= render :partial => "row", :collection => collection %>
 </table>
 
 <br />
-
-<%= link_to 'New industry', new_industry_path %>
+<%= link_to "New #{controller.controller_name.humanize.singularize}", new_object_path %>
