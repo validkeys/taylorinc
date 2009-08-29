@@ -1,16 +1,9 @@
+<h1><%=h @slide.title %></h1>
 <p>
-  <b>Title:</b>
-  <%=h @slide.title %>
+  <%= link_to h(@slide.url), h(@slide.url) %>
 </p>
-
 <p>
-  <b>Url:</b>
-  <%=h @slide.url %>
-</p>
-
-<p>
-  <b>Description:</b>
   <%=h @slide.description %>
 </p>
 
-<%= link_to 'Back', slides_path %>
+<%= link_to 'Back', collection_path %>

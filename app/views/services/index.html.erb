@@ -1,16 +1,6 @@
-<h1>Listing services</h1>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Body</th>
-  </tr>
-
-<% @services.each do |service| %>
-  <tr>
-    <td><%=h service.title %></td>
-    <td><%=h service.body %></td>
-    <td><%= link_to 'Show', service %></td>
-  </tr>
-<% end %>
-</table>
+<h1>Services</h1>
+<ul>
+  <% for service in @services -%>
+    <li><%= link_to h(service.title), object_path(service), :title => h(service.title) %></li>
+  <% end -%>
+</ul>

@@ -1,66 +1,12 @@
+<h1><%=h @location.title %></h1>
 <p>
-  <b>Title:</b>
-  <%=h @location.title %>
+  <%=h @location.street_1 %><br />
+  <%=h @location.street_2 %><br />
+  <%=h @location.city %>, <%=h @location.province %><br />
+  <%=h @location.country %>, <%=h @location.postal_code %>
+</p>
+<p>
+  <%= @location.contact_info %>
 </p>
 
-<p>
-  <b>Street 1:</b>
-  <%=h @location.street_1 %>
-</p>
-
-<p>
-  <b>Street 2:</b>
-  <%=h @location.street_2 %>
-</p>
-
-<p>
-  <b>City:</b>
-  <%=h @location.city %>
-</p>
-
-<p>
-  <b>Province:</b>
-  <%=h @location.province %>
-</p>
-
-<p>
-  <b>Country:</b>
-  <%=h @location.country %>
-</p>
-
-<p>
-  <b>Postal code:</b>
-  <%=h @location.postal_code %>
-</p>
-
-<p>
-  <b>Toll free:</b>
-  <%=h @location.toll_free %>
-</p>
-
-<p>
-  <b>Phone:</b>
-  <%=h @location.phone %>
-</p>
-
-<p>
-  <b>Fax:</b>
-  <%=h @location.fax %>
-</p>
-
-<p>
-  <b>Other label:</b>
-  <%=h @location.other_label %>
-</p>
-
-<p>
-  <b>Other value:</b>
-  <%=h @location.other_value %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%=h @location.email %>
-</p>
-
-<%= link_to 'Back', locations_path %>
+<%= link_to 'Back', collection_path %>

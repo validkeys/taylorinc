@@ -1,0 +1,24 @@
+<h1>Projects</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Url</th>
+    <th>Description</th>
+  </tr>
+
+<% @slides.each do |slide| %>
+  <tr>
+    <td><%=h slide.title %></td>
+    <td><%=h slide.url %></td>
+    <td><%=h slide.description %></td>
+    <td><%= link_to 'Show', slide %></td>
+    <td><%= link_to 'Edit', edit_slide_path(slide) %></td>
+    <td><%= link_to 'Destroy', slide, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New slide', new_slide_path %>

@@ -1,16 +1,6 @@
-<h1>Listing clients</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-  </tr>
-
-<% @clients.each do |client| %>
-  <tr>
-    <td><%=h client.name %></td>
-    <td><%=h client.description %></td>
-    <td><%= link_to 'Show', client %></td>
-  </tr>
-<% end %>
-</table>
+<h1>Clients</h1>
+<ul>
+  <% for client in @clients -%>
+    <li><%= link_to h(client.name), object_path(client), :title => h(client.name) %></li>
+  <% end -%>
+</ul>

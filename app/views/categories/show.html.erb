@@ -1,11 +1,3 @@
-<p>
-  <b>Slug:</b>
-  <%=h @category.slug %>
-</p>
+<h1><%=h @category.title %></h1>
 
-<p>
-  <b>Title:</b>
-  <%=h @category.title %>
-</p>
-
-<%= link_to 'Back', categories_path %>
+<%= link_to 'Back', collection_path %>

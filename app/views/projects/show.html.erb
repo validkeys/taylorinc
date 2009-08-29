@@ -1,0 +1,6 @@
+<h1><%= "#{h(@project.client)} #{h(@project.title)}" %></h1>
+<p>
+  <%=h @project.description %>
+</p>
+
+<%= link_to 'Back', collection_path %>

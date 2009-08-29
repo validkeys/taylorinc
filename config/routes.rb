@@ -1,5 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
 
+  map.root :controller => 'slides'
+  
+  map.resources :sitemap
+  
   map.resources :slides
   map.resources :locations
   map.resources :stories

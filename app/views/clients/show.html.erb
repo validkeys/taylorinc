@@ -1,11 +1,6 @@
+<h1><%=h @client.name %></h1>
 <p>
-  <b>Name:</b>
-  <%=h @client.name %>
+  <%= @client.description %>
 </p>
 
-<p>
-  <b>Description:</b>
-  <%=h @client.description %>
-</p>
-
-<%= link_to 'Back', clients_path %>
+<%= link_to 'Back', collection_path %>

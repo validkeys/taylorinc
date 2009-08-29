@@ -1,8 +1,9 @@
 class CreateSlides < ActiveRecord::Migration
   def self.up
     create_table :slides do |t|
-      t.string :title
-      t.string :url
+      t.integer :position, :null => :no, :default => 1
+      t.string :title, :null => :no, :limit => 128
+      t.string :url, :null => :no, :limit => 128
       t.text :description
 
       t.timestamps

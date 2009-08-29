@@ -1,20 +1,6 @@
-<h1>Listing departments</h1>
-
-<table>
-  <tr>
-    <th>Position</th>
-    <th>Slug</th>
-    <th>Title</th>
-    <th>Description</th>
-  </tr>
-
-<% @departments.each do |department| %>
-  <tr>
-    <td><%=h department.position %></td>
-    <td><%=h department.slug %></td>
-    <td><%=h department.title %></td>
-    <td><%=h department.description %></td>
-    <td><%= link_to 'Show', department %></td>
-  </tr>
-<% end %>
-</table>
+<h1>Departments</h1>
+<ul>
+  <% for department in @departments -%>
+    <li><%= link_to h(department.title), object_path(department), :title => h(department.title) %></li>
+  <% end -%>
+</ul>

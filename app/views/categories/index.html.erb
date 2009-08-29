@@ -1,16 +1,6 @@
-<h1>Listing categories</h1>
-
-<table>
-  <tr>
-    <th>Slug</th>
-    <th>Title</th>
-  </tr>
-
-<% @categories.each do |category| %>
-  <tr>
-    <td><%=h category.slug %></td>
-    <td><%=h category.title %></td>
-    <td><%= link_to 'Show', category %></td>
-  </tr>
-<% end %>
-</table>
+<h1>Categories</h1>
+<ul>
+  <% for category in @categories -%>
+    <li><%= link_to h(category.title), object_path(category), :title => h(category.title) %></li>
+  <% end -%>
+</ul>
