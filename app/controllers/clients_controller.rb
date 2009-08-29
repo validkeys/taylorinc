@@ -1,11 +1,14 @@
 class ClientsController < ApplicationController
-  make_resourceful do
-    actions :all
-  end
+  resource_controller
+  actions :index, :show #only handle index and show actions
+end
 
 
 
-
+# --------------
+# Actions replaced by resource_controller plugin
+# Leaving them in here for reference
+#---------------
 =begin
   
   # GET /clients
@@ -92,5 +95,3 @@ class ClientsController < ApplicationController
     end
   end
 =end
-
-end

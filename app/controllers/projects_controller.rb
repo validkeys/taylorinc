@@ -1,4 +1,14 @@
 class ProjectsController < ApplicationController
+  resource_controller
+  actions :index, :show #only handle index and show actions
+end
+
+
+# --------------
+# Actions replaced by resource_controller plugin
+# Leaving them in here for reference
+#---------------
+=begin
   # GET /projects
   # GET /projects.xml
   def index
@@ -82,4 +92,4 @@ class ProjectsController < ApplicationController
       format.xml  { head :ok }
     end
   end
-end
+=end

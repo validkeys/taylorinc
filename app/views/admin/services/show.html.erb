@@ -1,0 +1,13 @@
+<p>
+  <b>Title:</b>
+  <%=h @service.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @service.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_object_path(@object) %> |
+<%= link_to 'Back', collection_path %>

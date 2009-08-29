@@ -1,0 +1,18 @@
+<h1>Listing slides</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Url</th>
+    <th>Description</th>
+  </tr>
+
+<% @slides.each do |slide| %>
+  <tr>
+    <td><%=h slide.title %></td>
+    <td><%=h slide.url %></td>
+    <td><%=h slide.description %></td>
+    <td><%= link_to 'Show', slide %></td>
+  </tr>
+<% end %>
+</table>

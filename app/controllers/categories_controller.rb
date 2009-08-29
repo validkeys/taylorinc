@@ -1,11 +1,17 @@
 class CategoriesController < ApplicationController
-  make_resourceful do
-    actions :all
-  end
+  resource_controller
+  actions :index, :show #only handle index and show actions
+  
+  index.wants.xml { render :xml => @collection }
+  show.wants.xml { render :xml => @object }
+end
 
 
 
-
+# --------------
+# Actions replaced by resource_controller plugin
+# Leaving them in here for reference
+#---------------
 =begin
   # GET /categories
   # GET /categories.xml
@@ -91,5 +97,3 @@ class CategoriesController < ApplicationController
     end
   end
 =end
-
-end

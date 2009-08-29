@@ -1,6 +1,8 @@
 class CreateClients < ActiveRecord::Migration
   def self.up
     create_table :clients do |t|
+      t.integer :position, :null => :no, :default => 1
+      t.string :slug, :null => :no, :limit => 128
       t.string :name, :null => :no, :limit => 128
       t.text :description
 

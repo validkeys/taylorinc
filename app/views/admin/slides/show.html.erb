@@ -1,0 +1,18 @@
+<p>
+  <b>Title:</b>
+  <%=h @slide.title %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @slide.url %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @slide.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_object_path(@object) %> |
+<%= link_to 'Back', collection_path %>

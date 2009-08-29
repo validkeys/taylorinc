@@ -1,4 +1,15 @@
 class StoriesController < ApplicationController
+  resource_controller
+  actions :index, :show #only handle index and show actions
+end
+  
+
+
+# --------------
+# Actions replaced by resource_controller plugin
+# Leaving them in here for reference
+#---------------
+=begin
   # GET /stories
   # GET /stories.xml
   def index
@@ -82,4 +93,4 @@ class StoriesController < ApplicationController
       format.xml  { head :ok }
     end
   end
-end
+=end

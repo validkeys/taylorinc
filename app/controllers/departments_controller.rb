@@ -1,12 +1,13 @@
 class DepartmentsController < ApplicationController
-
-  make_resourceful do
-    actions :all
-  end
-
+  resource_controller
+  actions :index, :show #only handle index and show actions
+end
 
 
-
+# --------------
+# Actions replaced by resource_controller plugin
+# Leaving them in here for reference
+#---------------
 =begin
   
   # GET /departments
@@ -93,5 +94,3 @@ class DepartmentsController < ApplicationController
     end
   end
 =end
-
-end

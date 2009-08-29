@@ -1,4 +1,15 @@
 class ServicesController < ApplicationController
+  resource_controller
+  actions :index, :show #only handle index and show actions
+end
+  
+  
+
+# --------------
+# Actions replaced by resource_controller plugin
+# Leaving them in here for reference
+#---------------
+=begin
   # GET /services
   # GET /services.xml
   def index
@@ -82,4 +93,4 @@ class ServicesController < ApplicationController
       format.xml  { head :ok }
     end
   end
-end
+=end

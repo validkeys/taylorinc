@@ -1,0 +1,12 @@
+<h1>Listing categories</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+  <%= render :partial => "row", :collection => @categories %>
+</table>
+
+<br />
+
+<%= link_to 'New category', new_object_path %>
