@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :photos
+
 
   map.root :controller => 'slides'
   
@@ -11,7 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :clients
   map.resources :industries
   map.resources :categories
-  map.resources :projects
+  map.resources :projects, :has_many => :photos
   map.resources :departments
   
   # routes for the administration area
@@ -23,7 +25,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :clients
     admin.resources :industries
     admin.resources :categories
-    admin.resources :projects
+    admin.resources :projects, :has_many => :photos
     admin.resources :departments    
   end
   

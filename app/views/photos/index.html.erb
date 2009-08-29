@@ -1,0 +1,6 @@
+<h1>Photos</h1>
+<ul>
+  <% for photo in @photos -%>
+    <li><%= link_to h(photo.title), object_path(photo), :title => h(photo.title) %></li>
+  <% end -%>
+</ul>
