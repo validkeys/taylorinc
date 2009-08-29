@@ -1,7 +1,7 @@
 set :application, "taylor-group"
 set :user, "deploy"
-# can't seem to get the local repo to reolve with cap, so we're doing something silly, sshing to myself
-set :repository,  "ssh://#{user}@#{application}.com:30000/~/git/#{application}.git"
+
+set :repository,  "git@github.com:validkeys/taylor-group.git"
 
 set :deploy_to, "/var/www/#{application}"
 
