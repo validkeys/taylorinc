@@ -1,4 +1,14 @@
 class IndustriesController < ApplicationController
+
+  make_resourceful do
+    actions :all
+  end
+
+
+
+
+=begin
+
   # GET /industries
   # GET /industries.xml
   def index
@@ -82,4 +92,6 @@ class IndustriesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+=end
+
 end

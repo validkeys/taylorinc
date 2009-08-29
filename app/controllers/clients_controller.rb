@@ -1,4 +1,13 @@
 class ClientsController < ApplicationController
+  make_resourceful do
+    actions :all
+  end
+
+
+
+
+=begin
+  
   # GET /clients
   # GET /clients.xml
   def index
@@ -82,4 +91,6 @@ class ClientsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+=end
+
 end

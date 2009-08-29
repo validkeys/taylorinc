@@ -1,4 +1,14 @@
 class PagesController < ApplicationController
+
+  make_resourceful do
+    actions :all
+  end
+
+
+
+
+=begin
+
   # GET /pages
   # GET /pages.xml
   def index
@@ -82,4 +92,6 @@ class PagesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+=end
+
 end

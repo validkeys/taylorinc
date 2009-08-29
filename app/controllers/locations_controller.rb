@@ -1,4 +1,14 @@
 class LocationsController < ApplicationController
+
+  make_resourceful do
+    actions :all
+  end
+
+
+
+
+=begin
+
   # GET /locations
   # GET /locations.xml
   def index
@@ -82,4 +92,6 @@ class LocationsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+=end
+
 end

@@ -1,4 +1,14 @@
 class DepartmentsController < ApplicationController
+
+  make_resourceful do
+    actions :all
+  end
+
+
+
+
+=begin
+  
   # GET /departments
   # GET /departments.xml
   def index
@@ -82,4 +92,6 @@ class DepartmentsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+=end
+
 end
