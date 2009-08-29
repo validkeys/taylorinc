@@ -1,13 +1,103 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
+environments:
   position: 1
-  slug: MyString
-  title: MyString
-  description: MyText
+  slug: $LABEL
+  title: Environments
+  description: |
+    The Taylor Group has organized and integrated its services to support our clients at every stage in their Program Development, from initial strategy through fabrication and implementation, utilizing our vast resources and partnerships, worldwide. This enables clients to benefit from the wealth of knowledge found in our multidisciplinary professional teams. In addition to the capabilities mentioned in both the Exhibit and Event Management Sections, our program managers also provide the following support
+    * Strategic program planning and development
+    * Brand Integration in Multi-Dimensional marketing
+    * Customized web based client property management systems
+    * Audio Visual Support and Management
+    * Speaker, Script, Crew and Entertainment Support
+    * International Liaison and Communication Management
+    * Strategic program planning and development
+    * Brand Integration in Multi-Dimensional marketing
+    * Customized web based client property management systems
+    * Audio Visual Support and Management
+    * Speaker, Script, Crew and Entertainment Support
+    * International Liaison and Communication Management
+    * Strategic program planning and development
+    * Brand Integration in Multi-Dimensional marketing
+    * Customized web based client property management systems
+    * Audio Visual Support and Management
+    * Speaker, Script, Crew and Entertainment Support
+    * International Liaison and Communication Management
 
-two:
-  position: 1
-  slug: MyString
-  title: MyString
-  description: MyText
+events:
+  position: 2
+  slug: $LABEL
+  title: Events
+  description: |
+    The Taylor Group has organized and integrated its services to support our clients at every stage in their Program Development, from initial strategy through fabrication and implementation, utilizing our vast resources and partnerships, worldwide. This enables clients to benefit from the wealth of knowledge found in our multidisciplinary professional teams. In addition to the capabilities mentioned in both the Exhibit and Event Management Sections, our program managers also provide the following support
+    * Strategic program planning and development
+    * Brand Integration in Multi-Dimensional marketing
+    * Customized web based client property management systems
+    * Audio Visual Support and Management
+    * Speaker, Script, Crew and Entertainment Support
+    * International Liaison and Communication Management
+    * Strategic program planning and development
+    * Brand Integration in Multi-Dimensional marketing
+    * Customized web based client property management systems
+    * Audio Visual Support and Management
+    * Speaker, Script, Crew and Entertainment Support
+    * International Liaison and Communication Management
+    * Strategic program planning and development
+    * Brand Integration in Multi-Dimensional marketing
+    * Customized web based client property management systems
+    * Audio Visual Support and Management
+    * Speaker, Script, Crew and Entertainment Support
+    * International Liaison and Communication Management
+    
+
+exhibits:
+  position: 3
+  slug: $LABEL
+  title: Exhibits
+  description: |
+    The Taylor Group has organized and integrated its services to support our clients at every stage in their Program Development, from initial strategy through fabrication and implementation, utilizing our vast resources and partnerships, worldwide. This enables clients to benefit from the wealth of knowledge found in our multidisciplinary professional teams. In addition to the capabilities mentioned in both the Exhibit and Event Management Sections, our program managers also provide the following support
+    * Strategic program planning and development
+    * Brand Integration in Multi-Dimensional marketing
+    * Customized web based client property management systems
+    * Audio Visual Support and Management
+    * Speaker, Script, Crew and Entertainment Support
+    * International Liaison and Communication Management
+    * Strategic program planning and development
+    * Brand Integration in Multi-Dimensional marketing
+    * Customized web based client property management systems
+    * Audio Visual Support and Management
+    * Speaker, Script, Crew and Entertainment Support
+    * International Liaison and Communication Management
+    * Strategic program planning and development
+    * Brand Integration in Multi-Dimensional marketing
+    * Customized web based client property management systems
+    * Audio Visual Support and Management
+    * Speaker, Script, Crew and Entertainment Support
+    * International Liaison and Communication Management
+
+interactive:
+  position: 4
+  slug: $LABEL
+  title: Interactive
+  description: |
+    The Taylor Group has organized and integrated its services to support our clients at every stage in their Program Development, from initial strategy through fabrication and implementation, utilizing our vast resources and partnerships, worldwide. This enables clients to benefit from the wealth of knowledge found in our multidisciplinary professional teams. In addition to the capabilities mentioned in both the Exhibit and Event Management Sections, our program managers also provide the following support
+    * Strategic program planning and development
+    * Brand Integration in Multi-Dimensional marketing
+    * Customized web based client property management systems
+    * Audio Visual Support and Management
+    * Speaker, Script, Crew and Entertainment Support
+    * International Liaison and Communication Management
+    * Strategic program planning and development
+    * Brand Integration in Multi-Dimensional marketing
+    * Customized web based client property management systems
+    * Audio Visual Support and Management
+    * Speaker, Script, Crew and Entertainment Support
+    * International Liaison and Communication Management
+    * Strategic program planning and development
+    * Brand Integration in Multi-Dimensional marketing
+    * Customized web based client property management systems
+    * Audio Visual Support and Management
+    * Speaker, Script, Crew and Entertainment Support
+    * International Liaison and Communication Management
+

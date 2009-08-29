@@ -1,11 +1,51 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
+automotive:
   position: 1
-  slug: MyString
-  title: MyString
+  slug: $LABEL
+  title: Automotive
 
-two:
-  position: 1
-  slug: MyString
-  title: MyString
+finance:
+  position: 2
+  slug: $LABEL
+  title: Finance
+
+healthcare:
+  position: 3
+  slug: $LABEL
+  title: Healthcare
+
+government:
+  position: 4
+  slug: $LABEL
+  title: Government
+
+manufacturing:
+  position: 5
+  slug: $LABEL
+  title: Manufacturing
+
+technology:
+  position: 6
+  slug: $LABEL
+  title: Technology
+
+museums:
+  position: 7
+  slug: $LABEL
+  title: Museums
+
+consumer_goods_and_services:
+  position: 8
+  slug: $LABEL
+  title: Consumer Goods and Services
+
+real_estate:
+  position: 9
+  slug: $LABEL
+  title: Real Estate
+
+aviation:
+  position: 10
+  slug: $LABEL
+  title: Aviation

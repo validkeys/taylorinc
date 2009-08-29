@@ -1,0 +1,61 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+toronto:
+  position: 1
+  slug: $LABEL
+  title: Toronto
+  street_1: 255 Biscayne Crescent
+  city: Brampton
+  province: ON
+  country: Canada
+  postal_code: L6W 4R2
+  contact_info: |
+    Toll free: (800) 605-6519
+    Tel: (905) 451-5800
+    Fax: (905) 451-1544
+    Management, Sales, Design, Engineering
+    Fax: (905) 451-3338
+    Project Mgmt, Fabrication, Graphics, I&D, Warehouse, Admin.
+    Email: <a href="mailto:info@taylorinc.com">info@taylorinc.com</a>
+
+boston:
+  position: 2
+  slug: $LABEL
+  title: Boston
+  street_1: 12 Forge Park
+  city: Franklin
+  province: MA
+  country: U.S.A.
+  postal_code: "02038"
+  contact_info: |
+    Tel: (508) 488-1800
+    Fax: (508) 528-8947
+    Email: <a href="mailto:info@taylorinc.com">info@taylorinc.com</a>
+
+las_vegas:
+  position: 3
+  slug: $LABEL
+  title: "Las Vegas"
+  street_1: 4850 Statz Avenue
+  city: Las Vegas
+  province: NV
+  country: U.S.A.
+  postal_code: "89081"
+  contact_info: |
+    Tel: (800) 605-6519
+    Email: <a href="mailto:info@taylorinc.com">info@taylorinc.com</a>
+
+dallas:
+  position: 4
+  slug: $LABEL
+  title: Dallas
+  street_1: 8701 Sterling Drive
+  street_2: Suite 150
+  city: Irving
+  province: TX
+  country: U.S.A.
+  postal_code: "75063"
+  contact_info: |
+    Tel: (214) 277-8000
+    Fax: (214) 277-8012
+    Email: <a href="mailto:info@taylorinc.com">info@taylorinc.com</a>

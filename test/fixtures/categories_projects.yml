@@ -1,11 +1,6 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  category: 
-  project: 
-  position: 1
-
-two:
-  category: 
-  project: 
-  position: 1
+#one:
+#  category: 1
+#  project: 1
+#  position: 1
