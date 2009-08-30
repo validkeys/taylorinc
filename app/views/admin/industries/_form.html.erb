@@ -11,4 +11,5 @@
   <%= f.label :title %>
   <%= f.text_field :title, :class => 'text' %>
 </p>
+<%= render :partial => "admin/shared/image_upload", :locals => { :f => f } %>
 <%= render :partial => "admin/shared/buttons" %>

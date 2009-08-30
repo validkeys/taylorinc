@@ -1,0 +1,8 @@
+<p>
+  <% if @object.image.file? -%>
+    <%= image_tag(@object.image.url(:thumb), :class => 'thumb') %>
+  <% else -%>
+    <%= f.label :image, 'Upload Image' %>
+  <% end -%>
+  <%= f.file_field :image, :class => 'text', :style => 'vertical-align:top;margin-top:10px;' %>
+</p>

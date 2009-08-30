@@ -1,7 +1,7 @@
 class Slide < ActiveRecord::Base
   
   has_attached_file :image,
-                    :styles => { :original => "800x600>", :thumb => "618x490>" },
+                    :styles => { :original => "800x600>", :thumb => "300x300>" },
                     :path => ":rails_root/public/attachments/slides/:id/:style_:basename.:extension",
                     :url => "/attachments/slides/:id/:style_:basename.:extension"
   

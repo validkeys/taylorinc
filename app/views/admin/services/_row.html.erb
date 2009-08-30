@@ -1,6 +1,6 @@
 <tr class="<%= cycle("even_row", "odd_row") -%>">
   <td><%=h row.title %></td>
-  <td><%= link_to 'Show', object_path(row) %></td>
+  <td><%= link_to 'Preview', service_path(row) %></td>
   <td><%= link_to 'Edit', edit_object_path(row) %></td>
-  <td><%= link_to 'Destroy', object_path(row), :confirm => 'Are you sure?', :method => :delete %></td>
+  <td><%= link_to 'Delete', object_path(row), :confirm => 'Are you sure?', :method => :delete %></td>
 </tr>

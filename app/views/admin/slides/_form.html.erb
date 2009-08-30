@@ -3,6 +3,7 @@
   <%= f.label :title %>
   <%= f.text_field :title, :class => 'text' %>
 </p>
+<%= render :partial => "admin/shared/image_upload", :locals => { :f => f } %>
 <p>
   <%= f.label :url %>
   <%= f.text_field :url, :class => 'text' %>

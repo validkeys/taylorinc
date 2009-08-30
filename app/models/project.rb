@@ -5,7 +5,7 @@ class Project < ActiveRecord::Base
   has_many :photos
   
   has_attached_file :image,
-                    :styles => { :original => "800x600>", :thumb => "618x490>" },
+                    :styles => { :original => "800x600>", :thumb => "300x300>" },
                     :path => ":rails_root/public/attachments/projects/:id/:style_:basename.:extension",
                     :url => "/attachments/projects/:id/:style_:basename.:extension"
   

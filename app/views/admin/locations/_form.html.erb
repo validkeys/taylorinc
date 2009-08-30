@@ -27,6 +27,7 @@
   <%= f.label :postal_code %>
   <%= f.text_field :postal_code, :class => 'text' %>
 </p>
+<%= render :partial => "admin/shared/image_upload", :locals => { :f => f } %>
 <p>
   <%= f.label :contact_info %>
   <%= f.text_area :contact_info %>
