@@ -11,6 +11,7 @@ xml.locations do
       xml.country location.country
       xml.postal_code location.postal_code
       xml.contact_info location.contact_info
+      xml.image location.image.url if location.image?
     end
   end
 end

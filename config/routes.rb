@@ -1,11 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :photos
-
-
+  
   map.root :controller => 'slides'
   
   map.resources :sitemap
   
+  map.resources :photos
   map.resources :slides
   map.resources :locations
   map.resources :stories
@@ -15,6 +14,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :categories
   map.resources :projects, :has_many => :photos
   map.resources :departments
+  
+  map.admin '/admin', :controller => 'admin/slides'
   
   # routes for the administration area
   map.namespace :admin do |admin|

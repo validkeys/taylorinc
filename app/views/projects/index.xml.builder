@@ -1,10 +1,11 @@
 xml.instruct!
-xml.slides do
-  for slide in @slides
-    xml.slide do
-      xml.title slide.title
-      xml.url slide.url
-      xml.description slide.description
+xml.projects do
+  for project in @projects
+    xml.project do
+      xml.permalink project.permalink
+      xml.title project.title
+      xml.client project.client
+      xml.image project.image.url if project.image?
     end
   end
 end

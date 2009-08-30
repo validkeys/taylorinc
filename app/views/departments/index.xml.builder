@@ -5,6 +5,7 @@ xml.departments do
       xml.permalink department.permalink
       xml.title department.title
       xml.description department.description
+      xml.image department.image.url if department.image?
     end
   end
 end

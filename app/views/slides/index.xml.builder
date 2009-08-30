@@ -5,6 +5,7 @@ xml.slides do
       xml.title slide.title
       xml.url slide.url
       xml.description slide.description
+      xml.image slide.image.url if slide.image?
     end
   end
 end
