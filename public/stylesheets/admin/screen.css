@@ -34,7 +34,6 @@ a:hover, a:active {
 /* Header
 -------------------------------------------------------------- */
 
-#header { margin-top: 20px; }
 #header h1 { margin-bottom: 0px; }
 #header h2 { font-size: 1.3em; }
 #header .tabs { border-bottom: 1px solid #ddd; }
