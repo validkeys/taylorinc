@@ -2,7 +2,7 @@ xml.instruct!
 xml.locations do
   for location in @locations
     xml.location do
-      xml.slug location.slug
+      xml.permalink location.permalink
       xml.title location.title
       xml.street_1 location.street_1
       xml.street_2 location.street_2

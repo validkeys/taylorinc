@@ -2,7 +2,7 @@ xml.instruct!
 xml.industries do
   for industry in @industries
     xml.industry do
-      xml.slug industry.slug
+      xml.permalink industry.permalink
       xml.title industry.title
     end
   end

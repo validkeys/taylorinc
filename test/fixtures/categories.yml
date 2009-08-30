@@ -2,60 +2,60 @@
 
 product_launches:
   position: 1
-  slug: $LABEL
+  permalink: $LABEL
   title: Product Launches
 
 themed_environments:
   position: 2
-  slug: $LABEL
+  permalink: $LABEL
   title: Themed Environments
 
 retail:
   position: 3
-  slug: $LABEL
+  permalink: $LABEL
   title: Retail
 
 mobile:
   position: 4
-  slug: $LABEL
+  permalink: $LABEL
   title: Mobile
 
 corporate_theatre:
   position: 5
-  slug: $LABEL
+  permalink: $LABEL
   title: Corporate Theatre
 
 tours_and_meetings:
   position: 6
-  slug: $LABEL
+  permalink: $LABEL
   title: Tours and Meetings
 
 graphics_and_wayfinding:
   position: 7
-  slug: $LABEL
+  permalink: $LABEL
   title: Graphics and Way-Finding
 
 museums:
   position: 8
-  slug: $LABEL
+  permalink: $LABEL
   title: Museums
 
 exhibits_over_1000_feet:
   position: 9
-  slug: $LABEL
+  permalink: $LABEL
   title: Exhibits (Over 1000 feet)
 
 exhibits_under_1000_feet:
   position: 10
-  slug: $LABEL
+  permalink: $LABEL
   title: Exhibits (Under 1000 feet)
 
 exhibits_custom_rentals:
   position: 11
-  slug: $LABEL
+  permalink: $LABEL
   title: Exhibits (Custom Rentals)
 
 interiors:
   position: 12
-  slug: $LABEL
+  permalink: $LABEL
   title: Interiors

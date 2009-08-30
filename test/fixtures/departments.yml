@@ -2,7 +2,7 @@
 
 retail_and_environments:
   position: 1
-  slug: $LABEL
+  permalink: $LABEL
   title: "Retail & Environments"
   description: |
     The Taylor Group has organized and integrated its services to support our clients at every stage in their Program Development, from initial strategy through fabrication and implementation, utilizing our vast resources and partnerships, worldwide. This enables clients to benefit from the wealth of knowledge found in our multidisciplinary professional teams. In addition to the capabilities mentioned in both the Exhibit and Event Management Sections, our program managers also provide the following support
@@ -27,7 +27,7 @@ retail_and_environments:
 
 events:
   position: 2
-  slug: $LABEL
+  permalink: $LABEL
   title: Events
   description: |
     The Taylor Group has organized and integrated its services to support our clients at every stage in their Program Development, from initial strategy through fabrication and implementation, utilizing our vast resources and partnerships, worldwide. This enables clients to benefit from the wealth of knowledge found in our multidisciplinary professional teams. In addition to the capabilities mentioned in both the Exhibit and Event Management Sections, our program managers also provide the following support
@@ -53,7 +53,7 @@ events:
 
 exhibits:
   position: 3
-  slug: $LABEL
+  permalink: $LABEL
   title: Exhibits
   description: |
     The Taylor Group has organized and integrated its services to support our clients at every stage in their Program Development, from initial strategy through fabrication and implementation, utilizing our vast resources and partnerships, worldwide. This enables clients to benefit from the wealth of knowledge found in our multidisciplinary professional teams. In addition to the capabilities mentioned in both the Exhibit and Event Management Sections, our program managers also provide the following support
@@ -78,7 +78,7 @@ exhibits:
 
 interactive:
   position: 4
-  slug: $LABEL
+  permalink: $LABEL
   title: Interactive
   description: |
     The Taylor Group has organized and integrated its services to support our clients at every stage in their Program Development, from initial strategy through fabrication and implementation, utilizing our vast resources and partnerships, worldwide. This enables clients to benefit from the wealth of knowledge found in our multidisciplinary professional teams. In addition to the capabilities mentioned in both the Exhibit and Event Management Sections, our program managers also provide the following support
@@ -103,7 +103,7 @@ interactive:
 
 museums:
   position: 5
-  slug: $LABEL
+  permalink: $LABEL
   title: Museums
   description: |
     The Taylor Group has organized and integrated its services to support our clients at every stage in their Program Development, from initial strategy through fabrication and implementation, utilizing our vast resources and partnerships, worldwide. This enables clients to benefit from the wealth of knowledge found in our multidisciplinary professional teams. In addition to the capabilities mentioned in both the Exhibit and Event Management Sections, our program managers also provide the following support

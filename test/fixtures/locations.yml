@@ -2,7 +2,7 @@
 
 toronto:
   position: 1
-  slug: $LABEL
+  permalink: $LABEL
   title: Toronto
   street_1: 255 Biscayne Crescent
   city: Brampton
@@ -20,7 +20,7 @@ toronto:
 
 boston:
   position: 2
-  slug: $LABEL
+  permalink: $LABEL
   title: Boston
   street_1: 12 Forge Park
   city: Franklin
@@ -34,7 +34,7 @@ boston:
 
 las_vegas:
   position: 3
-  slug: $LABEL
+  permalink: $LABEL
   title: "Las Vegas"
   street_1: 4850 Statz Avenue
   city: Las Vegas
@@ -47,7 +47,7 @@ las_vegas:
 
 dallas:
   position: 4
-  slug: $LABEL
+  permalink: $LABEL
   title: Dallas
   street_1: 8701 Sterling Drive
   street_2: Suite 150

@@ -2,7 +2,7 @@ xml.instruct!
 xml.categories do
   for category in @categories
     xml.category do
-      xml.slug category.slug
+      xml.permalink category.permalink
       xml.title category.title
     end
   end

@@ -4,8 +4,8 @@
   <%= f.text_field :position, :class => 'text' %>
 </p>
 <p>
-  <%= f.label :slug %>
-  <%= f.text_field :slug, :class => 'text' %>
+  <%= f.label :permalink %>
+  <%= f.text_field :permalink, :class => 'text' %>
 </p>
 <p>
   <%= f.label :title %>
@@ -15,6 +15,4 @@
   <%= f.label :description %>
   <%= f.text_area :description %>
 </p>
-<p>
-  <%= f.submit 'Save' %>
-</p>
+<%= render :partial => "admin/shared/buttons" %>

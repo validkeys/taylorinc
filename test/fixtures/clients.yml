@@ -1,11 +1,11 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 acura:
-  slug: $LABEL
+  permalink: $LABEL
   name: Acura
   description: Description for Acura
 
 bmw:
-  slug: $LABEL
+  permalink: $LABEL
   name: BMW
   description: Description for BMW

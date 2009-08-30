@@ -15,17 +15,21 @@
 /* Page
 -------------------------------------------------------------- */
 
-#page { margin: 0 auto; width: 950px; }
-.clear {clear:both;}
-
+h1 h2 { color: #444;}
+h3, h4, h5, h6 { color: #be7503; }
+#page {
+	margin: 0 auto; 
+	width: 950px; 
+}
+.clear { clear:both; }
 a, a:visited {
   text-decoration: none;
+	color: #be7503;
 }
 a:hover, a:active {
   background-color: #ccc;
+	color: #be7503;
 }
-
-h1 { color: 111188;}
 
 /* Header
 -------------------------------------------------------------- */
@@ -35,34 +39,45 @@ h1 { color: 111188;}
 #header h2 { font-size: 1.3em; }
 #header .tabs { border-bottom: 1px solid #ddd; }
 #header .tabs li { margin-right: 1px; }
-#header .tabs a { padding: 5px 15px; background: #ddd; color: #666; text-decoration: none; }
-#header .tabs a:hover { padding: 5px 15px; color: #ddd; text-decoration: none; }
-#header .tabs a.active { padding: 5px 15px; color: #ddd; text-decoration: none; }
-
-
-/* Body
--------------------------------------------------------------- */
-
-#body { margin-top: 20px; }
-
-#content { float: left; width: 620px; margin-right: 80px;}
-
-#resources { float: left; width: 250px; }
-#resources h3 { color: #888; }
-#resources p { color: #888; }
-#resources li { color: #888; }
-
-
-/* Footer
--------------------------------------------------------------- */
-#footer { border-top: 1px solid #D9E1E5; margin-top: 20px; }
-
-#footer p.quiet { color: #888; }
+#header .tabs a { 
+	padding: 5px 15px; 
+	background: #ddd; 
+	color: #666; 
+	text-decoration: none; 
+}
+#header .tabs a:hover { 
+	padding: 5px 15px; 
+	color: #ddd; 
+	text-decoration: none; 
+	background: #be7503; 
+}
+#header .tabs a.active { 
+	padding: 5px 15px; 
+	color: #ddd; 
+	text-decoration: none; 
+	background: #be7503; 
+}
 
 
 /* Content
 -------------------------------------------------------------- */
 
-ul#clients { margin: 0; padding: 0; }
-ul#clients li { list-style-type: none; padding-bottom: 20px; }
-ul#clients li img { float: left; margin: 0px 15px 40px 0px; }
+.odd_row {
+	background: #eeedeb; 
+}
+td, th {
+	padding-left: 3px;
+}
+
+/* Footer
+-------------------------------------------------------------- */
+#footer { 
+	border-top: 1px solid #D9E1E5; 
+	margin-top: 20px; 
+}
+
+#footer p.quiet { color: #444; }
+
+
+/* Content
+-------------------------------------------------------------- */

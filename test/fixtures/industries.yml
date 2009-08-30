@@ -2,50 +2,50 @@
 
 automotive:
   position: 1
-  slug: $LABEL
+  permalink: $LABEL
   title: Automotive
 
 finance:
   position: 2
-  slug: $LABEL
+  permalink: $LABEL
   title: Finance
 
 healthcare:
   position: 3
-  slug: $LABEL
+  permalink: $LABEL
   title: Healthcare
 
 government:
   position: 4
-  slug: $LABEL
+  permalink: $LABEL
   title: Government
 
 manufacturing:
   position: 5
-  slug: $LABEL
+  permalink: $LABEL
   title: Manufacturing
 
 technology:
   position: 6
-  slug: $LABEL
+  permalink: $LABEL
   title: Technology
 
 museums:
   position: 7
-  slug: $LABEL
+  permalink: $LABEL
   title: Museums
 
 consumer_goods_and_services:
   position: 8
-  slug: $LABEL
+  permalink: $LABEL
   title: Consumer Goods and Services
 
 real_estate:
   position: 9
-  slug: $LABEL
+  permalink: $LABEL
   title: Real Estate
 
 aviation:
   position: 10
-  slug: $LABEL
+  permalink: $LABEL
   title: Aviation

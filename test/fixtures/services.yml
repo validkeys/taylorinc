@@ -2,7 +2,7 @@
 
 how_we_can_help:
   position: 1
-  slug: $LABEL
+  permalink: $LABEL
   title: "How we can help!"
   body: |
     Join an award winning team of exhibit, event and environmental designers, fabricators, producers and planners.
@@ -11,14 +11,14 @@ how_we_can_help:
 
 exhibit_design:
   position: 2
-  slug: $LABEL
+  permalink: $LABEL
   title: Exhibit Design
   body: |
     Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. Our award winning Design Team, Account Managers and Project Managers work interactively with our clients and agency partners, through every step of the development of each program so that all expectations and needs are met at every step from the first initial concept to the final completed product.
 
 fabrication:
   position: 3
-  slug: $LABEL
+  permalink: $LABEL
   title: "Fabrication"
   body: |
     Our production facility is state-of-the-art and staffed by some of the finest craftsmen in the industry. Our commitment to quality and to cost effective fabrication and refurbishment has encouraged us to research and invest in the highest level of computer aided manufacturing equipment.
@@ -32,7 +32,7 @@ fabrication:
 
 custom_fabrication:
   position: 4
-  slug: $LABEL
+  permalink: $LABEL
   title: Custom Fabrication
   body: |
     h2. Aluminum Fabrication - The Oz System
@@ -42,7 +42,7 @@ custom_fabrication:
 
 scenic_environments_and_events:
   position: 5
-  slug: $LABEL
+  permalink: $LABEL
   title: "Scenic Environments & Events"
   body: |
     h2. Fabric Architecture
@@ -54,28 +54,28 @@ scenic_environments_and_events:
 
 mobile_exhibits_and_events:
   position: 6
-  slug: $LABEL
+  permalink: $LABEL
   title: "Mobile Exhibits & Events"
   body: |
     With services ranging from strategy assistance to vehicle design and construction, clients can rely on us to produce quality mobile marketing environments on time and within budget. Our mobile marketing services include interior design, vehicle refurbishing, site selection, event management, tour logistics, field staffing, and mobile marketing program management.
 
 customrentals:
   position: 7
-  slug: $LABEL
+  permalink: $LABEL
   title: "Custom Rentals"
   body: |
     In this changing economy, our Custom Rental Program can allow you to cut costs while still developing new business and meeting your corporate goals and objectives. Our rental solutions will assist you in creating a quality environment that will convey your message, motivate your audience, and deliver results.
 
 graphics:
   position: 8
-  slug: $LABEL
+  permalink: $LABEL
   title: "Graphics"
   body: |
     Our full service in-house graphic production capabilities guarantee the highest quality fastest turn around time for any project. We provide desktop publishing and image setting on PC and MAC platforms, computer-controlled cut vinyl, dimensional graphics, full-colour inkjet printing on numerous substrates (including fabric), as well as any other processes that suite the design and requirements.
 
 installation_and_project_management:
   position: 9
-  slug: $LABEL
+  permalink: $LABEL
   title: "Installation & Project Management"
   body: |
     h2. Installation & Dismantle
@@ -85,7 +85,7 @@ installation_and_project_management:
 
 inventory_and_transportation:
   position: 10
-  slug: $LABEL
+  permalink: $LABEL
   title: "Inventory & Transportation"
   body: |
     h2. Inventory Management
@@ -96,7 +96,7 @@ inventory_and_transportation:
 
 technology:
   position: 11
-  slug: $LABEL
+  permalink: $LABEL
   title: "Technology"
   body: |
     To enhance our communication ability, Taylor developed TWIST: Taylor Worldwide Information System Technology. This secure, on-line utility provides our clients with 24-hour access to The Taylor Group and is included in every client program.
@@ -104,7 +104,7 @@ technology:
 
 awards:
   position: 12
-  slug: $LABEL
+  permalink: $LABEL
   title: "Awards"
   body: |
     Readers Choice, Best Exhibit in 20 years
