@@ -1,31 +1,35 @@
 <%= f.error_messages %>
 <p>
+  <%= f.label :permalink %>
+  <%= f.text_field :permalink, :class => 'text required', :minlength => '2', :maxlength => '100' %>
+</p>
+<p>
   <%= f.label :title %>
-  <%= f.text_field :title, :class => 'text' %>
+  <%= f.text_field :title, :class => 'text required', :minlength => '2', :maxlength => '100' %>
 </p>
 <p>
   <%= f.label :street_1 %>
-  <%= f.text_field :street_1, :class => 'text' %>
+  <%= f.text_field :street_1, :class => 'text required', :minlength => '2', :maxlength => '128' %>
 </p>
 <p>
   <%= f.label :street_2 %>
-  <%= f.text_field :street_2, :class => 'text' %>
+  <%= f.text_field :street_2, :class => 'text', :minlength => '2', :maxlength => '100' %>
 </p>
 <p>
   <%= f.label :city %>
-  <%= f.text_field :city, :class => 'text' %>
+  <%= f.text_field :city, :class => 'text required', :minlength => '2', :maxlength => '100' %>
 </p>
 <p>
   <%= f.label :province %>
-  <%= f.text_field :province, :class => 'text' %>
+  <%= f.text_field :province, :class => 'text required', :minlength => '2', :maxlength => '2' %>
 </p>
 <p>
   <%= f.label :country %>
-  <%= f.text_field :country, :class => 'text' %>
+  <%= f.text_field :country, :class => 'text required', :minlength => '2', :maxlength => '32' %>
 </p>
 <p>
   <%= f.label :postal_code %>
-  <%= f.text_field :postal_code, :class => 'text' %>
+  <%= f.text_field :postal_code, :class => 'text required', :minlength => '5', :maxlength => '20' %>
 </p>
 <%= render :partial => "admin/shared/image_upload", :locals => { :f => f } %>
 <p>

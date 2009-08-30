@@ -1,6 +1,6 @@
 <p>
   <% if @object.image.file? -%>
-    <%= image_tag(@object.image.url(:thumb), :class => 'thumb') %>
+    <%= link_to image_tag(@object.image.url(:thumb), :class => 'thumb'), @object.image.url, :class => 'thumb' %>
   <% else -%>
     <%= f.label :image, 'Upload Image' %>
   <% end -%>

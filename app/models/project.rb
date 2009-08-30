@@ -1,8 +1,14 @@
 class Project < ActiveRecord::Base
+  #belongs_to :client
   belongs_to :department
   has_many :industries, :through => :industries_projects
   has_many :categories, :through => :categories_projects
   has_many :photos
+  
+  validates_presence_of :permalink, :title, :client
+  validates_length_of :permalink, :within => 2..128
+  validates_length_of :title, :within => 2..128
+  validates_length_of :client, :within => 2..128
   
   has_attached_file :image,
                     :styles => { :original => "800x600>", :thumb => "300x300>" },

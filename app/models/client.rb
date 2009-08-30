@@ -1,5 +1,8 @@
 class Client < ActiveRecord::Base
   
+  validates_presence_of :name
+  validates_length_of :name, :within => 2..128
+  
   has_attached_file :image,
                     :styles => { :original => "800x600>", :thumb => "300x300>" },
                     :path => ":rails_root/public/attachments/clients/:id/:style_:basename.:extension",

@@ -1,5 +1,10 @@
 class Department < ActiveRecord::Base
   has_many :projects, :dependent => :nullify
+  
+  validates_presence_of :permalink, :title
+  validates_length_of :permalink, :within => 2..128
+  validates_length_of :title, :within => 2..128
+  
   # acts_as_list
   has_attached_file :image,
                     :styles => { :original => "800x600>", :thumb => "300x300>" },

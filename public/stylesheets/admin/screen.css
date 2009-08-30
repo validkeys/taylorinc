@@ -60,7 +60,9 @@ a:hover, a:active {
 
 /* Content
 -------------------------------------------------------------- */
-
+#body {
+	margin-top: 20px;
+}
 .odd_row {
 	background: #eeedeb; 
 }
@@ -70,6 +72,35 @@ td, th {
 img.thumb {
 	display: block;
 	margin-top: 10px;
+}
+
+/* Notices and Alerts
+-------------------------------------------------------------- */
+div.flash {
+  padding: 5px 10px 5px 10px;
+  margin: 10px 0px;
+  font-weight: bold;
+}
+div.flash_error, div.flash_alert {
+  color: #333;  
+	background: #fee;
+	border: solid 1px #fbb;
+}
+div.flash_notice {
+	color: #333;  
+	background: #efe;
+	border: solid 1px #bfb;
+}
+div.errorExplanation {
+  border: solid 1px #dcdcdc;
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 15px;
+}
+div.fieldWithErrors input.text, div.fieldWithErrors input.title, div.fieldWithErrors textarea, div.fieldWithErrors select {
+  border: 2px solid #d88;
+}
+div.fieldWithErrors input.text:focus, div.fieldWithErrors input.title:focus, div.fieldWithErrors textarea:focus, div.fieldWithErrors select:focus {
+  border: 2px solid #d44;
 }
 
 /* Footer
