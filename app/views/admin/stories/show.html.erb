@@ -1,13 +1,11 @@
 <p>
-  <b>Title:</b>
+  <%= label(nil, :title) %>
   <%=h @story.title %>
 </p>
-
 <p>
-  <b>Body:</b>
-  <%=h @story.body %>
+  <%= label(nil, :body) %>
+  <%= @story.body %>
 </p>
-
 
 <%= link_to 'Edit', edit_object_path(@object) %> |
 <%= link_to 'Back', collection_path %>

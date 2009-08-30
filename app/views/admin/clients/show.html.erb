@@ -1,12 +1,11 @@
 <p>
-  <b>Name:</b>
+  <%= label(nil, :name) %>
   <%=h @client.name %>
 </p>
 <p>
-  <b>Description:</b>
+  <%= label(nil, :description) %>
   <%=h @client.description %>
 </p>
-
 
 <%= link_to 'Edit', edit_object_path(@object) %> |
 <%= link_to 'Back', collection_path %>

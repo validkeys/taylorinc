@@ -1,18 +1,15 @@
 <p>
-  <b>Position:</b>
+  <%= label(nil, :position) %>
   <%=h @industry.position %>
 </p>
-
 <p>
-  <b>Slug:</b>
+  <%= label(nil, :slug) %>
   <%=h @industry.slug %>
 </p>
-
 <p>
-  <b>Title:</b>
+  <%= label(nil, :title) %>
   <%=h @industry.title %>
 </p>
-
 
 <%= link_to 'Edit', edit_object_path(@object) %> |
 <%= link_to 'Back', collection_path %>

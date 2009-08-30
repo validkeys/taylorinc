@@ -1,68 +1,35 @@
 <p>
-  <b>Title:</b>
+  <%= label(nil, :title) %>
   <%=h @location.title %>
 </p>
-
 <p>
-  <b>Street 1:</b>
+  <%= label(nil, :street_1) %>
   <%=h @location.street_1 %>
 </p>
-
 <p>
-  <b>Street 2:</b>
+  <%= label(nil, :street_2) %>
   <%=h @location.street_2 %>
 </p>
-
 <p>
   <b>City:</b>
-  <%=h @location.city %>
+  <%= label(nil, :city) %>
 </p>
-
 <p>
-  <b>Province:</b>
+  <%= label(nil, :province) %>
   <%=h @location.province %>
 </p>
-
 <p>
-  <b>Country:</b>
+  <%= label(nil, :country) %>
   <%=h @location.country %>
 </p>
-
 <p>
-  <b>Postal code:</b>
+  <%= label(nil, :postal_code) %>
   <%=h @location.postal_code %>
 </p>
-
 <p>
-  <b>Toll free:</b>
-  <%=h @location.toll_free %>
+  <%= label(nil, :contact_info) %>
+  <%= @location.contact_info %>
 </p>
-
-<p>
-  <b>Phone:</b>
-  <%=h @location.phone %>
-</p>
-
-<p>
-  <b>Fax:</b>
-  <%=h @location.fax %>
-</p>
-
-<p>
-  <b>Other label:</b>
-  <%=h @location.other_label %>
-</p>
-
-<p>
-  <b>Other value:</b>
-  <%=h @location.other_value %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%=h @location.email %>
-</p>
-
 
 <%= link_to 'Edit', edit_object_path(@object) %> |
 <%= link_to 'Back', collection_path %>

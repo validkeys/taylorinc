@@ -1,18 +1,19 @@
 <p>
-  <b>Title:</b>
-  <%=h @slide.title %>
+  <%= label(nil, :slug) %>
+  <%=h @project.slug %>
 </p>
-
 <p>
-  <b>Url:</b>
-  <%=h @slide.url %>
+  <%= label(nil, :client) %>
+  <%=h @project.client %>
 </p>
-
 <p>
-  <b>Description:</b>
-  <%=h @slide.description %>
+  <%= label(nil, :title) %>
+  <%=h @project.title %>
 </p>
-
+<p>
+  <%= label(nil, :description) %>
+  <%= @project.description %>
+</p>
 
 <%= link_to 'Edit', edit_object_path(@object) %> |
 <%= link_to 'Back', collection_path %>

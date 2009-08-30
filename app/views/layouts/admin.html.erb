@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>The Taylor Group Administration | <%= controller.controller_name.humanize %>: <%= controller.action_name.humanize %></title>
+  <%= stylesheet_link_tag 'admin/screen.css' %>
+  <link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print" charset="utf-8">
+  <!--[if lte IE 6]><link rel="stylesheet" href="/stylesheets/lib/ie.css" type="text/css" media="screen" charset="utf-8"><![endif]-->
+</head>
+<body>
+
+  <div id="page">
+    <div id="header">
+      <h1>The Taylor Group</h1>
+      <h2>Website Administration</h2>
+      <ul class="tabs">
+        <li><a href="<%= admin_slides_path %>"<%= ' class="active"' if controller.controller_name == 'slides' %>>Slides</a></li>
+        <li><a href="<%= admin_projects_path %>"<%= ' class="active"' if controller.controller_name == 'projects' %>>Projects</a></li>
+        <li><a href="<%= admin_categories_path %>"<%= ' class="active"' if controller.controller_name == 'categories' %>>Categories</a></li>
+        <li><a href="<%= admin_clients_path %>"<%= ' class="active"' if controller.controller_name == 'clients' %>>Clients</a></li>
+        <li><a href="<%= admin_departments_path %>"<%= ' class="active"' if controller.controller_name == 'departments' %>>Departments</a></li>
+        <li><a href="<%= admin_industries_path %>"<%= ' class="active"' if controller.controller_name == 'industries' %>>Industries</a></li>
+        <li><a href="<%= admin_locations_path %>"<%= ' class="active"' if controller.controller_name == 'locations' %>>Contact</a></li>
+        <li><a href="<%= admin_services_path %>"<%= ' class="active"' if controller.controller_name == 'services' %>>Services</a></li>
+        <li><a href="<%= admin_stories_path %>"<%= ' class="active"' if controller.controller_name == 'stories' %>>News</a></li>
+        <li><a href="<%= root_path %>">Visit Live Site &raquo;</a></li>
+      </ul>
+    </div>
+    <div id="body" class="wrapper">
+      <p style="color: green"><%= flash[:notice] %></p>
+      <%= yield -%>
+    </div>
+    <div id="footer">
+      <p class="quiet"><small>Copyright &copy; 2009 Taylor Group Inc., All Rights Reserved</small></p>
+    </div>
+  </div>
+
+</body>
+</html>

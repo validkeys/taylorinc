@@ -1,11 +1,9 @@
-<h1>News</h1>
-
-<table>
+<h4><%= link_to "Create News Story &raquo;", new_object_path %></h4>
+<table width="100%">
   <tr>
     <th>Title</th>
+    <th colspan="3" width="13%"></th>
   </tr>
   <%= render :partial => "row", :collection => collection %>
 </table>
-
-<br />
-<%= link_to "New #{controller.controller_name.humanize.singularize}", new_object_path %>
+<strong><%= will_paginate collection %></strong>
