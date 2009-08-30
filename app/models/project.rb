@@ -20,4 +20,6 @@ class Project < ActiveRecord::Base
   
   # acts_as_list :scope => :department
   
+  has_friendly_id :permalink
+  
 end

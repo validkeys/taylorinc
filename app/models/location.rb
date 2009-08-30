@@ -17,6 +17,8 @@ class Location < ActiveRecord::Base
   #validates_attachment_presence :image
   validates_attachment_content_type :image, :content_type => ['image/jpeg', 'image/gif', 'image/png', 'image/pjpeg', 'image/x-png']
   
+  has_friendly_id :permalink
+  
   # consolidates address feilds
   def address
     "#{street_1} #{street_2}, #{city}, #{province}, #{country}, #{postal_code}"
