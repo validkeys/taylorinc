@@ -2,7 +2,7 @@ class CreateStories < ActiveRecord::Migration
   def self.up
     create_table :stories do |t|
       t.string :permalink, :null => :no, :limit => 128
-      t.string :title, :null => :no, :limit => 128
+      t.string :title, :null => :no, :limit => 100
       t.text :body, :null => :no
 
       # paperclip attachment fields

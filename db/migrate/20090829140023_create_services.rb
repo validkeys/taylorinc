@@ -3,7 +3,7 @@ class CreateServices < ActiveRecord::Migration
     create_table :services do |t|
       t.integer :position, :null => :no, :default => 1
       t.string :permalink, :null => :no, :limit => 128
-      t.string :title, :null => :no, :limit => 128
+      t.string :title, :null => :no, :limit => 100
       t.text :body, :null => :no
 
       # paperclip attachment fields

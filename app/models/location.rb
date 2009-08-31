@@ -1,9 +1,8 @@
 class Location < ActiveRecord::Base
   
-  validates_presence_of :permalink, :title, :street_1, :city, :province, :country, :postal_code
-  validates_length_of :permalink, :within => 2..100
+  validates_presence_of :title, :street_1, :city, :province, :country, :postal_code
   validates_length_of :title, :within => 2..100
-  validates_length_of :street_1, :within => 3..128
+  validates_length_of :street_1, :within => 3..100
   validates_length_of :city, :within => 3..100
   validates_length_of :province, :within => 2..2
   validates_length_of :country, :within => 2..32
@@ -22,6 +21,11 @@ class Location < ActiveRecord::Base
   # consolidates address feilds
   def address
     "#{street_1} #{street_2}, #{city}, #{province}, #{country}, #{postal_code}"
+  end
+  
+  # populate the permalink field for SEO friendly links
+  def before_save
+    self.permalink = title.to_permalink
   end
   
 end

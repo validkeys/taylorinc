@@ -2,9 +2,9 @@ class CreateLocations < ActiveRecord::Migration
   def self.up
     create_table :locations do |t|
       t.integer :position, :null => :no, :default => 1
-      t.string :permalink, :null => :no, :limit => 100
+      t.string :permalink, :null => :no, :limit => 128
       t.string :title, :null => :no, :limit => 100
-      t.string :street_1, :null => :no, :limit => 128
+      t.string :street_1, :null => :no, :limit => 100
       t.string :street_2, :limit => 100
       t.string :city, :null => :no, :limit => 100
       t.string :province, :null => :no, :limit => 2

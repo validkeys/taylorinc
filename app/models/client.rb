@@ -1,7 +1,7 @@
 class Client < ActiveRecord::Base
   
   validates_presence_of :name
-  validates_length_of :name, :within => 2..128
+  validates_length_of :name, :within => 2..100
   
   has_attached_file :image,
                     :styles => { :original => "800x600>", :thumb => "300x300>" },
@@ -12,5 +12,10 @@ class Client < ActiveRecord::Base
   validates_attachment_content_type :image, :content_type => ['image/jpeg', 'image/gif', 'image/png', 'image/pjpeg', 'image/x-png']
   
   has_friendly_id :permalink
+  
+  # populate the permalink field for SEO friendly links
+  def before_save
+    self.permalink = name.to_permalink
+  end
   
 end

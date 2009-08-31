@@ -3,7 +3,7 @@ class CreatePhotos < ActiveRecord::Migration
     create_table :photos do |t|
       t.references :project, :null => :no
       t.integer :position, :null => :no, :default => 1
-      t.string :title, :limit => 128
+      t.string :title, :limit => 100
       
       # paperclip attachment fields
       t.string :image_file_name # Original filename

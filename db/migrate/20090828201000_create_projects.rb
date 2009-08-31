@@ -3,8 +3,8 @@ class CreateProjects < ActiveRecord::Migration
     create_table :projects do |t|
       #t.references :client, :null => :no
       t.string :permalink, :null => :no, :limit => 128
-      t.string :title, :null => :no, :limit => 128
-      t.string :client, :null => :no, :limit => 128
+      t.string :title, :null => :no, :limit => 100
+      t.string :client, :null => :no, :limit => 100
       t.text :description
 
       # paperclip attachment fields

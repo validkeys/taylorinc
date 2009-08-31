@@ -3,7 +3,7 @@ class CreateIndustries < ActiveRecord::Migration
     create_table :industries do |t|
       t.integer :position, :null => :no, :default => 1
       t.string :permalink, :null => :no, :limit => 128
-      t.string :title, :null => :no, :limit => 128
+      t.string :title, :null => :no, :limit => 100
 
       # paperclip attachment fields
       t.string :image_file_name # Original filename

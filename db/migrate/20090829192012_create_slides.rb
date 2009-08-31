@@ -3,8 +3,8 @@ class CreateSlides < ActiveRecord::Migration
     create_table :slides do |t|
       t.integer :position, :null => :no, :default => 1
       t.string :permalink, :null => :no, :limit => 128
-      t.string :title, :null => :no, :limit => 128
-      t.string :url, :null => :no, :limit => 128
+      t.string :title, :null => :no, :limit => 100
+      t.string :url, :null => :no, :limit => 255
       t.text :description
 
       # paperclip attachment fields
