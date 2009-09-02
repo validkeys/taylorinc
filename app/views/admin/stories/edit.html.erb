@@ -1,5 +1,0 @@
-<h3>Editing <%= controller.controller_name.humanize.singularize %></h3>
-
-<% form_for(@object, :url => object_path, :html => { :multipart => true, :method => :put, :class => "ajax" }) do |f| %>
-  <%= render :partial => "form", :locals => { :f => f } %>
-<% end %>

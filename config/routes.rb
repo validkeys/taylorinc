@@ -4,12 +4,11 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resources :sitemap
   
+  map.resources :pages
+  map.resources :sections, :has_many => :pages
   map.resources :photos
   map.resources :slides
   map.resources :locations
-  map.resources :stories
-  map.resources :services
-  map.resources :clients
   map.resources :industries
   map.resources :categories
   map.resources :projects, :has_many => :photos
@@ -19,11 +18,10 @@ ActionController::Routing::Routes.draw do |map|
   
   # routes for the administration area
   map.namespace :admin do |admin|
+    admin.resources :pages
+    admin.resources :sections, :has_many => :pages
     admin.resources :slides
     admin.resources :locations
-    admin.resources :stories
-    admin.resources :services
-    admin.resources :clients
     admin.resources :industries
     admin.resources :categories
     admin.resources :projects, :has_many => :photos

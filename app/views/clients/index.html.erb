@@ -1,6 +1,0 @@
-<h1>Clients</h1>
-<ul>
-  <% for client in @clients -%>
-    <li><%= link_to h(client.name), object_path(client), :title => h(client.name) %></li>
-  <% end -%>
-</ul>

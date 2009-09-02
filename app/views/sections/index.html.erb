@@ -1,0 +1,6 @@
+<h1>Sections</h1>
+<ul>
+  <% for section in @sections -%>
+    <li><%= link_to h(section.title), object_path(section), :title => h(section.title) %></li>
+  <% end -%>
+</ul>

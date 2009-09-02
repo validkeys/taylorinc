@@ -22,21 +22,6 @@ xml.urlset "xmlns" => "http://www.google.com/schemas/sitemap/0.84" do
     end
   end
   
-  #-- Clients
-  xml.url do
-    xml.loc         clients_url
-    xml.lastmod     w3c_date(Time.now)
-    xml.changefreq  "weekly"
-  end
-  for client in @clients
-    xml.url do
-      xml.loc         client_url(client)
-      xml.lastmod     w3c_date(client.updated_at)
-      xml.changefreq  "weekly"
-      xml.priority    0.8
-    end
-  end
-  
   #-- Departments
   xml.url do
     xml.loc         departments_url
@@ -97,21 +82,6 @@ xml.urlset "xmlns" => "http://www.google.com/schemas/sitemap/0.84" do
     end
   end
   
-  #-- Services
-  xml.url do
-    xml.loc         services_url
-    xml.lastmod     w3c_date(Time.now)
-    xml.changefreq  "weekly"
-  end
-  for service in @services
-    xml.url do
-      xml.loc         service_url(service)
-      xml.lastmod     w3c_date(service.updated_at)
-      xml.changefreq  "weekly"
-      xml.priority    0.8
-    end
-  end
-  
   #-- Slides
   xml.url do
     xml.loc         slides_url
@@ -127,16 +97,46 @@ xml.urlset "xmlns" => "http://www.google.com/schemas/sitemap/0.84" do
     end
   end
   
-  #-- Stories / News
+  #-- Services
   xml.url do
-    xml.loc         stories_url
+    xml.loc         section_pages_url('services')
     xml.lastmod     w3c_date(Time.now)
     xml.changefreq  "weekly"
   end
-  for story in @stories
+  for page in @services
     xml.url do
-      xml.loc         story_url(story)
-      xml.lastmod     w3c_date(story.updated_at)
+      xml.loc         section_page_url('services', page)
+      xml.lastmod     w3c_date(page.updated_at)
+      xml.changefreq  "weekly"
+      xml.priority    0.8
+    end
+  end
+  
+  #-- News
+  xml.url do
+    xml.loc         section_pages_url('news')
+    xml.lastmod     w3c_date(Time.now)
+    xml.changefreq  "weekly"
+  end
+  for page in @news
+    xml.url do
+      xml.loc         section_page_url('news', page)
+      xml.lastmod     w3c_date(page.updated_at)
+      xml.changefreq  "weekly"
+      xml.priority    0.8
+    end
+  end
+  
+  #-- About Us
+  xml.url do
+    xml.loc         section_pages_url('about')
+    xml.lastmod     w3c_date(Time.now)
+    xml.changefreq  "weekly"
+  end
+  for page in @abouts
+    xml.url do
+      xml.loc         section_page_url('about', page)
+      xml.lastmod     w3c_date(page.updated_at)
       xml.changefreq  "weekly"
       xml.priority    0.8
     end

@@ -1,10 +1,8 @@
-class CreateProjects < ActiveRecord::Migration
+class CreateSections < ActiveRecord::Migration
   def self.up
-    create_table :projects do |t|
+    create_table :sections do |t|
       t.string :permalink, :null => :no, :limit => 128
       t.string :title, :null => :no, :limit => 100
-      t.string :client, :null => :no, :limit => 100
-      t.text :description
 
       # paperclip attachment fields
       t.string :image_file_name # Original filename
@@ -17,6 +15,6 @@ class CreateProjects < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :projects
+    drop_table :sections
   end
 end

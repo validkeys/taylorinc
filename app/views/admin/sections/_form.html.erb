@@ -1,0 +1,7 @@
+<%= f.error_messages %>
+<p>
+  <%= f.label :title %>
+  <%= f.text_field :title, :class => 'text required', :minlength => '2', :maxlength => '100' %>
+</p>
+<%= render :partial => "admin/shared/image_upload", :locals => { :f => f } %>
+<%= render :partial => "admin/shared/buttons" %>

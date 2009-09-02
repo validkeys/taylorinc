@@ -1,6 +1,0 @@
-<h1>News</h1>
-<ul>
-  <% for story in @stories -%>
-    <li><%= link_to h(story.title), object_path(story), :title => h(story.title) %></li>
-  <% end -%>
-</ul>
