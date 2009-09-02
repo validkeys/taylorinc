@@ -1,6 +1,6 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-retail_and_environments:
+"retail-and-environments":
   position: 1
   permalink: $LABEL
   title: "Retail & Environments"

@@ -1,12 +1,12 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-sikorsky_exhibit:
+"sikorsky-exhibit":
   permalink: $LABEL
   title: "NEW Sikorsky Exhibit at Heli-Expo 2009, Anaheim"
   body: |
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-teknion_gold:
+"teknion-gold":
   permalink: $LABEL
   title: "Teknion Wins GOLD"
   body: |
@@ -16,13 +16,13 @@ teknion_gold:
     The ceiling is made from a spandex type stretch fabric made from 90% polyester and 10% lycra. Great care was taken to use recycled and recyclable materials throughout, as well as sustainable wood and wall finishes. 
     Check out the photos in Our Work > Exhibits over 1000 sq.ft. > Teknion 07
 
-award_winning_ces:
+"award-winning-ces":
   permalink: $LABEL
   title: "Another Award winning year at CES"
   body: |
     Taylor has had the pleasure of working with a number of clients over the years at the Consumer Electronics Show (CES) in Las Vegas. This year was no exception, and Taylor wishes to congratulate its team for the successful exhibits for Intel and Research in Motion, both award winning exhibits!
 
-latest_from_the_autoshow:
+"latest-from-the-autoshow":
   permalink: $LABEL
   title: "See the latest from the AutoShow"
   body: |

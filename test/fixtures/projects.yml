@@ -1,18 +1,18 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-acura_authoshow_2008:
+"acura-authoshow-2008":
   permalink: $LABEL
   client: Acura
   title: Authoshow 2008
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-aldar_city_scape_abu_dabi_2008:
+"aldar-city-scape-abu-dabi-2008":
   permalink: $LABEL
   client: Aldar
   title: City Scape Abu Dhabi 2008
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-alliance_atlantis:
+"alliance-atlantis":
   permalink: $LABEL
   client: Alliance Atlantis
   title: Alliance Atlantis
@@ -30,13 +30,13 @@ att:
   title: "AT&T"
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-bank_of_america:
+"bank-of-america":
   permalink: $LABEL
   client: Bank of America
   title: Bank of America
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-bell_imagination:
+"bell-imagination":
   permalink: $LABEL
   client: Bell
   title: Imagination
@@ -48,19 +48,19 @@ bmw:
   title: BMW
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-cadillac_fairview:
+"cadillac-fairview":
   permalink: $LABEL
   client: Cadillac Fairview
   title: Cadillac Fairview
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-canada_war_museum:
+"canada-war-museum":
   permalink: $LABEL
   client: Canada War Museum
   title: Canada War Museum
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-chrysler_2008:
+"chrysler-2008":
   permalink: $LABEL
   client: Chrysler
   title: Chrysler 2008
@@ -78,25 +78,25 @@ genentech:
   title: Genentech
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-hockey_hall_of_fame:
+"hockey-hall-of-fame":
   permalink: $LABEL
   client: Hockey Hall of Fame
   title: Hockey Hall of Fame
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-honda_cia_2008:
+"honda-cia-2008":
   permalink: $LABEL
   client: Honda
   title: Honda CIA 2008
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-honda_f1_2007:
+"honda-f1-2007":
   permalink: $LABEL
   client: Honda
   title: Honda F1 2007
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-intel_ces_2009:
+"intel-ces-2009":
   permalink: $LABEL
   client: Intel
   title: CES 2009
@@ -114,37 +114,37 @@ lookfab:
   title: Lookfab
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-rim_ctia_2008:
+"rim-ctia-2008":
   permalink: $LABEL
   client: RIM
   title: CTIA 2008
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-rim_wes_2008:
+"rim-wes-2008":
   permalink: $LABEL
   client: RIM
   title: WES 2008
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-subaru_2008:
+"subaru-2008":
   permalink: $LABEL
   client: Subaru
   title: "2008"
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-teknion_2007:
+"teknion-2007":
   permalink: $LABEL
   client: Teknion
   title: "2007"
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-xbox_2005:
+"xbox-2005":
   permalink: $LABEL
   client: XBOX
   title: "2005"
   description: "You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution. Your success is our success. Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. It revolves, first and foremost, around research, Let us take care of the details while you enjoy the show! Our exhibit design process is one of collaboration. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients. learning and understanding. Learning as much as possible about our potential clients, existing affiliated agencies, strategies, culture, products, markets and their clients."
 
-kia_2008:
+"kia-2008":
   permalink: $LABEL
   client: KIA
   title: "2008"

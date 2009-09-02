@@ -32,7 +32,7 @@ boston:
     Fax: (508) 528-8947
     Email: <a href="mailto:info@taylorinc.com">info@taylorinc.com</a>
 
-las_vegas:
+"las-vegas":
   position: 3
   permalink: $LABEL
   title: "Las Vegas"

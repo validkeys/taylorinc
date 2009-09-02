@@ -1,8 +1,7 @@
 xml.instruct!
 xml.locations do
   for location in @locations
-    xml.location do
-      xml.permalink location.permalink
+    xml.location :href => "#{location_path(location)}.xml" do
       xml.title location.title
       xml.street_1 location.street_1
       xml.street_2 location.street_2

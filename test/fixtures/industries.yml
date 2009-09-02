@@ -35,12 +35,12 @@ museums:
   permalink: $LABEL
   title: Museums
 
-consumer_goods_and_services:
+"consumer-goods-and-services":
   position: 8
   permalink: $LABEL
   title: Consumer Goods and Services
 
-real_estate:
+"real-estate":
   position: 9
   permalink: $LABEL
   title: Real Estate

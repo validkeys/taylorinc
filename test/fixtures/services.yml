@@ -1,6 +1,6 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-how_we_can_help:
+"how-we-can-help":
   position: 1
   permalink: $LABEL
   title: "How we can help!"
@@ -9,7 +9,7 @@ how_we_can_help:
     You tell us how we can help plan a profitable experience with accurate, precise and continuous coordination and execution.
     Your success is our success. Let us take care of the details while you enjoy the show!
 
-exhibit_design:
+"exhibit-design":
   position: 2
   permalink: $LABEL
   title: Exhibit Design
@@ -30,7 +30,7 @@ fabrication:
     * Electrical design and fabrication
     * Tensioned Fabric Structures
 
-custom_fabrication:
+"custom-fabrication":
   position: 4
   permalink: $LABEL
   title: Custom Fabrication
@@ -40,7 +40,7 @@ custom_fabrication:
     h2. Manfred Frank ASC Acrylic Showcase System
     Winner of the Innovation and Design Award at the SITEM in Paris in 1999, ASC is an easy-to-use, slide-on frame system satisfying the most demanding design and quality requirements. A proven product in museums, professional presentation centers, or as custom exhibit components, these showcases include acrylic panels and fine aluminum profile strips making them highly stable, completely air-tight, and dust-free.
 
-scenic_environments_and_events:
+"scenic-environments-and-events":
   position: 5
   permalink: $LABEL
   title: "Scenic Environments & Events"
@@ -52,7 +52,7 @@ scenic_environments_and_events:
     h2. Theatres & Staging
     Taking care of client requirements, from liaising with show management to developing staging, to hosting hospitality events to arranging giveaways and booking performances, The Taylor Group professionals work with clients to ensure that the event runs smoothly and exceeds expectations.
 
-mobile_exhibits_and_events:
+"mobile-exhibits-and-events":
   position: 6
   permalink: $LABEL
   title: "Mobile Exhibits & Events"
@@ -73,7 +73,7 @@ graphics:
   body: |
     Our full service in-house graphic production capabilities guarantee the highest quality fastest turn around time for any project. We provide desktop publishing and image setting on PC and MAC platforms, computer-controlled cut vinyl, dimensional graphics, full-colour inkjet printing on numerous substrates (including fabric), as well as any other processes that suite the design and requirements.
 
-installation_and_project_management:
+"installation-and-project-management":
   position: 9
   permalink: $LABEL
   title: "Installation & Project Management"
@@ -83,7 +83,7 @@ installation_and_project_management:
     h2. Project Management
     At the outset of each project the Project Manager provides a scheduling document outlining all relevant milestones including progress and budget updates. Quality control, design and production status is monitored using project management software. All project documentation is readily available during each phase of any program for inspection. We encourage tours of our facility at your convenience for in-person progress reviews during pre-show set up.
 
-inventory_and_transportation:
+"inventory-and-transportation":
   position: 10
   permalink: $LABEL
   title: "Inventory & Transportation"
