@@ -15,6 +15,23 @@
   <script type="text/javascript" src="/javascripts/jquery.lightbox-0.5.min.js"></script>
   <script type="text/javascript" src="/javascripts/jquery.gritter.js"></script>
   <script type="text/javascript" src="/javascripts/admin.js"></script>
+  <% if flash[:notice] -%>
+    <!-- status messages -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+      <% flash.each do |key,value| %>
+        <% if !value.blank? -%>
+          $.gritter.add({
+        		title: '<%= key.to_s.capitalize %>',
+        		text: '<%= value %>',
+        		image: '/images/icons/<%= key.to_s %>.png',
+        		time: 3000
+        	});
+      	<% end -%>
+      <% end -%>
+      });
+    </script>
+  <% end -%>
 </head>
 <body>
 
@@ -33,14 +50,6 @@
       </ul>
     </div>
     <div id="body" class="wrapper">
-      <!-- status messages -->
-      <% flash.each do |key,value| %>
-        <% if !value.blank? -%>
-        	<div class="flash flash_<%= key %>" >
-        	  <span class="message"><%= value %></span>
-        	</div>
-      	<% end -%>
-      <% end -%>
       <%= yield -%>
     </div>
     <div id="footer">

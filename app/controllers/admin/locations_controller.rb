@@ -3,20 +3,8 @@ class Admin::LocationsController < Admin::MainController
   
   actions :all, :except => :show
   
-  [create, update].each { |action| 
-    action.wants.js {
-      flash[:notice] = nil # remove the default notice
-      render :json => {:title => 'Success', :message => 'Location has been successfully saved.', :timeout => 2000}.to_json
-    }
-    action.failure.wants.js {
-      flash[:notice] = nil # remove the default notice
-      # if we get a failure, report the first error found back in a json object
-      message = nil
-      @object.errors.each_full{ |msg| message ||= msg } # add the first error to the message
-      render :json => {:title => 'Error', :message => message, :icon => 'cross', :timeout => 6000}.to_json # send it back
-    }
-    action.wants.html { redirect_to edit_object_path }
-  }
+  # redirect to edit path on create and update instead of show
+  [create, update].each { |action| action.wants.html { redirect_to edit_object_path } }
   
   private #-------
     # Defining the collection explicitly for paging
