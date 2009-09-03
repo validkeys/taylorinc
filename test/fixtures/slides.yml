@@ -1,29 +1,53 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-"first-slide":
+sikorsky:
   position: 1
-  permalink: $LABEL
-  title: First Slide
   url: http://someurl
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  title: Sikorsky
+  summary: |
+    "We had a very ambitious design and amazingly tight timelines but Taylor pulled it off and mage it look easy"
 
-"second-slide":
+aldar:
   position: 2
-  permalink: $LABEL
-  title: Second Slide
   url: http://someurl
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  title: Aldar
+  tag_line: Cityscape Aby Dhabi 2009
+  summary: |
+    "Taylor meets our international tradeshow program needs and exceeds our expectations everytime"
 
-"third-slide":
+rim_ces_rfid:
   position: 3
-  permalink: $LABEL
-  title: Third Slide
   url: http://someurl
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  title: RIM CES RFID Project
+  summary: (Best of CES) - Best use of Technology CES Las Vegas 2009
 
-"fourth-slide":
+automotive:
   position: 4
-  permalink: $LABEL
-  title: Fourth Slide
   url: http://someurl
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  title: Automotive
+  summary: Auto season is fast approaching. Check out the automotive section of our Portfolio for project examples.
+
+taylor_awarded:
+  position: 5
+  url: http://someurl
+  title: Taylor Awarded
+  summary: |
+    "One of Canada's Best 50 Managed Companies"
+
+telus_koodo:
+  position: 6
+  url: http://someurl
+  title: Telus Koodo
+  tag_line: Custom Kiosks
+  summary: |
+    "The quality of work and seamless integration of technology was astounding"
+
+honda:
+  position: 7
+  url: http://someurl
+  title: Honda
+  summary: |
+    "from Custom Touchscreen development, to an entirely new build we're very happy with Taylor's work this year at both the Autoshow and Indy!"
+
+
+

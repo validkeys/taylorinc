@@ -3,7 +3,6 @@ class CreatePages < ActiveRecord::Migration
     create_table :pages do |t|
       t.references :section, :null => :no
       t.integer :position, :null => :no, :default => 1
-      t.string :permalink, :null => :no, :limit => 128
       t.string :title, :null => :no, :limit => 100
       t.text :body, :null => :no
 

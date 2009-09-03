@@ -1,5 +1,8 @@
 class ProjectsController < ApplicationController
   resource_controller
+  
+  belongs_to :category, :industry, :department
+  
   actions :index, :show #only handle index and show actions
   
   index.wants.xml { render :xml => @collection }

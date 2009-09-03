@@ -12,11 +12,6 @@ class Page < ActiveRecord::Base
   #validates_attachment_presence :image
   validates_attachment_content_type :image, :content_type => ['image/jpeg', 'image/gif', 'image/png', 'image/pjpeg', 'image/x-png']
   
-  has_friendly_id :permalink
-  
-  # populate the permalink field for SEO friendly links
-  def before_save
-    self.permalink = title.to_permalink
-  end
+  has_friendly_id :title, :use_slug => true
   
 end

@@ -1,6 +1,8 @@
 class Admin::ProjectsController < Admin::MainController
   resource_controller
   
+  belongs_to :category, :industry, :department
+  
   actions :all, :except => :show
   
   [create, update].each { |action| 
@@ -21,7 +23,7 @@ class Admin::ProjectsController < Admin::MainController
   private #-------
     # Defining the collection explicitly for paging
     def collection
-      @collection ||= end_of_association_chain.paginate :page => params[:page], :per_page => 15, :order => 'title'
+      @collection ||= end_of_association_chain.paginate :page => params[:page], :per_page => 15, :order => 'projects.title'
     end
     
 end

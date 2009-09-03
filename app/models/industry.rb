@@ -1,5 +1,6 @@
 class Industry < ActiveRecord::Base
-  has_many :projects, :through => :industries_projects
+  
+  has_many :projects, :order => 'title'
   
   validates_presence_of :title
   validates_length_of :title, :within => 2..100
@@ -9,14 +10,8 @@ class Industry < ActiveRecord::Base
                     :path => ":rails_root/public/attachments/industries/:id/:style_:basename.:extension",
                     :url => "/attachments/industries/:id/:style_:basename.:extension"
   
-  #validates_attachment_presence :image
   validates_attachment_content_type :image, :content_type => ['image/jpeg', 'image/gif', 'image/png', 'image/pjpeg', 'image/x-png']
   
-  has_friendly_id :permalink
-  
-  # populate the permalink field for SEO friendly links
-  def before_save
-    self.permalink = title.to_permalink
-  end
+  has_friendly_id :title, :use_slug => true
   
 end

@@ -7,9 +7,13 @@
   <%= f.label :title %>
   <%= f.text_field :title, :class => 'text required', :minlength => '2', :maxlength => '100' %>
 </p>
+<p>
+  <%= f.label :tag_line %>
+  <%= f.text_field :tag_line, :class => 'text required', :minlength => '2', :maxlength => '255' %>
+</p>
 <%= render :partial => "admin/shared/image_upload", :locals => { :f => f } %>
 <p>
   <%= f.label :description %>
-  <%= f.text_area :description %>
+  <%= f.text_area :description, :class => 'required' %>
 </p>
 <%= render :partial => "admin/shared/buttons" %>

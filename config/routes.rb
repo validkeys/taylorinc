@@ -4,15 +4,14 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resources :sitemap
   
-  map.resources :pages
   map.resources :sections, :has_many => :pages
   map.resources :photos
   map.resources :slides
   map.resources :locations
-  map.resources :industries
-  map.resources :categories
+  map.resources :industries, :has_many => :projects
+  map.resources :categories, :has_many => :projects
   map.resources :projects, :has_many => :photos
-  map.resources :departments
+  map.resources :departments, :has_many => :projects
   
   map.admin '/admin', :controller => 'admin/slides'
   
@@ -22,10 +21,10 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :sections, :has_many => :pages
     admin.resources :slides
     admin.resources :locations
-    admin.resources :industries
-    admin.resources :categories
+    admin.resources :industries, :has_many => :projects
+    admin.resources :categories, :has_many => :projects
     admin.resources :projects, :has_many => :photos
-    admin.resources :departments    
+    admin.resources :departments, :has_many => :projects
   end
   
 end

@@ -1,48 +1,64 @@
 h1. Taylor Group Website Redesign
 http://as3.globacore.com/taylor/
 
+h2. Slide
+
+h3. Fields
+* position (for ordering)
+* url (where it links to)
+* title
+* tag_line
+* summary
+
 
 h2. Department
 
 h3. Fields
+* position (for ordering)
 * title
-* slug (SEO)
 * description
-* one to many projects
-* zero to many featured projects (many to many through relationship)
+* testimonial (string)
+* has many projects (one to many)
+* retrieve industry list via products table (department has many industries through projects, many to many)
+* retrieve category list via products table (department has many categories through projects, many to many)
 
 
 h2. Project
 
 h3. Fields
+* belongs to industry (industry_id)
+* belongs to category (category_id)
+* belongs to department (department_id)
+* featured flag
+* client
 * title
-* slug
-* client (feeform)
+* tag_line
 * description
-* zero or one industry
-* zero or one category
-* one or many departments (many to many through relationship)
-
+* image (web size, mobile size)
+* image thumb (just one size. same image but potentially different aspect ratio)
 
 h2. Category
 
 h3. Fields
+* position (for ordering)
 * title
-* slug
-* has many projects (through relationship to support ordering)
+* has many projects
+* (category has many departments through projects, many to many)
 
 
 h2. Industry
 
 h3. Fields
+* position (for ordering)
 * title
-* slug
-* has many projects (through relationship to support ordering)
+* has many projects
+* (industry has many departments through projects, many to many)
 
 
 h2. Section
 
 h3. Fields
+* permalink (we don't want this to change often, so we're storing it in the section itself)
 * title
 * has many pages
 
@@ -50,6 +66,7 @@ h3. Fields
 h2. Page
 
 h3. Fields
+* belongs to section
+* position (for ordering within section scope)
 * title
 * body (supports markup)
-* belongs to section

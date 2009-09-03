@@ -2,11 +2,10 @@
 
 toronto:
   position: 1
-  permalink: $LABEL
   title: Toronto
   street_1: 255 Biscayne Crescent
   city: Brampton
-  province: ON
+  province: "ON"
   country: Canada
   postal_code: L6W 4R2
   contact_info: |
@@ -20,7 +19,6 @@ toronto:
 
 boston:
   position: 2
-  permalink: $LABEL
   title: Boston
   street_1: 12 Forge Park
   city: Franklin
@@ -32,9 +30,8 @@ boston:
     Fax: (508) 528-8947
     Email: <a href="mailto:info@taylorinc.com">info@taylorinc.com</a>
 
-"las-vegas":
+las_vegas:
   position: 3
-  permalink: $LABEL
   title: "Las Vegas"
   street_1: 4850 Statz Avenue
   city: Las Vegas
@@ -47,7 +44,6 @@ boston:
 
 dallas:
   position: 4
-  permalink: $LABEL
   title: Dallas
   street_1: 8701 Sterling Drive
   street_2: Suite 150

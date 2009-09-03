@@ -1,61 +1,49 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-"product-launches":
+product_launches:
   position: 1
-  permalink: $LABEL
   title: Product Launches
 
-"themed-environments":
+themed_environments:
   position: 2
-  permalink: $LABEL
   title: Themed Environments
 
 retail:
   position: 3
-  permalink: $LABEL
   title: Retail
 
 mobile:
   position: 4
-  permalink: $LABEL
   title: Mobile
 
-"corporate-theatre":
+corporate_theatre:
   position: 5
-  permalink: $LABEL
   title: Corporate Theatre
 
-"tours-and-meetings":
+tours_meetings:
   position: 6
-  permalink: $LABEL
   title: Tours and Meetings
 
-"graphics-and-wayfinding":
+graphics_wayfinding:
   position: 7
-  permalink: $LABEL
   title: Graphics and Way-Finding
 
 museums:
   position: 8
-  permalink: $LABEL
   title: Museums
 
-"exhibits-over-1000-feet":
+exhibits_over_1000_feet:
   position: 9
-  permalink: $LABEL
   title: Exhibits (Over 1000 feet)
 
-"exhibits-under-1000-feet":
+exhibits_under_1000_feet:
   position: 10
-  permalink: $LABEL
   title: Exhibits (Under 1000 feet)
 
-"exhibits-custom-rentals":
+exhibits_custom_rentals:
   position: 11
-  permalink: $LABEL
   title: Exhibits (Custom Rentals)
 
 interiors:
   position: 12
-  permalink: $LABEL
   title: Interiors

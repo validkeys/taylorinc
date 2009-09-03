@@ -2,50 +2,40 @@
 
 automotive:
   position: 1
-  permalink: $LABEL
   title: Automotive
 
 finance:
   position: 2
-  permalink: $LABEL
   title: Finance
 
 healthcare:
   position: 3
-  permalink: $LABEL
   title: Healthcare
 
 government:
   position: 4
-  permalink: $LABEL
   title: Government
 
 manufacturing:
   position: 5
-  permalink: $LABEL
   title: Manufacturing
 
 technology:
   position: 6
-  permalink: $LABEL
   title: Technology
 
 museums:
   position: 7
-  permalink: $LABEL
   title: Museums
 
-"consumer-goods-and-services":
+consumer_goods_services:
   position: 8
-  permalink: $LABEL
   title: Consumer Goods and Services
 
-"real-estate":
+real_estate:
   position: 9
-  permalink: $LABEL
   title: Real Estate
 
 aviation:
   position: 10
-  permalink: $LABEL
   title: Aviation

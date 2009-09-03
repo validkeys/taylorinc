@@ -1,7 +1,7 @@
 class CreateSections < ActiveRecord::Migration
   def self.up
     create_table :sections do |t|
-      t.string :permalink, :null => :no, :limit => 128
+      t.string :permalink, :null => :no, :limit => 100
       t.string :title, :null => :no, :limit => 100
 
       # paperclip attachment fields

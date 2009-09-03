@@ -1,10 +1,14 @@
 class CreateProjects < ActiveRecord::Migration
   def self.up
     create_table :projects do |t|
-      t.string :permalink, :null => :no, :limit => 128
-      t.string :title, :null => :no, :limit => 100
+      t.references :category
+      t.references :industry
+      t.references :department
       t.string :client, :null => :no, :limit => 100
-      t.text :description
+      t.string :title, :null => :no, :limit => 100
+      t.string :tag_line, :null => :no, :limit => 255
+      t.boolean :featured, :null => :no, :deafult => false
+      t.text :description, :null => :no
 
       # paperclip attachment fields
       t.string :image_file_name # Original filename

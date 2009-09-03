@@ -1,6 +1,7 @@
 class Section < ActiveRecord::Base
   has_many :pages, :dependent => :destroy
   
+  validates_presence_of :permalink
   validates_presence_of :title
   validates_length_of :title, :within => 2..100
   
@@ -13,10 +14,5 @@ class Section < ActiveRecord::Base
   validates_attachment_content_type :image, :content_type => ['image/jpeg', 'image/gif', 'image/png', 'image/pjpeg', 'image/x-png']
   
   has_friendly_id :permalink
-  
-  # populate the permalink field for SEO friendly links
-  def before_save
-    self.permalink = title.to_permalink
-  end
   
 end

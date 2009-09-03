@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   protected
     def correct_safari_and_ie_accept_headers
       ajax_request_types = ['text/javascript', 'application/json', 'text/xml']
-      request.accepts.sort!{ |x, y| ajax_request_types.include? (y.to_s) ? 1 : -1 } if request.xhr?
+      request.accepts.sort!{ |x, y| ajax_request_types.include?(y.to_s) ? 1 : -1 } if request.xhr?
     end
   
 end
