@@ -74,6 +74,10 @@ img.thumb {
 	margin-top: 10px;
 }
 
+tr.row_drag {
+	background-color: #be7503;
+}
+
 /* Notices and Alerts
 -------------------------------------------------------------- */
 div.flash {
@@ -111,8 +115,4 @@ div.fieldWithErrors input.text:focus, div.fieldWithErrors input.title:focus, div
 }
 
 #footer p.quiet { color: #444; }
-
-
-/* Content
--------------------------------------------------------------- */
 

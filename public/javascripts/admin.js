@@ -23,6 +23,7 @@ $(document).ready(function() {
 	**  4) The table you want to sort should have a class assignment of "sortable".
 	*/
   $("table.sortable").tableDnD({
+		onDragClass: "row_drag",
     onDrop: function(table, row) {
 			// figure out where the row moved to
       var position = 0;
