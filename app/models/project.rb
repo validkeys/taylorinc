@@ -14,7 +14,7 @@ class Project < ActiveRecord::Base
                     :path => ":rails_root/public/attachments/projects/:id/:style_:basename.:extension",
                     :url => "/attachments/projects/:id/:style_:basename.:extension"
   
-  validates_attachment_presence :image
+  #validates_attachment_presence :image
   validates_attachment_content_type :image, :content_type => ['image/jpeg', 'image/gif', 'image/png', 'image/pjpeg', 'image/x-png']
   
   has_friendly_id :title, :use_slug => true

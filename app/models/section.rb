@@ -10,7 +10,6 @@ class Section < ActiveRecord::Base
                     :path => ":rails_root/public/attachments/sections/:id/:style_:basename.:extension",
                     :url => "/attachments/sections/:id/:style_:basename.:extension"
   
-  #validates_attachment_presence :image
   validates_attachment_content_type :image, :content_type => ['image/jpeg', 'image/gif', 'image/png', 'image/pjpeg', 'image/x-png']
   
   has_friendly_id :permalink

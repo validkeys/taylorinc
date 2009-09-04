@@ -16,7 +16,7 @@ class Slide < ActiveRecord::Base
                     :path => ":rails_root/public/attachments/slides/:id/:style_transition_:basename.:extension",
                     :url => "/attachments/slides/:id/:style_transition_:basename.:extension"
   
-  validates_attachment_presence :image
+  #validates_attachment_presence :image
   validates_attachment_content_type :image, :content_type => ['image/jpeg', 'image/gif', 'image/png', 'image/pjpeg', 'image/x-png']
   validates_attachment_content_type :transition_image, :content_type => ['image/jpeg', 'image/gif', 'image/png', 'image/pjpeg', 'image/x-png']
   

@@ -1,4 +1,16 @@
 namespace :friendly_id do
+  task :make_all_slugs => :environment do
+    
+    system('rake friendly_id:make_slugs MODEL=Slide')
+    system('rake friendly_id:make_slugs MODEL=Department')
+    system('rake friendly_id:make_slugs MODEL=Project')
+    system('rake friendly_id:make_slugs MODEL=Category')
+    system('rake friendly_id:make_slugs MODEL=Industry')
+    system('rake friendly_id:make_slugs MODEL=Page')
+    system('rake friendly_id:make_slugs MODEL=Location')
+    
+  end
+  
   desc "Make slugs for a model."
   task :make_slugs => :environment do
     raise 'USAGE: rake friendly_id:make_slugs MODEL=MyModelName' if ENV["MODEL"].nil?
@@ -13,7 +25,7 @@ namespace :friendly_id do
         puts "#{sluggable_class.to_s}(#{r.id}) friendly_id set to \"#{r.slug.name}\""
       end
     end
-  end
+  end  
 
   desc "Regenereate slugs for a model."
   task :redo_slugs => :environment do
