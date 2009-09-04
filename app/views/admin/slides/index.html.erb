@@ -1,5 +1,11 @@
+<script type="text/javascript">
+  var server_authenticity_token = "<%= form_authenticity_token %>";
+</script>
 <h4><%= link_to "Create #{controller.controller_name.humanize.singularize} &raquo;", new_object_path %></h4>
-<table width="100%">
+<p>
+  Click and drag any row and move it up and down to change it's order of appearance on the public site.
+</p>
+<table width="100%" class="sortable">
   <tr>
     <th>Title</th>
     <th>Url</th>
@@ -7,4 +13,3 @@
   </tr>
   <%= render :partial => "row", :collection => collection %>
 </table>
-<strong><%= will_paginate collection %></strong>

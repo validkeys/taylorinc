@@ -1,11 +1,17 @@
 <%= f.error_messages %>
-<p>
-  <%= f.label :title %>
-  <%= f.text_field :title, :class => 'text required', :minlength => '2', :maxlength => '100' %>
-</p>
-<%= render :partial => "admin/shared/image_upload", :locals => { :f => f } %>
-<p>
-  <%= f.label :body %>
-  <%= f.text_area :body, :class => 'required' %>
-</p>
-<%= render :partial => "admin/shared/buttons" %>
+<div style="width:40%; float:left;">
+  <%= render :partial => "admin/shared/image_upload", :locals => { :f => f } %>
+</div>
+<div style="width:60%; float:left;">
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title, :class => 'text required', :minlength => '2', :maxlength => '100' %>
+  </p>
+</div>
+<div style="width:100%; float:left;">
+  <p>
+    <%= f.label :body %>
+    <%= f.text_area :body, :class => 'required long' %>
+  </p>
+  <%= render :partial => "admin/shared/buttons" %>
+</div>

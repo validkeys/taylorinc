@@ -1,4 +1,4 @@
-<tr class="<%= cycle("even_row", "odd_row") -%>">
+<tr class="<%= cycle("even_row", "odd_row") -%>" id="<%= row.id %>">
   <td><%=h row.title %></td>
   <td><%= link_to h(row.url), h(row.url) %></td>
   <td><%= link_to 'Preview', slide_path(row) %></td>

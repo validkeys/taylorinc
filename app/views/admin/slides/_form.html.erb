@@ -1,27 +1,33 @@
 <%= f.error_messages %>
-<%= render :partial => "admin/shared/image_upload", :locals => { :f => f } %>
-<p>
-  <% if @object.transition_image.file? -%>
-    <%= link_to image_tag(@object.transition_image.url(:thumb), :class => 'thumb'), @object.transition_image.url, :class => 'thumb' %>
-  <% else -%>
-    <%= f.label :transition_image, 'Upload Transition Image' %>
-  <% end -%>
-  <%= f.file_field :transition_image, :class => 'text', :style => 'vertical-align:top;margin-top:10px;' %>
-</p>
-<p>
-  <%= f.label :url %>
-  <%= f.text_field :url, :class => 'text required', :minlength => '2', :maxlength => '255' %>
-</p>
-<p>
-  <%= f.label :title %>
-  <%= f.text_field :title, :class => 'text required', :minlength => '2', :maxlength => '100' %>
-</p>
-<p>
-  <%= f.label :tag_line %>
-  <%= f.text_field :tag_line, :class => 'text', :minlength => '2', :maxlength => '128' %>
-</p>
-<p>
-  <%= f.label :summary %>
-  <%= f.text_area :summary, :minlength => '2', :maxlength => '1000' %>
-</p>
-<%= render :partial => "admin/shared/buttons" %>
+<div style="width:40%; float:left;">
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title, :class => 'text required', :minlength => '2', :maxlength => '100' %>
+  </p>
+  <%= render :partial => "admin/shared/image_upload", :locals => { :f => f } %>
+</div>
+<div style="width:60%; float:left;">
+  <p>
+    <%= f.label :url %>
+    <%= f.text_field :url, :class => 'text required', :minlength => '2', :maxlength => '255' %>
+  </p>
+  <p>
+    <% if @object.transition_image.file? -%>
+      <%= link_to image_tag(@object.transition_image.url(:thumb), :class => 'thumb'), @object.transition_image.url, :class => 'thumb' %>
+    <% else -%>
+      <%= f.label :transition_image, 'Upload Transition Image' %>
+    <% end -%>
+    <%= f.file_field :transition_image, :class => 'text', :style => 'vertical-align:top;margin-top:10px;' %>
+  </p>
+</div>
+<div style="width:100%; float:left;">
+  <p>
+    <%= f.label :tag_line %>
+    <%= f.text_field :tag_line, :class => 'text long', :minlength => '2', :maxlength => '128' %>
+  </p>
+  <p>
+    <%= f.label :summary %>
+    <%= f.text_area :summary, :minlength => '2', :maxlength => '1000' %>
+  </p>
+  <%= render :partial => "admin/shared/buttons" %>
+</div>

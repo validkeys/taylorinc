@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site>
+    <topnav>
+        <logo                           href="/" />
+        <btn label="HOME"               href="/" />
+        <btn label="SERVICES"           href="services" />
+        <btn label="OUR WORK"           href="our work" />
+        <btn label="NEWS"               href="news" />
+        <btn label="ABOUT US"           href="about" />
+        <btn label="CONTACT"            href="contact" />
+        <login>
+            <link label="Learn More!"   href="login_learn" />
+        </login>
+    </topnav>
+    <nav>
+        <btn href="environments">
+            <title>ENVIRONMENTS</title>
+            <heading>Project & Program Management</heading>
+            <colors main="0x98c8b6" bg="0xc4f4dc" />
+        </btn>      
+        <btn href="events">
+            <title>EVENTS</title>
+            <heading>Event Management</heading>
+            <colors main="0xefc692" bg="0xc4f4dc" />
+        </btn>      
+        <btn href="exhibits">
+            <title>EXHIBITS</title>
+            <heading>Exhibit & Program Management</heading>
+            <colors main="0xf3787b" bg="0xc4f4dc" />
+        </btn>      
+        <btn href="Interactive">
+            <title>INTERACTIVE</title>
+            <heading>Taylor Interactive Experiences</heading>
+            <colors main="0x6dc3d8" bg="0xc4f4dc" />
+        </btn>      
+    </nav>
+    <footer>
+        <label text="Copyright © 2008 Taylor Inc. All rights reserved. " />
+        <link label="Terms of Use"      href="terms" />
+        <label text="|" />
+        <link label="Privacy Policy"    href="policy" />        
+    </footer>
+    <page default="home">
+        <item href="/"               	src="pages/home.xml"            view="home" />
+		<item href="environments"		src="pages/environments.xml"	view="featured" />        
+		<item href="events"				src="pages/events.xml"			view="featured" />        
+		<item href="exhibits"			src="pages/exhibits.xml"		view="featured" />        
+		<item href="Interactive"		src="pages/interactive.xml"		view="featured" />        
+        <item href="our work"           src="pages/our_work.xml"        view="portfolio" />
+        <item href="projects"           src="pages/projects/*"        	view="project" />
+        <item href="services"           src="pages/services.xml"        view="template" />
+        <item href="news"               src="pages/news.xml"            view="template" />
+        <item href="about"              src="pages/about_us.xml"        view="template" />
+        <item href="contact"            src="pages/contact.xml"         view="template" />
+        <item href="login learn"        src="pages/login_learn.xml"     view="template" />
+        <item href="terms"              src="pages/terms.xml"           view="template" />
+        <item href="policy"             src="pages/policy.xml"          view="template" />
+    </page>
+</site>

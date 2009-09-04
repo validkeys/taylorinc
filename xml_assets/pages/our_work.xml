@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<section>
+    <featured>
+        <item href="projects/aldar" /> 
+        <item href="projects/rim" /> 
+    </featured>
+    <content>
+	
+        <item href="interactive" >
+            <title>INTERACTIVE</title>
+            <heading>CUSTOM DESIGN AND DEVELOPMENT</heading>
+            <desc>Floor you customers with an intuitive way to browse hi-def video, view renderings and floor plans of buildings that don't exists yet or hook it up to a custom web application that collects contact information and on the 1000th entry contacts a custom built circuit board and software that opens up a trap door in the ceiling which drops confetti on their head -- just an ...idea. Our graphic designers will take your existing collateral, renderings, brochures, and 3D models and repurpose them to suit the unique usability requirements of a touchscreen interface.</desc>
+            <featured href="projects/aldar" />
+        </item>
+        
+        <item href="projects/aldar">
+            <title>ALDAR</title>
+            <desc>CITY SCAPE ABU DHABI 2008</desc>
+            <image src="projects/aldar/1.jpg" />       
+            <image src="projects/aldar/2.jpg" />       
+            <thumb src="projects/aldar/thumb.jpg" /> 
+        </item>
+
+        <item href="projects/gc">
+            <title>GLOBACORE</title>
+            <desc>CITY SCAPE ABU DHABI 2008</desc>
+            <image src="projects/aldar/1.jpg" />       
+            <image src="projects/aldar/2.jpg" />       
+            <thumb src="projects/aldar/thumb.jpg" /> 
+        </item>
+
+        <item href="projects/rim">
+            <title>RESEARCH IN MOTION</title>
+            <desc>BLACKBERRY DEVELOPERS CONFERENCE 2008</desc>
+            <image src="projects/rim/1.jpg" />       
+            <image src="projects/rim/2.jpg" />       
+            <thumb src="projects/rim/thumb.jpg" /> 
+        </item>
+        
+    </content>
+</section>

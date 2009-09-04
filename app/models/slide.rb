@@ -1,4 +1,6 @@
 class Slide < ActiveRecord::Base
+  
+  acts_as_list
     
   validates_presence_of :title, :url
   validates_length_of :title, :within => 2..100

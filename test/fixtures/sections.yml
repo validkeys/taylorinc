@@ -11,3 +11,7 @@ news:
 about:
   permalink: $LABEL
   title: About Us
+
+legal:
+  permalink: $LABEL
+  title: Legal

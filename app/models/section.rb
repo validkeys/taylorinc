@@ -1,5 +1,5 @@
 class Section < ActiveRecord::Base
-  has_many :pages, :dependent => :destroy
+  has_many :pages, :dependent => :destroy, :order => 'position'
   
   validates_presence_of :permalink
   validates_presence_of :title

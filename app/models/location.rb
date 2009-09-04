@@ -1,5 +1,7 @@
 class Location < ActiveRecord::Base
   
+  acts_as_list
+  
   validates_presence_of :title, :street_1, :city, :province, :country, :postal_code
   validates_length_of :title, :within => 2..100
   validates_length_of :street_1, :within => 3..100

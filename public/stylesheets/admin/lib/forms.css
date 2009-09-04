@@ -15,7 +15,7 @@ input.title { font-size:1.5em; }
 input.text.numeric { width: 60px; }
 input.text.long { width: 590px; }
 textarea { width:590px; height:120px; padding:5px; }
-textarea.long { height:400px; }
+textarea.long { height:350px; width: 850px; }
 .error, .notice, .success {padding:.8em;margin-bottom:1em;border:2px solid #ddd;}
 .error {background:#FBE3E4;color:#8a1f11;border-color:#FBC2C4;}
 .notice {background:#FFF6BF;color:#514721;border-color:#FFD324;}

@@ -1,4 +1,4 @@
-<tr class="<%= cycle("even_row", "odd_row") -%>">
+<tr class="<%= cycle("even_row", "odd_row") -%>" id="<%= row.id %>">
   <td><%=h row.title %></td>
   <td><%=h truncate(row.description, :length => 100) %></td>
   <td><%= link_to 'Projects', admin_department_projects_path(row) %></td>

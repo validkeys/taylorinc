@@ -12,6 +12,7 @@ class SitemapController < ApplicationController
     @services = Section.find 'services'
     @news = Section.find 'news'
     @about = Section.find 'about'
+    @legal = Section.find 'legal'
     
     respond_to do |format|
       format.html

@@ -1,6 +1,7 @@
 retail_environments:
   position: 1
   title: "Retail & Environments"
+  tag_line: "Project & Program Management"
   description: |
     The Taylor Group has organized and integrated its services to support our clients at every stage in their Program Development, from initial strategy through fabrication and implementation, utilizing our vast resources and partnerships, worldwide. This enables clients to benefit from the wealth of knowledge found in our multidisciplinary professional teams. In addition to the capabilities mentioned in both the Exhibit and Event Management Sections, our program managers also provide the following support
     * Strategic program planning and development
@@ -21,10 +22,13 @@ retail_environments:
     * Audio Visual Support and Management
     * Speaker, Script, Crew and Entertainment Support
     * International Liaison and Communication Management
+  color_main: "0x98c8b6"
+  color_bg: "0xc4f4dc"
 
 events:
   position: 2
   title: Events
+  tag_line: "Event Management"
   description: |
     The Taylor Group has organized and integrated its services to support our clients at every stage in their Program Development, from initial strategy through fabrication and implementation, utilizing our vast resources and partnerships, worldwide. This enables clients to benefit from the wealth of knowledge found in our multidisciplinary professional teams. In addition to the capabilities mentioned in both the Exhibit and Event Management Sections, our program managers also provide the following support
     * Strategic program planning and development
@@ -45,11 +49,13 @@ events:
     * Audio Visual Support and Management
     * Speaker, Script, Crew and Entertainment Support
     * International Liaison and Communication Management
+  color_main: "0xefc692"
+  color_bg: "0xc4f4dc"
     
-
 exhibits:
   position: 3
   title: Exhibits
+  tag_line: "Exhibit & Program Management"
   description: |
     The Taylor Group has organized and integrated its services to support our clients at every stage in their Program Development, from initial strategy through fabrication and implementation, utilizing our vast resources and partnerships, worldwide. This enables clients to benefit from the wealth of knowledge found in our multidisciplinary professional teams. In addition to the capabilities mentioned in both the Exhibit and Event Management Sections, our program managers also provide the following support
     * Strategic program planning and development
@@ -70,10 +76,13 @@ exhibits:
     * Audio Visual Support and Management
     * Speaker, Script, Crew and Entertainment Support
     * International Liaison and Communication Management
+  color_main: "0xf3787b"
+  color_bg: "0xc4f4dc"
 
 interactive:
   position: 4
   title: Interactive
+  tag_line: "Taylor Interactive Experiences"
   description: |
     The Taylor Group has organized and integrated its services to support our clients at every stage in their Program Development, from initial strategy through fabrication and implementation, utilizing our vast resources and partnerships, worldwide. This enables clients to benefit from the wealth of knowledge found in our multidisciplinary professional teams. In addition to the capabilities mentioned in both the Exhibit and Event Management Sections, our program managers also provide the following support
     * Strategic program planning and development
@@ -94,10 +103,13 @@ interactive:
     * Audio Visual Support and Management
     * Speaker, Script, Crew and Entertainment Support
     * International Liaison and Communication Management
-
+  color_main: "0x6dc3d8"
+  color_bg: "0xc4f4dc"
+      
 museums:
   position: 5
   title: Museums
+  tag_line: "Museums"
   description: |
     The Taylor Group has organized and integrated its services to support our clients at every stage in their Program Development, from initial strategy through fabrication and implementation, utilizing our vast resources and partnerships, worldwide. This enables clients to benefit from the wealth of knowledge found in our multidisciplinary professional teams. In addition to the capabilities mentioned in both the Exhibit and Event Management Sections, our program managers also provide the following support
     * Strategic program planning and development
@@ -118,3 +130,5 @@ museums:
     * Audio Visual Support and Management
     * Speaker, Script, Crew and Entertainment Support
     * International Liaison and Communication Management
+  color_main:   "0x6dc3d8"
+  color_bg: "0xc4f4dc"

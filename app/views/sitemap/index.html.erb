@@ -2,6 +2,9 @@
 
 <ul>
   <li>
+    <%= link_to "Main XML", "main.xml", :title => 'Main XML' %>
+  </li>
+  <li>
     <%= link_to "Categories", categories_path, :title => 'Categories' %> (<%= link_to 'xml', "#{categories_path}.xml" %>)
     <ul>
       <% for category in @categories -%>
@@ -50,7 +53,7 @@
     </ul>
   </li>
   <li>
-    <%= link_to "Services", section_pages_path(@services), :title => 'Services' %> (<%= link_to 'xml', "#{section_pages_path(@services)}.xml" %>)
+    <%= link_to "Services", section_pages_path(@services), :title => @services.title %> (<%= link_to 'xml', "#{section_pages_path(@services)}.xml" %>)
     <ul>
       <% for page in @services.pages -%>
         <li><%= link_to h(page.title), section_page_path(@services, page), :title => h(page.title) %> (<%= link_to 'xml', "#{section_page_path(@services, page)}.xml" %>)</li>
@@ -58,7 +61,7 @@
     </ul>
   </li>
   <li>
-    <%= link_to "News", section_pages_path(@news), :title => 'News' %> (<%= link_to 'xml', "#{section_pages_path(@news)}.xml" %>)
+    <%= link_to "News", section_pages_path(@news), :title => @news.title %> (<%= link_to 'xml', "#{section_pages_path(@news)}.xml" %>)
     <ul>
       <% for page in @news.pages -%>
         <li><%= link_to h(page.title), section_page_path(@news, page), :title => h(page.title) %> (<%= link_to 'xml', "#{section_page_path(@news, page)}.xml" %>)</li>
@@ -66,10 +69,18 @@
     </ul>
   </li>
   <li>
-    <%= link_to "About Us", section_pages_path(@about), :title => 'About Us' %> (<%= link_to 'xml', "#{section_pages_path(@about)}.xml" %>)
+    <%= link_to "About Us", section_pages_path(@about), :title => @about.title %> (<%= link_to 'xml', "#{section_pages_path(@about)}.xml" %>)
     <ul>
       <% for page in @about.pages -%>
-        <li><%= link_to h(page.title), section_page_path('about', page), :title => h(page.title) %> (<%= link_to 'xml', "#{section_page_path(@about, page)}.xml" %>)</li>
+        <li><%= link_to h(page.title), section_page_path(@about, page), :title => h(page.title) %> (<%= link_to 'xml', "#{section_page_path(@about, page)}.xml" %>)</li>
+      <% end -%>
+    </ul>
+  </li>
+  <li>
+    <%= link_to "Legal", section_pages_path(@legal), :title => @legal.title %> (<%= link_to 'xml', "#{section_pages_path(@legal)}.xml" %>)
+    <ul>
+      <% for page in @legal.pages -%>
+        <li><%= link_to h(page.title), section_page_path(@legal, page), :title => h(page.title) %> (<%= link_to 'xml', "#{section_page_path(@legal, page)}.xml" %>)</li>
       <% end -%>
     </ul>
   </li>

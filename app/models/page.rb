@@ -1,5 +1,7 @@
 class Page < ActiveRecord::Base
+  
   belongs_to :section
+  acts_as_list :scope => :section
   
   validates_presence_of :title, :body
   validates_length_of :title, :within => 2..100

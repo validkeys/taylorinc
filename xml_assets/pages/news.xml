@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<section>
+	<subnav>
+		<item href="about/Overview" />
+		<item href="about/Our Philosophy" />
+		<item href="about/Competitive Advantage" />
+		<item href="about/Location Advantages" />
+	</subnav>
+    <content>
+	
+        <item href="about/Overview" >
+            <title>Overview</title>
+            <description><![CDATA[Celebrating 75 years of growth and success, The Taylor Group is a global event design and integrated communications agency. We have a combined staff of over 200 people, and our head office is located in Toronto, Ontario. Our central US office is located in Boston, Massachusetts, and we have an additional satellite office in Las Vegas, Nevada. Our global alliances with manufacturing and resource facilities in Europe, Asia and Australia allow us to provide worldwide event and exhibit solutions anytime, anywhere.]]></description>
+        </item>
+        <item href="about/Our Philosophy" >
+            <title>Our Philosophy</title>
+            <description><![CDATA[Our focus is to maximize the strategic business initiatives of our clients by listening to and understanding their core objectives, then bringing these to life as exciting, value-added, memorable experiences.
+
+We work with you and your team to cultivate an environment where you can maximize your message through the use of effective, motivating technologies and architectural solutions.]]></description>
+        </item>
+        <item href="about/Competitive Advantage" >
+            <title>Competitive Advantage</title>
+            <description><![CDATA[There are SIX key factors that, we believe, set us apart from our competition.
+
+   1. Financial Stability
+   2. Total Solutions
+   3. Experienced Team
+   4. Quality Processes
+   5. Scale
+   6. Commitment & Passion]]></description>
+        </item>
+        <item href="about/Location Advantages" >
+            <title>Location Advantages</title>
+            <description><![CDATA[Our offices in Toronto, Boston and Las Vegas are strategically located within Canada and the United States for optimum access to both the east and west coasts. We are just over an hour by air to cities such as New York, Philadelphia, and Chicago, with direct flights available to most major world centers. Our location means we have a virtually limitless supplier base for everything from raw materials, to creative talent, scriptwriters, digital media providers, and more.]]></description>
+        </item>
+    </content>
+</section>

@@ -198,7 +198,7 @@ overview:
   body: |
     Celebrating 75 years of growth and success, The Taylor Group is a global event design and integrated communications agency. We have a combined staff of over 200 people, and our head office is located in Toronto, Ontario. Our central US office is located in Boston, Massachusetts, and we have an additional satellite office in Las Vegas, Nevada. Our global alliances with manufacturing and resource facilities in Europe, Asia and Australia allow us to provide worldwide event and exhibit solutions anytime, anywhere.
 
-our+philosophy:
+our_philosophy:
   section: about
   position: 2
   title: Our Philosophy
@@ -225,3 +225,17 @@ location_advantages:
   title: Location Advantages
   body: |
     Our offices in Toronto, Boston and Las Vegas are strategically located within Canada and the United States for optimum access to both the east and west coasts. We are just over an hour by air to cities such as New York, Philadelphia, and Chicago, with direct flights available to most major world centers. Our location means we have a virtually limitless supplier base for everything from raw materials, to creative talent, scriptwriters, digital media providers, and more. 
+
+terms:
+  section: legal
+  position: 1
+  title: "Terms & Conditions"
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+policy:
+  section: legal
+  position: 2
+  title: "Policy"
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.

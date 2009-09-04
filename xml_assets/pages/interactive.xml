@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<section>
+	<description>The Taylor Group has organized and integrated its services to support our clients at every stage in their Program Development, from initial strategy through fabrication and implementation, utilizing our vast resources and partnerships, worldwide. This enables clients to benefit from the wealth of knowledge found in our multidisciplinary professional teams. In addition to the capabilities mentioned in both the Exhibit and Event Management Sections, our program managers also provide the following support
+
+    * Strategic program planning and development
+    * Brand Integration in Multi-Dimensional marketing
+    * Customized web based client property management systems
+    * Audio Visual Support and Management
+    * Speaker, Script, Crew and Entertainment Support
+    * International Liaison and Communication Management
+    
+    * Strategic program planning and development
+    * Brand Integration in Multi-Dimensional marketing
+    * Customized web based client property management systems
+    * Audio Visual Support and Management
+    * Speaker, Script, Crew and Entertainment Support
+    * International Liaison and Communication Management
+    
+    * Strategic program planning and development
+    * Brand Integration in Multi-Dimensional marketing
+    * Customized web based client property management systems
+    * Audio Visual Support and Management
+    * Speaker, Script, Crew and Entertainment Support
+    * International Liaison and Communication Management
+    
+	</description>
+    <items>
+        <item href="projects/ford" /> 
+        <item href="projects/lexus" /> 
+        <item href="projects/acura" /> 
+        <item href="projects/kia" /> 
+        <item href="projects/genentech aao" /> 
+        <item href="projects/aldar" /> 
+        <item href="projects/rim" /> 
+        <item href="projects/ford" /> 
+        <item href="projects/lexus" /> 
+        <item href="projects/acura" /> 
+        <item href="projects/kia" /> 
+        <item href="projects/genentech aao" /> 
+        <item href="projects/aldar" /> 
+        <item href="projects/rim" /> 
+    </items>
+	<other>
+		<item href="our work/themed environments" title="Themed Environments" />
+		<item href="our work/retail" title="Retail & Commercial" />
+		<item href="our work/graphical" title="Graphics and Way Finding" />
+		<item href="our work/museums" title="Museums" />
+	</other>
+	<featured>
+        <item href="projects/lexus" /> 
+	</featured>
+    <content>
+        <item href="projects/ford">
+            <title>FORD</title>
+            <desc>Ford Lincoln LS Product Launch</desc>
+        </item>
+        <item href="projects/lexus">
+            <title>LEXUS</title>
+            <desc>Canadian Auto Shows, 2006</desc>
+        </item>
+        <item href="projects/acura">
+            <title>ACURA</title>
+            <desc>Canadian Auto Shows 2004 to present</desc>
+        </item>
+        <item href="projects/kia">
+            <title>KIA</title>
+            <desc>toronto international auto show</desc>
+        </item>
+        <item href="projects/genentech aao">
+            <title>GENENTECH AAO</title>
+            <desc>American Academy of Allergy Asthma and Immunology</desc>
+        </item>
+        <item href="projects/aldar">
+            <title>ALDAR</title>
+            <desc>City Scape Abu Dhabi 2008</desc>
+        </item>
+        <item href="projects/rim">
+	        <title>RESEARCH IN MOTION</title>
+	        <desc>Blackberry Developers Conference 2008</desc>
+		</item>
+    </content>
+</section>

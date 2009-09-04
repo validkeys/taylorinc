@@ -71,13 +71,13 @@ xml.urlset "xmlns" => "http://www.google.com/schemas/sitemap/0.84" do
   xml.url do
     xml.loc         projects_url
     xml.lastmod     w3c_date(Time.now)
-    xml.changefreq  "weekly"
+    xml.changefreq  "daily"
   end
   for project in @projects
     xml.url do
       xml.loc         project_url(project)
       xml.lastmod     w3c_date(project.updated_at)
-      xml.changefreq  "weekly"
+      xml.changefreq  "daily"
       xml.priority    0.8
     end
   end
@@ -136,6 +136,21 @@ xml.urlset "xmlns" => "http://www.google.com/schemas/sitemap/0.84" do
   for page in @about.pages
     xml.url do
       xml.loc         section_page_url(@about, page)
+      xml.lastmod     w3c_date(page.updated_at)
+      xml.changefreq  "weekly"
+      xml.priority    0.8
+    end
+  end
+  
+  #-- Legal
+  xml.url do
+    xml.loc         section_pages_url(@legal)
+    xml.lastmod     w3c_date(Time.now)
+    xml.changefreq  "weekly"
+  end
+  for page in @about.pages
+    xml.url do
+      xml.loc         section_page_url(@legal, page)
       xml.lastmod     w3c_date(page.updated_at)
       xml.changefreq  "weekly"
       xml.priority    0.8

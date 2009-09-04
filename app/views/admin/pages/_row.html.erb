@@ -1,4 +1,4 @@
-<tr class="<%= cycle("even_row", "odd_row") -%>">
+<tr class="<%= cycle("even_row", "odd_row") -%>" id="<%= row.id %>">
   <td><%=h row.title %></td>
   <td><%= link_to 'Preview', section_page_path(parent_object, row) %></td>
   <td><%= link_to 'Edit', edit_object_path(row) %></td>
