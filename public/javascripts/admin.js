@@ -4,9 +4,14 @@ jQuery.ajaxSetup({
 
 $(document).ready(function() {
   
+	// validate all forms
 	$('form').validate();
-  $('a.thumb').lightBox();
 	
+	// lightbox thumbnails
+  $('a.thumb').lightBox();
+
+	// use markitup for editing textareas with a class of markup
+	$('textarea.markup').markItUp(mySettings);
 	
 	/* ***
 	** TABLE ROW ORDERING VIA DRAG AND DROP **

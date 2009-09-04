@@ -18,6 +18,7 @@ ActionController::Routing::Routes.draw do |map|
   
   # routes for the administration area
   map.namespace :admin do |admin|
+    admin.resources :main, :collection => { :textile_preview => :post }
     admin.resources :sections do |section|
       section.resources :pages, :member => { :update_position => :put }
     end
