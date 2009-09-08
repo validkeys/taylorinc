@@ -4,14 +4,39 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Taylor Group: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'scaffold' %>
+  <title>The Taylor Group | <%= controller.controller_name.humanize %>: <%= object.title.humanize if object %></title>
+  <link rel="stylesheet" href="/stylesheets/jquery.lightbox-0.5.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="screen" charset="utf-8">
+  <!--[if lte IE 6]><link rel="stylesheet" href="/stylesheets/lib/ie.css" type="text/css" media="screen" charset="utf-8"><![endif]-->
+  <script type="text/javascript" src="/javascripts/jquery-1.3.2.min.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.lightbox-0.5.min.js"></script>
 </head>
 <body>
 
-<p style="color: green"><%= flash[:notice] %></p>
-
-<%= yield %>
+  <div id="page">
+    <div id="header">
+      <%= link_to image_tag('taylor_group_admin.gif', :size => '84x72', :alt => 'The Taylor Group'), root_path %>
+      <ul class="tabs" style="margin-left:86px; margin-top: -29px;">
+        <li><a href="<%= root_path %>"<%= ' class="active"' if controller.controller_name == 'main' %>>Home</a></li>
+        <li><a href="<%= section_path('services') %>"<%= ' class="active"' if controller.controller_name == 'pages' or (object and object.title == 'Services') %>>Services</a></li>
+        <li><a href="<%= categories_path %>"<%= ' class="active"' if controller.controller_name == 'categories' or controller.controller_name == 'industries' or controller.controller_name == 'departments' or controller.controller_name == 'projects' %>>Our Work</a></li>
+        <li><a href="<%= section_path('news') %>"<%= ' class="active"' if (controller.controller_name == 'pages' and parent_object.friendly_id == 'news') or (object and object.friendly_id == 'news') %>>News</a></li>
+        <li><a href="<%= section_path('about') %>"<%= ' class="active"' if (controller.controller_name == 'pages' and parent_object.friendly_id == 'about') or (object and object.friendly_id == 'about') %>>About Us</a></li>
+        <li><a href="<%= locations_path %>"<%= ' class="active"' if controller.controller_name == 'locations' %>>Contact</a></li>
+      </ul>
+    </div>
+    <div id="body" class="wrapper">
+      <%= yield -%>
+    </div>
+    <div id="footer">
+      <p class="quiet"><small>Copyright &copy; 2009 The Taylor Group Inc., All Rights Reserved. &nbsp; 
+      <% @legal.pages.each_with_index do |page, index| -%>
+        <%= " | " if index > 0 %>
+        <%= link_to page.title, section_page_path(@legal, page) %>
+      <% end -%>
+      </small></p>
+    </div>
+  </div>
 
 </body>
 </html>

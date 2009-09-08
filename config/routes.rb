@@ -12,7 +12,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :industries, :has_many => :projects
   map.resources :categories, :has_many => :projects
   map.resources :projects, :has_many => :photos
-  map.resources :departments, :has_many => :projects
+  map.resources :departments, :has_many => [:projects, :categories, :industries]
   
   map.admin '/admin', :controller => 'admin/main'
   

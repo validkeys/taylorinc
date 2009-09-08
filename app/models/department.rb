@@ -2,8 +2,8 @@ class Department < ActiveRecord::Base
   
   has_many :projects, :order => 'title'
   #has_many :featured_projects, :class_name => "project", :foreign_key => "department_id", :conditions => "featured = true", :order => 'title'
-  has_many :categories, :through => :projects
-  has_many :industries, :through => :projects
+  has_many :categories, :through => :projects, :uniq => true
+  has_many :industries, :through => :projects, :uniq => true
   
   acts_as_list
   
