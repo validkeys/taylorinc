@@ -9,10 +9,7 @@ class SitemapController < ApplicationController
     @industries = Industry.find :all, :order => 'position'
     @locations = Location.find :all, :order => 'position'
     @projects = Project.find :all, :order => 'title'
-    @services = Section.find 'services'
-    @news = Section.find 'news'
-    @about = Section.find 'about'
-    @legal = Section.find 'legal'
+    @sections = Section.find :all, :order => 'title'
     
     respond_to do |format|
       format.html

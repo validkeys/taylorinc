@@ -78,6 +78,21 @@ tr.row_drag {
 	background-color: #be7503;
 }
 
+#photos {
+  margin: 0px;
+  height: 600px;
+}
+#photos li {
+  list-style-type: none;
+  border:1px solid #555;
+  float:left;
+  margin: 8px 6px 8px 0px;
+	padding: 1px;
+  width: 180px;
+  height: 140px;
+	text-align: center;
+}
+
 /* Notices and Alerts
 -------------------------------------------------------------- */
 div.flash {

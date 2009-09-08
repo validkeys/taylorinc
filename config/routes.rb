@@ -26,7 +26,9 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :locations, :member => { :update_position => :put }
     admin.resources :industries, :has_many => :projects
     admin.resources :categories, :has_many => :projects
-    admin.resources :projects, :has_many => :photos
+    admin.resources :projects do |project|
+      project.resources :photos, :member => { :update_position => :put }
+    end
     admin.resources :departments, :member => { :update_position => :put }, :has_many => :projects
   end
   

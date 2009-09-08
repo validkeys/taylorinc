@@ -1,8 +1,73 @@
-<h4><%= link_to "Create #{controller.controller_name.humanize.singularize} &raquo;", new_object_path %></h4>
-<table width="100%">
-  <tr>
-    <th>Title</th>
-    <th colspan="3" width="14%"></th>
-  </tr>
+<script type="text/javascript">
+  var server_authenticity_token = "<%= form_authenticity_token %>";
+  
+  // binds / rebinds lightbox to photo clicks
+	//function bindLightBox() {
+	//  $('#photos a[@rel*=thumb]').lightBox();
+	//}
+	
+  $(document).ready(function() {
+
+    //bindLightBox();
+    
+    // allows for photo sorting within a category by dragging them around.
+    // updates the order on the fly using ajax
+    // this is by far the trickiest JS in the app
+    $("#photos").sortable({ 
+        placeholder: "ui-selected",
+        opacity: 0.7,
+        update: function(e, ui) {
+          // determine the end position for the element that was moved
+  
+          // end order as an array
+          var end_order = $(this).sortable('serialize').replace(/photo\[\]\=/g, '').split('&');
+          //alert('End order: ' + end_order);
+
+          // id of element that was moved (element is in the ui.helper object)
+          var moved_photo_id = ui.item.attr('id').replace('photo_', ''); // parse photo_ from the id
+          //alert('Moved photo id: ' + moved_photo_id);
+  
+          // determine the end position of the moved element
+          var end_position = 0;
+          // loop through all order elements
+          for (var y=0; y<end_order.length; y++) {
+            // if the ids match, then we have the new index
+            if (end_order[y] === moved_photo_id) {
+              end_position = y;
+              break; // found it, bail
+            }
+          }
+          // increment it to match our backend which starts the list at 1 instead of 0
+          end_position++;
+          //alert('End position: ' + end_position);
+  
+          // ajax post to save the position change
+          // we're passing the parent album, the moved photo, and the new position of the photo
+          $.post('/admin/projects/<%= parent_object.id %>/photos/' + moved_photo_id + '/update_position', {_method:"put", authenticity_token:server_authenticity_token, position:end_position}, function(data) {
+    
+            json = eval('(' + data + ')');
+    				var icon = '/images/icons/notice.png';
+    				if (json.title === "Error") icon = '/images/icons/warning.png';
+            // inform the user of success / fail via gritter (growl)
+            $.gritter.add({
+          		title: json.title,
+          		text: json.message,
+          		image: icon,
+          		time: 3000
+          	});
+            
+            // re-bind lightbox so the photos elements are in the right order for next / prev buttons
+            //bindLightBox();
+       	  });
+
+        },
+        revert: true
+    });
+
+  });
+</script>
+<h4><%= link_to "Add another photo to #{parent_object.title} &raquo;", new_object_path %></h4>
+<h6>You can click and drag photos to reorder them within the project.</h6>
+<ul id="photos">
   <%= render :partial => "row", :collection => collection %>
-</table>
+</ul>

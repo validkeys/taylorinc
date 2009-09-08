@@ -3,9 +3,10 @@
 
 # product launches
 ford_lincoln_launch:
-  category: product_launches
-  industry: automotive
-  department: events
+  id: 1
+  category_id: 1
+  industry_id: 1
+  department_id: 2
   client: Ford Lincoln
   title: Ford Lincoln Launch
   tag_line: Ford Lincoln LS Product Launch
@@ -13,9 +14,10 @@ ford_lincoln_launch:
     When Lincoln Mercury was faced with a ten week project time frame to launch their new Lincoln LS model, The Taylor Group was asked to join the team.  In seven weeks, an old airplane hanger on Treasure Island near San Francisco was converted into a 50,000 sq. ft. event environment.  Over 2,500 dealer representatives were introduced to and educated about every aspect of the car at the $10 million event.
   
 microsoft_launch:
-  category: product_launches
-  industry: technology
-  department: events
+  id: 2
+  category_id: 1
+  industry_id: 6
+  department_id: 2
   client: Microsoft
   title: Microsoft Launch
   tag_line: "MS Windows XP Media Center Edition Launch"
@@ -25,9 +27,10 @@ microsoft_launch:
   
 # themed environments
 bat_headquarters:
-  category: themed_environments
-  industry: manufacturing
-  department: exhibits
+  id: 3
+  category_id: 2
+  industry_id: 5
+  department_id: 3
   client: BAT
   title: BAT Headquarters
   tag_line: "British American Tobacco, Headquarters: London"
@@ -35,9 +38,10 @@ bat_headquarters:
     The Taylor Group constructed six fully detailed themed activity rooms for the new global head office of British American Tobacco on the Thames River. Luckys Diner is a 1950s-style room constructed of stainless steel walls and floor. Its a great place to hang out and try the slot machine, listen to 50s music or have a bottle of Coke even the coffee machine talks to you. Other elements included the Electronic Library and a 50 percent scale of an F1 car depicting 555 branding complete with an F1 simulator ride.
   
 cn_tower:
-  category: themed_environments
-  industry: museums
-  department: museums
+  id: 4
+  category_id: 2
+  industry_id: 7
+  department_id: 5
   client: CN Tower
   title: CN Tower
   tag_line: CN Tower EcoDeck - Global Change Exhibit
@@ -45,9 +49,10 @@ cn_tower:
     The CN Tower Corporation engaged The Taylor Group to fabricate all components of this ecological science center located in the upper decks of the worlds largest freestanding structure.  Vivid colours, dramatic lighting and interesting textures combined to create a visually stunning environment.
 
 ontario_government:
-  category: themed_environments
-  industry: government
-  department: exhibits
+  id: 5
+  category_id: 2
+  industry_id: 4
+  department_id: 3
   client: Ontario Government
   title: Ontario Government
   tag_line: "Ontario Pavillion: World Expo 86"
@@ -55,8 +60,9 @@ ontario_government:
     The Taylor Group was awarded the contract for the fabrication and installation of the entire Ontario Pavilion. Crescent shaped, the white canopied Pavilion graces the waters of False Creek. It showcases the province of Ontario in 31,000 sqft of exhibits, a 750 seat 3-D multi-image cinema, restaurant, marketing lounge and amphitheatre for live entertainment.  Products displayed in the pavilion showcase high-tech marvels made in Ontario. A stunning theatrical exhibit leads the visitor through the historic development of the province, from the primeval forests and canoe routes, to the technology explosion of today.
 
 storybook_gardens:
-  category: themed_environments
-  department: exhibits
+  id: 6
+  category_id: 2
+  department_id: 3
   client: Storybook Gardens
   title: Storybook Gardens
   tag_line: Storybook Gardens Various Themed Exhibits
@@ -65,9 +71,10 @@ storybook_gardens:
 
 # retail
 canadian_tire:
-  category: retail
-  industry: consumer_goods_services
-  department: retail_environments
+  id: 7
+  category_id: 3
+  industry_id: 8
+  department_id: 1
   client: Canadian Tire
   title: Canadian Tire
   tag_line: Canadian Tire Financial Services Kiosks
@@ -75,9 +82,10 @@ canadian_tire:
     Taylor successfully won a bid from Canadian Tire Financial Services to assist them with the design development, fabrication and installation of the pilot in-store banking program. Taylor worked with both Canadian Tire Financial Services  and Canadian Tire Retail to modify their original concept to meet their budget and operational and design requirements. The pilot program consisted of 9 kiosk units going into selected stores in Ontario and Alberta.
 
 casino_rama:
-  category: retail
-  industry: government
-  department: retail_environments
+  id: 8
+  category_id: 3
+  industry_id: 4
+  department_id: 1
   client: Casino Rama
   title: Casino Rama
   tag_line: Casino Rama Boutiques
@@ -85,8 +93,9 @@ casino_rama:
     This complex of three boutiques is an integral part of the 600-room hotel and spa at Casino Rama.  The gallery store displays original native craft and art pieces in museum quality showcases and custom fixtures. The clothing store features high-end fashions by famous Native Canadian designers and the souvenir store incorporates a cafe and various natural elements.  All three stores are united by the artistic use of natural finishes such as slate, wood, stone, and dramatic accent lighting.  Various materials were developed specifically for use in the Rama boutiques.
 
 lookfab:
-  category: retail
-  department: retail_environments
+  id: 9
+  category_id: 3
+  department_id: 1
   client: Lookfab Studio
   title: Lookfab Studio
   tag_line: "LookFab Temporary Location for P&G"
@@ -94,8 +103,9 @@ lookfab:
     Hired by Upshot, Taylor built, the first-ever Look Fab Studio, a holistic beauty experience for the entire body. This street-level storefront was a limited-time beauty destination, offering Canadians the chance to learn about the latest Spring/Summer 07 beauty trends and secrets, interact directly with industry experts for personal tips and sample new FABulous P&G Beauty products.
 
 prada:
-  category: retail
-  department: retail_environments
+  id: 10
+  category_id: 3
+  department_id: 1
   client: Prada
   title: Prada
   tag_line: "Prada Showcase Program"
@@ -103,9 +113,10 @@ prada:
     Working in conjunction with Prada Italy and Prada USA, Taylor was hired to fabricate a series of Custom Niche and Cantilevered Shelving Units: Polished s/s cabinets with tubular s/s frame, Painted canvas valence c/w cove lighting, Edge-stitched, leather wrapped shelving insert panels, Painted canvas side wall and back panels, Fabrication, supply, coordination (GC install).
   
 royal_bank:
-  category: retail
-  industry: finance
-  department: retail_environments
+  id: 11
+  category_id: 3
+  industry_id: 2
+  department_id: 1
   client: Royal Bank
   title: Royal Bank
   tag_line: "Royal Bank of Canada, Airport Location"
@@ -113,9 +124,10 @@ royal_bank:
     The Taylor Group was asked by The Royal Bank of Canada to co-develop what became the winning proposal for the delivery of financial services to passengers at Vancouver's International Airport. A total of thirteen different kiosks were created in a variety of configurations ranging from 600 to 3,000 sq.ft. 
 
 samsung:
-  category: retail
-  industry: technology
-  department: retail_environments
+  id: 12
+  category_id: 3
+  industry_id: 6
+  department_id: 1
   client: Samsung
   title: Samsung
   tag_line: "Samsung Retail Store"
@@ -123,9 +135,10 @@ samsung:
     Working in conjunction with the creative agency Imagination, Taylor implemented the new Samsung Experience Store at the Time Warner Center in New York City. The space integrated interactive areas, graphic information panels, digital media and a lounge style atmosphere.
 
 telus_koodo:
-  category: retail
-  industry: technology
-  department: retail_environments
+  id: 13
+  category_id: 3
+  industry_id: 6
+  department_id: 1
   client: Telus Koodo
   title: Telus Koodo
   tag_line: "Telus Koodo"
@@ -134,9 +147,10 @@ telus_koodo:
 
 # mobile
 blockbuster:
-  category: mobile
-  industry: consumer_goods_services
-  department: retail_environments
+  id: 14
+  category_id: 4
+  industry_id: 8
+  department_id: 1
   client: Blockbuster
   title: Blockbuster
   tag_line: "Blockbuster Legends Tour"
@@ -144,9 +158,10 @@ blockbuster:
     During the summer of 1998 the Blockbuster Legends Tour travelled over 20,000 miles and entertained over 44,000 guests in celebration of 100 years of movie making. Beginning with an empty trailer, The Taylor Group completed this project in three weeks - from installing a generator for electrical, AC and lighting, to designing and fabricating exhibit cases and interior finishes. Exhibit case graphic design and exterior graphics, plus the handling and placement of all artifacts, were also included in the project.
   
 espn:
-  category: mobile
-  industry: consumer_goods_services
-  department: interactive
+  id: 15
+  category_id: 4
+  industry_id: 8
+  department_id: 4
   client: ESPN
   title: ESPN
   tag_line: "ESPN Superbowl Trailer"
@@ -154,9 +169,10 @@ espn:
     The ESPN Trailer, which travels to top US sports events, displays legendary Superbowl memorabilia and interactive sports activities, for fans and players alike.
     
 ge_plastics_vector:
-  category: mobile
-  industry: manufacturing
-  department: retail_environments
+  id: 16
+  category_id: 4
+  industry_id: 5
+  department_id: 1
   client: GE Plastics Vector
   title: GE Plastics Vector
   tag_line: "GE Vector Trailer"
@@ -164,8 +180,9 @@ ge_plastics_vector:
     The Vector trailer was designed for product presentations to GE Plastics' clients throughout North America. Vector is 48 ft long, with 30 ft. of its length expanding to 21 ft. wide when set-up. The mobile command center features a computer docking station, as well as the latest in mixed media AV presentation equipment, for presentations and meetings.
 
 michelin_tires:
-  category: mobile
-  department: retail_environments
+  id: 17
+  category_id: 4
+  department_id: 1
   client: Michelin Tires
   title: Michelin Tires
   tag_line: "Michelin Experience Trailer"
@@ -173,8 +190,9 @@ michelin_tires:
     The Michelin Tour de Force attends racing and other events throughout North America. The tour launch occurred at The Montreal Grand Prix in 2001. The Michelin Experience Trailer explores the historical roots of The Michelin Company. Some of the unique displays on board include the Performance Wall which showcases Michelin Tire products on various faux surfaces consistent with each respective tire. The tires displayed range from car and SUV applications to the highly specialized Formula One, Aircraft and Space Shuttle tires. The Taylor Group also produced 10; Mr.Bibs, better known as The Michelin Man. These lovable characters sit atop each trailer and are connected to motors allowing them to rotate.
 
 nestle:
-  category: mobile
-  department: events
+  id: 18
+  category_id: 4
+  department_id: 2
   client: Nestle
   title: Nestle
   tag_line: "NesQuik Traveling Tour"
@@ -182,8 +200,9 @@ nestle:
     This traveling tour included a 20ft. tall, custom-made, fiberglass bottle for various Canadian markets. Events on the tour included; finding the fastest climbers, in each city, who can climb to the top of the bottle and back and finish by drinking large glass of NesQuik at the end of the climb. The contest ended with a cross-country competition for the local winners, and the naming of the NesQuik National Champion Climber.
 
 ralston_purina:
-  category: mobile
-  department: events
+  id: 19
+  category_id: 4
+  department_id: 2
   client: Ralston Purina
   title: Ralston Purina
   tag_line: "Ralston Purina: Meow Mix Mobile"
@@ -192,9 +211,10 @@ ralston_purina:
   
 # corporate_theatre
 ati_technologies:
-  category: corporate_theatre
-  industry: technology
-  department: interactive
+  id: 20
+  category_id: 5
+  industry_id: 6
+  department_id: 4
   client: ATI Technologies
   title: ATI Technologies
   tag_line: "Radeon Press Launch: Title Club"
@@ -204,9 +224,10 @@ ati_technologies:
     Andrew Rodie, Marketing Manager
   
 bell_canada:
-  category: corporate_theatre
-  industry: consumer_goods_services
-  department: interactive
+  id: 21
+  category_id: 5
+  industry_id: 8
+  department_id: 4
   client: Bell Canada
   title: Bell Canada
   tag_line: "Bell Canada; Annual General Meeting"
@@ -214,9 +235,10 @@ bell_canada:
     Produced in conjunction with the design group, Imagination, this conference program included demonstrations, partner program announcements, both small and large format meetings and dynamic company presentations.
     
 rim_wes_event:
-  category: corporate_theatre
-  industry: technology
-  department: interactive
+  id: 22
+  category_id: 5
+  industry_id: 6
+  department_id: 4
   client: RIM WEST Event
   title: RIM WEST Event
   tag_line: "RIM Wireless Enterprise Symposium"
@@ -225,9 +247,10 @@ rim_wes_event:
 
 # tours_meetings
 bacardi:
-  category: tours_meetings
-  industry: consumer_goods_services
-  department: retail_environments
+  id: 23
+  category_id: 6
+  industry_id: 8
+  department_id: 1
   client: Bacardi
   title: Bacardi
   tag_line: "Grey Goose Golf Lounge"
@@ -235,9 +258,10 @@ bacardi:
     In conjunction with @Radical.Media & Javelin Entertainment, The Taylor Group was contracted through Bacardi USA to design and fabricate an updated lounge for Grey Goose Vodka for the BMW Championship at Cog Hill in Chicago. This lounge reflects Grey Goose's new marketing campaign and will be featured at multiple PGA Tour Golf Tournaments across the United States.  Taylor exceeded expectations by using hi-end products and impeccable finishes.
   
 bmw_f1:
-  category: tours_meetings
-  industry: automotive
-  department: interactive
+  id: 24
+  category_id: 6
+  industry_id: 1
+  department_id: 4
   client: BMW F1
   title: BMW F1
   tag_line: "BMW Sauber F1 Team World Launch, Canadian Grand Prix"
@@ -245,9 +269,10 @@ bmw_f1:
     Taylor Managed the logistics and installation of the BMW Sauber F1 Pit Lane Park with WWP (agency). The park was an interactive environment where fans could learn about Formula 1 and the BMW Sauber team. In the center  of the park was a test track that featured a live Formula 1 vehicle every hour...This brought the fans extremely close to the feel and sounds of Formula 1. Over 45,000 people walked through the park in the 3 day period.
 
 bombardier:
-  category: tours_meetings
-  industry: manufacturing
-  department: exhibits
+  id: 25
+  category_id: 6
+  industry_id: 5
+  department_id: 3
   client: Bombardier
   title: Bombardier
   tag_line: "Bombardier Aerospace at NBAA 2008"
@@ -255,9 +280,10 @@ bombardier:
     Taylor provided Bombardier Aerospace with new exhibit modules along with complete co-ordination, installation and dismantling of their Static program at NBAA.  Bombardier's NBAA Static Event took place over three days at the Orlando Executive Airport runway!  This yearly event is the business aviation industry's largest and most efficient annual gathering of buyers and sellers.  It often is the only yearly opportunity to do direct, side-by-side comparisons of nearly every product and service available to company flight departments.  NBAA is the industry's leading venue for new product announcements and introductions.
 
 canon_event:
-  category: tours_meetings
-  industry: consumer_goods_services
-  department: events
+  id: 26
+  category_id: 6
+  industry_id: 8
+  department_id: 2
   client: Canon
   title: Canon Event
   tag_line: "Canon Professional Solutions EXPO (CPSE)"
@@ -265,9 +291,10 @@ canon_event:
     Canon Canada embarked on a unique grass-roots campaign to bring its message to a wide audience by launching the first-ever Canon Professional Solutions EXPO. The Taylor Group was responsible for the design, construction and management of the entire event, and also oversaw the procurement of venues while arranging all transportation and on-site labor. The 5000sq.ft. event traveled to Vancouver, Calgary, Toronto and Montreal and was set up in a variety of locations over a 4-week period. Guest celebrity photographers were invited to hold seminars and discussions on their work and techniques.
   
 dove_tour:
-  category: tours_meetings
-  industry: consumer_goods_services
-  department: exhibits
+  id: 27
+  category_id: 6
+  industry_id: 8
+  department_id: 3
   client: Dove
   title: Dove Tour
   tag_line: "Dove; Beyond Compare Photo Exhibit"
@@ -275,9 +302,10 @@ dove_tour:
     Toronto design firm 3rd Uncle Design partnered with The Taylor Group to create a setting for the traveling exhibition "Beyond Compare: Women Photographers on Beauty". The challenge was to design a portable exhibit that would highlight "The essentials of the brand's qualities of wholesomeness and healthy living", as well as fit easily into spaces of different sizes and restrictions as it traveled across North America and Europe. The result was an environment that communicated Dove's gentle message of Inner Beauty using soft glowing lamps and laminate-glass flooring with each lamp stand doubling as an easel for the framed photography.
 
 hewlett_packard:
-  category: tours_meetings
-  industry: technology
-  department: exhibits
+  id: 28
+  category_id: 6
+  industry_id: 6
+  department_id: 3
   client: Hewlett Packard
   title: Hewlett Packard
   tag_line: "HP: The Beatles!"
@@ -285,9 +313,10 @@ hewlett_packard:
     HP Canada challenged The Taylor Group to create an exciting, sophisticated atmosphere in which to showcase both a collection of The Beatles photography and HP as the sponsor of this exhibit.  As a traveling exhibit, it needed to be easily installed and transported across North America, Japan, and Europe.  It also needed to be scalable in order to accommodate venues of various sizes and restrictions.
 
 honda_f1_07:
-  category: tours_meetings
-  industry: automotive
-  department: events
+  id: 29
+  category_id: 6
+  industry_id: 1
+  department_id: 2
   client: Honda
   title: Honda F1-07
   tag_line: "Honda F1: Montreal Grand Prix 2007"
@@ -296,9 +325,10 @@ honda_f1_07:
     This event is driven largely by Hondas commitment to its F1 team and racing technology. However, the Honda World event has a broader focus: to showcase the company's many other achievements and directives. This year Honda launched the "My Earth Dream" campaign to help raise awareness of environmental issues and to encourage people everywhere to make a difference in the world around them.
   
 samsung_olympics:
-  category: tours_meetings
-  industry: technology
-  department: events
+  id: 30
+  category_id: 6
+  industry_id: 6
+  department_id: 2
   client: Samsung
   title: Samsung Olympics
   tag_line: "Samsung Olympics"
@@ -307,9 +337,10 @@ samsung_olympics:
   
 # graphics_wayfinding
 fidelity:
-  category: graphics_wayfinding
-  industry: finance
-  department: retail_environments
+  id: 31
+  category_id: 7
+  industry_id: 2
+  department_id: 1
   client: Fidelity
   title: Fidelity
   tag_line: "Fidelity Ivestments"
@@ -317,9 +348,10 @@ fidelity:
     Working in conjunction with Gensler, New York, the Taylor Group implemented and fabricated a new collateral program in 110 Information Resource Center's for Fidelity Investments.  These included 110 literature kiosks and 250 poster displays distributed to locations throughout the US.
 
 ottawa_airport:
-  category: graphics_wayfinding
-  industry: government
-  department: events
+  id: 32
+  category_id: 7
+  industry_id: 4
+  department_id: 2
   client: Ottawa Airport
   title: Ottawa Airport
   tag_line: "Ottawa Airport; Wayfinding Signage"
@@ -327,9 +359,10 @@ ottawa_airport:
     The Taylor Group partnered with Terrry Heard Design and Gottshalk & Ash International Design Consultants to implement the designs for the way-finding signage program in the new Ottawa International Airport.
   
 york_university:
-  category: graphics_wayfinding
-  industry: government
-  department: events
+  id: 33
+  category_id: 7
+  industry_id: 4
+  department_id: 2
   client: York University
   title: York University
   tag_line: "York University; Directory and Wayfinding Signage"
@@ -338,9 +371,10 @@ york_university:
 
 # museums
 cdn_war_museum:
-  category: museums
-  industry: museums
-  department: museums
+  id: 34
+  category_id: 8
+  industry_id: 7
+  department_id: 5
   client: Cdn War Museum
   title: Cdn War Museum
   tag_line: "Canadian War Museum; Ottawa, Ontario"
@@ -348,9 +382,10 @@ cdn_war_museum:
     Taylor detailed built and installed five permanent exhibition galleries.  These included displays of Canadian history from early settlers to current peace keeping activities.  The galleries were defined in groups including; pre-confederation, World War One, World War Two, Modern history and the Memorial hall.  The entire project was completed over eighteen months.
 
 geraldton:
-  category: museums
-  industry: museums
-  department: museums
+  id: 35
+  category_id: 8
+  industry_id: 7
+  department_id: 5
   client: Geraldton
   title: Geraldton
   tag_line: "Geraldton Visitors Centre"
@@ -358,9 +393,10 @@ geraldton:
     The Taylor Group provided a complete exhibit construction program to fabricate and install this exciting 3,000 sq. ft. visitor centre. The project includes five themed areas, each containing 3D graphics and special effects.  A large diorama containing granite rocks dominates the centre of the gallery.  The gallery includes artifacts, murals, sound effects and four interactive computer units that involve the visitor in learning about the history of Geraldton.  The entrance contains a large-scale model of a fire fighting water bomber and a detailed scale model of the Geraldton area.  In addition to its function as a tourist attraction, the visitor centre is now home to many community events.
 
 glasgow:
-  category: museums
-  industry: museums
-  department: museums
+  id: 36
+  category_id: 8
+  industry_id: 7
+  department_id: 5
   client: Glasgow
   title: Glasgow
   tag_line: "Glasgow Science Center"
@@ -368,9 +404,10 @@ glasgow:
     The Taylor Group, with Krause and Johnson Design Consultants, won an international competition to be the design build team responsible for the "Creativity and Innovation" floor at the Glasgow Science Centre.  This, the largest floor, celebrates creativity and innovation through a fun, hands-on showcase of science and technology.  The Taylor Group successfully coordinated simultaneous fabrication of various components in the space in both Scotland and North America, before installation began on-site.
 
 hockey_hall_of_fame:
-  category: museums
-  industry: museums
-  department: museums
+  id: 37
+  category_id: 8
+  industry_id: 7
+  department_id: 5
   client: Hockey Hall Of Fame
   title: Hockey Hall Of Fame
   tag_line: "Hockey Hall Of Fame"
@@ -378,8 +415,9 @@ hockey_hall_of_fame:
     The Hockey Hall of Fame was designed as an interactive and historical tribute to the sport of ice hockey.  The Taylor Group brought a vital dimension to the evolution of the new museum, and was responsible for the entire project from project management, working drawings, and budget control to fabrication and installation. With on-going installations and updates, Taylor continues to evolve the museum environment to appeal to the ever changing world of hockey fans.
 
 imiloa_hawaii:
-  category: museums
-  industry: museums
+  id: 38
+  category_id: 8
+  industry_id: 7
   client: Imiloa - Hawaii
   title: Imiloa - Hawaii
   tag_line: "Imiloa Astronomy Education Centre"
@@ -387,9 +425,10 @@ imiloa_hawaii:
     Funded by, NASA and the University of Hawaii, the concept required the integration of Astronomy and the rich historic culture of the Hawaiian Islands. The exhibits include the Kumilipo Theater (the Hawaiian origin of life legend) and the skills of using the stares to navigate all over Polynesia. The integration of astronomy, art and culture makes the 14,000 sq. ft. exhibit gallery an important cultural attraction in Hawaii. The creation of an attraction that is a showcase for the local Hawaiian cultural community and the important international science and technology industry makes this project a big part of the future of the Big Island.
 
 museo_del_acero:
-  category: museums
-  industry: museums
-  department: museums
+  id: 39
+  category_id: 8
+  industry_id: 7
+  department_id: 5
   client: Museo Del Acero
   title: Museo Del Acero
   tag_line: "Museo Del Acero Horno3, Monterrey, Mexico, 2007"
@@ -397,9 +436,10 @@ museo_del_acero:
     The Museo Del Acero celebrates the history and science of steel making, as well as, its impact on the Monterrey region. This 35,000 square foot interpretive project is featured within an adaptively re-used steel refinery. There are two main science based galleries consisting of dioramas, reconstructions, artifacts and display cases, video and physical interactive displays, theatres and a spectacular demonstrative theatrical show featuring the authentic steel furnace. The grounds of Parque Fundidora are the original mill property and the City of Monterrey has maintained and restored the buildings as a cultural and entertainment based hub.
 
 muskoka:
-  category: museums
-  industry: museums
-  department: museums
+  id: 40
+  category_id: 8
+  industry_id: 7
+  department_id: 5
   client: Muskoka
   title: Muskoka
   tag_line: "Grace and Speed: Wharf and Visitors Centre"
@@ -407,9 +447,10 @@ muskoka:
     Built as part of a waterfront development for the town, this new museum houses four reconstruction vignettes. The vignettes showcase the history and development of the the of Muskoka area beginning with Logging for Industry, Cottage Building, and Tourism (Hotels and Lodges). There are also displays with reconstructed Steamships for moving Goods and People, and finally, an extensive Boathouse for cottagers and visitors with actual working antique wooden boats in slips on the lake. The site overlooks the newly renovated Gravenhurst harbour and the remaining Muskoka Steamships, the RMS Segwun and the Wenonah.
 
 rom:
-  category: museums
-  industry: museums
-  department: museums
+  id: 41
+  category_id: 8
+  industry_id: 7
+  department_id: 5
   client: ROM
   title: ROM
   tag_line: "Royal Ontario Museum; Various Exhibits"
@@ -417,8 +458,9 @@ rom:
     The Taylor Group undertook a complete restoration of the Greek Exhibit gallery including lifting of the hardwood floor and reinstalling and refinishing it back to it's original condition.  All services were replaced including HVAC, electrical, lighting, and humidity controls.  While general contracting was being completed on site, all showcases and display elements were under construction in our state-of-the-art workshop.
 
 science_of_survival:
-  category: museums
-  department: museums
+  id: 42
+  category_id: 8
+  department_id: 5
   client: Science of... Survival
   title: Science of... Survival
   tag_line: "Science of... Survival"
@@ -428,9 +470,10 @@ science_of_survival:
 
 #exhibits_over_1000_feet
 acura:
-  category: exhibits_over_1000_feet
-  industry: automotive
-  department: exhibits
+  id: 43
+  category_id: 9
+  industry_id: 1
+  department_id: 3
   client: Acura
   title: Acura
   tag_line: "Acura: Canadian Auto Shows 2004 to present"
@@ -438,9 +481,10 @@ acura:
     The Taylor Group partnered with one of Japan's largest advertising agencies to carry out this project. The design goal for Acura's environment at the Canadian International AutoShow was for visitors to have an immersive experience, resulting in more time being spent in the space. A boutique style approach enabled the vehicles to be showcased on raised floors surrounded by an aluminum & acrylic structure with access from 3 sides. Hanging banners, monochromatic graphics and HID lighting completed this immersive environment.
 
 bmw:
-  category: exhibits_over_1000_feet
-  industry: automotive
-  department: exhibits
+  id: 44
+  category_id: 9
+  industry_id: 1
+  department_id: 3
   client: BMW
   title: BMW
   tag_line: "BMW MINI: Canadian Auto Shows, 1992 to present"
@@ -448,9 +492,10 @@ bmw:
     This large project required the capacity, attention to detail and skill level that only The Taylor Group could provide BMW Canada.  The intricate display using the custom exhibit system called MAS was shipped from Germany for the internationally recognized Toronto Auto show.  The Taylor Group completed the project management and fabrication processes from logistics and installation to lighting and additional component fabrication.
 
 genentech_aao:
-  category: exhibits_over_1000_feet
-  industry: healthcare
-  department: exhibits
+  id: 45
+  category_id: 9
+  industry_id: 3
+  department_id: 3
   client: Genentech
   title: Genentech AAO
   tag_line: "Genentech AAO"
@@ -458,9 +503,10 @@ genentech_aao:
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
   
 honda_2009:
-  category: exhibits_over_1000_feet
-  industry: automotive
-  department: exhibits
+  id: 46
+  category_id: 9
+  industry_id: 1
+  department_id: 3
   client: Honda
   title: Honda 2009
   tag_line: "Honda 2009"
@@ -468,9 +514,10 @@ honda_2009:
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 kia_08:
-  category: exhibits_over_1000_feet
-  industry: automotive
-  department: exhibits
+  id: 47
+  category_id: 9
+  industry_id: 1
+  department_id: 3
   client: Kia
   title: Kia 08
   tag_line: "Kia 08"
@@ -478,8 +525,9 @@ kia_08:
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
   
 lexus:
-  category: exhibits_over_1000_feet
-  department: exhibits
+  id: 48
+  category_id: 9
+  department_id: 3
   client: Lexus
   title: Lexus
   tag_line: "Lexus"
@@ -487,9 +535,10 @@ lexus:
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 novo_nordisk:
-  category: exhibits_over_1000_feet
-  industry: healthcare
-  department: exhibits
+  id: 49
+  category_id: 9
+  industry_id: 3
+  department_id: 3
   client: Novo Nordisk
   title: Novo Nordisk
   tag_line: "Novo Nordisk"
@@ -497,9 +546,10 @@ novo_nordisk:
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
   
 sikorsky:
-  category: exhibits_over_1000_feet
-  industry: aviation
-  department: exhibits
+  id: 50
+  category_id: 9
+  industry_id: 10
+  department_id: 3
   client: Sikorsky
   title: Sikorsky
   tag_line: "Sikorsky"
@@ -507,8 +557,9 @@ sikorsky:
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
   
 tecknion_07:
-  category: exhibits_over_1000_feet
-  department: exhibits
+  id: 51
+  category_id: 9
+  department_id: 3
   client: Teknion 07
   title: Teknion 07
   tag_line: "Teknion Furniture 2007"
@@ -517,9 +568,10 @@ tecknion_07:
 
 #exhibits_under_1000_feet
 aldar_cityscape_nyc:
-  category: exhibits_under_1000_feet
-  industry: real_estate
-  department: exhibits
+  id: 52
+  category_id: 10
+  industry_id: 9
+  department_id: 3
   client: Aldar
   title: Cityscape NYC
   tag_line: "Aldar Cityscape New York"
@@ -528,9 +580,10 @@ aldar_cityscape_nyc:
     Our design solution: A cooling white and blue color palette with a neutral yet dramatic backdrop for showcasing the various Aldar developments of Yas Island and Raha Beach projects demonstrating the layout and scale of the their developments. The exhibit also featured modern, clean d袯r and seating creating a sleek, relaxed atmosphere, as well as interchangeable elements, such as floor gels, acrylic walls, and panel dividers allowing a quick conversion of the accent color from blue to red.
 
 alliance_atlantis:
-  category: exhibits_under_1000_feet
-  industry: consumer_goods_services
-  department: exhibits
+  id: 53
+  category_id: 10
+  industry_id: 8
+  department_id: 3
   client: Alliance Atlantis
   title: Alliance Atlantis
   tag_line: "Alliance Atlantis Entertainment Group, Licensing Show"
@@ -538,9 +591,10 @@ alliance_atlantis:
     Alliance Atlantis approached Taylor at the last minute for help to meet the deadline for the Licensing show in New York in 2006. They required private meeting areas, casual seating, and a reception, all supported with plasmas for presentation purposes. This was a custom rental solution, fabricated primarily from our proprietary aluminum extrusion, OZ. The space included large format stretched fabric image panels, custom rental furniture and integrated display units.
   
 audi:
-  category: exhibits_under_1000_feet
-  industry: automotive
-  department: exhibits
+  id: 54
+  category_id: 10
+  industry_id: 1
+  department_id: 3
   client: Audi
   title: Audi
   tag_line: "Audi: IIDEX, NeoCon"
@@ -548,8 +602,9 @@ audi:
     Taylor worked with both Audi & OCAD to develop an exhibit that would showcase the Audi vehicles along with the students work. This was a student designed display that The Taylor Group fabricated & installed at the Toronto Interior Design Show.
 
 chevron:
-  category: exhibits_under_1000_feet
-  department: exhibits
+  id: 55
+  category_id: 10
+  department_id: 3
   client: Chevron
   title: Chevron
   tag_line: "Chevron"
@@ -557,9 +612,10 @@ chevron:
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
   
 greenwich_aerogroup:
-  category: exhibits_under_1000_feet
-  industry: aviation
-  department: exhibits
+  id: 56
+  category_id: 10
+  industry_id: 10
+  department_id: 3
   client: Greenwich AeroGroup
   title: Greenwich AeroGroup
   tag_line: "Greenwich AeroGroup"
@@ -567,9 +623,10 @@ greenwich_aerogroup:
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       
 ingenico:
-  category: exhibits_under_1000_feet
-  industry: technology
-  department: exhibits
+  id: 57
+  category_id: 10
+  industry_id: 6
+  department_id: 3
   client: Ingenico
   title: Ingenico
   tag_line: "Ingenico Las Vegas 2007"
@@ -577,9 +634,10 @@ ingenico:
     Ingencio was looking for a exhibit with bright, fun colours to showcase their series of handheld devices. This custom rental solution involved an interior lit white fabric skin on truss, with a series of hanging graphics and devices in the iZone lounge, and a series of working devices on custom display counters.
 
 pfizer:
-  category: exhibits_under_1000_feet
-  industry: healthcare
-  department: exhibits
+  id: 58
+  category_id: 10
+  industry_id: 3
+  department_id: 3
   client: Pfizer
   title: Pfizer
   tag_line: "Pfizer"
@@ -587,9 +645,10 @@ pfizer:
     The Pfizer exhibit was a feature at the World AIDS Conference 2006 and displayed the renowned artwork of Joe Average.  Produced and installed by The Taylor Group, designed by Photosound.  It was a major hit at the conference.
 
 smart_pill:
-  category: exhibits_under_1000_feet
-  industry: healthcare
-  department: exhibits
+  id: 59
+  category_id: 10
+  industry_id: 3
+  department_id: 3
   client: Smart Pill
   title: Smart Pill
   tag_line: "Smart Pill"
@@ -597,8 +656,9 @@ smart_pill:
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
   
 wigwam:
-  category: exhibits_under_1000_feet
-  department: exhibits
+  id: 60
+  category_id: 10
+  department_id: 3
   client: Wigwam
   title: Wigwam
   tag_line: "Wigwam; Outdoor Retailer Show 2005"
@@ -608,9 +668,10 @@ wigwam:
   
 # exhibits_custom_rentals
 aldar:
-  category: exhibits_custom_rentals
-  industry: real_estate
-  department: exhibits
+  id: 61
+  category_id: 11
+  industry_id: 9
+  department_id: 3
   client: Aldar
   title: Aldar
   tag_line: "ICSC Show, Las Vegas 2007"
@@ -619,9 +680,10 @@ aldar:
     With 8000 sq.ft. of exhibit space, the task was to effectively plan the space and direct traffic flow. With a simple open plan, as well as clean, elegant and simple architectural forms and finishes this was accomplished.
 
 cadillac_fairview:
-  category: exhibits_custom_rentals
-  industry: consumer_goods_services
-  department: exhibits
+  id: 62
+  category_id: 11
+  industry_id: 8
+  department_id: 3
   client: Cadillac Fairview
   title: Cadillac Fairview
   tag_line: "Cadillac Fairview; ISCS 2006"
@@ -629,8 +691,9 @@ cadillac_fairview:
     The challenge for this nation-wide commercial property-owner of shopping malls, was to create an environment that linked two distinct exhibit spaces into one cohesive single unit. The Taylor Group produced and designed an environment that included brochures and images from nationwide shopping mall locations, plus seating, a cafe and meeting areas for 20-40 people.
 
 hd_dvd:
-  category: exhibits_custom_rentals
-  department: exhibits
+  id: 63
+  category_id: 11
+  department_id: 3
   client: HD DVD
   title: HD DVD
   tag_line: "HD DVD at CES 2008"
@@ -638,9 +701,10 @@ hd_dvd:
     Working closely with GMR Marketing, Taylor designed a dark (black, red and grey) exhibit to ensure that the controlled lighting in the space would showcase the extensive range of movies on LCD screens throughout the environment. The exhibit perimeter was framed by large scrim walls (10 ft wide  x 20 ft tall) creating a layered consumer experience. The outer layer housed the movies and players in various demo scenarios. The inner layer was a theatre featuring the latest productions and format upgrades.
 
 hr_textron:
-  category: exhibits_custom_rentals
-  industry: aviation
-  department: exhibits
+  id: 64
+  category_id: 11
+  industry_id: 10
+  department_id: 3
   client: HR Textron
   title: HR Textron
   tag_line: "HR Textron; HAI - Heli Expo"
@@ -648,9 +712,10 @@ hr_textron:
     HR Textron was looking for an elegant, inviting lounge and meeting areas for extensive client and consumer interaction at the show.  The exhibit met these goals utilizing dark woods, rich fabric and extensive attention to the finished details including planting, lighting and furniture choices.
 
 rim_blackberry:
-  category: exhibits_custom_rentals
-  industry: technology
-  department: exhibits
+  id: 65
+  category_id: 11
+  industry_id: 6
+  department_id: 3
   client: RIM Blackberry
   title: RIM Blackberry
   tag_line: "RIM Blackberry CES 2009"
@@ -662,8 +727,9 @@ rim_blackberry:
     (Event Marketer)
 
 teknion:
-  category: exhibits_custom_rentals
-  department: exhibits
+  id: 66
+  category_id: 11
+  department_id: 3
   client: Teknion
   title: Teknion
   tag_line: "Teknion Furniture Systems"
@@ -671,8 +737,9 @@ teknion:
     For this prestigious design show, The Taylor Group built an impressive two island exhibit. Using fabric, lighting and dramatic material combinations, Taylor created a spectacular environment utilizing 7,200 square feet of fabric and 870 fluorescent tube lights. Designed by Burdifilek, from Toronto, this exhibit went on to win the Readers Choice, Best Exhibit in 20 years, from Exhibitor Magazine in 2006.
 
 virgin_charter_air:
-  category: exhibits_custom_rentals
-  department: exhibits
+  id: 67
+  category_id: 11
+  department_id: 3
   client: Virgin Charter Air
   title: Virgin Charter Air
   tag_line: "Virgin Charter Air"
@@ -680,8 +747,9 @@ virgin_charter_air:
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 xbox:
-  category: exhibits_custom_rentals
-  department: exhibits
+  id: 68
+  category_id: 11
+  department_id: 3
   client: Microsoft
   title: Xbox
   tag_line: "Xbox; E3 Gaming Show, 2005"
@@ -690,9 +758,10 @@ xbox:
 
 # interiors
 honda_interior:
-  category: interiors
-  industry: automotive
-  department: retail_environments
+  id: 69
+  category_id: 12
+  industry_id: 1
+  department_id: 1
   client: Honda
   title: Honda Interior
   tag_line: "Honda Dealership: Consumer Zones"
@@ -700,8 +769,9 @@ honda_interior:
     The Honda Dealership in Markham was fabricated and installed by Taylor. This was a roll out program for Honda dealerships across Canada and was implemented into 15 locations over several months.
 
 lookfab:
-  category: interiors
-  department: retail_environments
+  id: 70
+  category_id: 12
+  department_id: 1
   client: LookFab
   title: LookFab
   tag_line: "LookFab Permanent Site for P&G"
@@ -709,8 +779,9 @@ lookfab:
     The extension of the LookFab Temporary Studio, this facility is in P&G's corporate Headquarters as a permanent experiential display.
 
 mullen_agency:
-  category: interiors
-  department: retail_environments
+  id: 71
+  category_id: 12
+  department_id: 1
   client: Mullen Agency
   title: Mullen Agency
   tag_line: "Mullen Advertising Corporate Interior"
@@ -719,9 +790,10 @@ mullen_agency:
     Taylor's own proprietary OZ aluminum extrusion system was used as a structural and finishing element.
 
 sbli_office:
-  category: interiors
-  industry: finance
-  department: retail_environments
+  id: 72
+  category_id: 12
+  industry_id: 2
+  department_id: 1
   client: SBLI Agency
   title: SBLI Agency
   tag_line: "SBLI Insurance, Corporate Headquarters"
@@ -729,8 +801,9 @@ sbli_office:
     The Taylor Group was the millwork fabricator for items including the reception desk, built-in cabinetry, creative room and filing areas.
 
 virgin_mobile_nj:
-  category: interiors
-  department: retail_environments
+  id: 73
+  category_id: 12
+  department_id: 1
   client: Virgin Mobile
   title: Virgin Mobile NJ
   tag_line: "New Jersey Offices"
@@ -738,8 +811,9 @@ virgin_mobile_nj:
     Virgin Mobile USA (VMU) hired Gensler, NY to design a fun office space with modern graphics and a loose, kitchy, urban feel to enhance the 'fun at work' atmosphere inherent at VMU. Custom graphic wall patterns, spray-painted logos, integrated magnetic display walls, painted chandeliers and a 'shrine' to Richard Branson were all designed to accomplish this feel while maintaining the existing useable and flexible work environment. Taylor was hired as a one-stop resource to 'turn-key' the project: graphics, millwork, display cases, custom elements, coordination and installation. Materials included metal, wood, environmentally safe graphic vinyl, BASF paint treatments and acrylic.
 
 virgin_mobile_nyc:
-  category: interiors
-  department: retail_environments
+  id: 74
+  category_id: 12
+  department_id: 1
   client: Virgin Mobile
   title: Virgin Mobile NYC
   tag_line: "New York Offices"

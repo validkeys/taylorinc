@@ -13,7 +13,7 @@
   </p>
   <p>
     <% if @object.transition_image.file? -%>
-      <%= link_to image_tag(@object.transition_image.url(:thumb), :class => 'thumb'), @object.transition_image.url, :class => 'thumb' %>
+      <%= link_to image_tag(@object.transition_image.url(:small), :class => 'thumb'), @object.transition_image.url, :class => 'thumb' %>
     <% else -%>
       <%= f.label :transition_image, 'Upload Transition Image' %>
     <% end -%>

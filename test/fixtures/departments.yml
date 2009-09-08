@@ -1,4 +1,5 @@
 retail_environments:
+  id: 1
   position: 1
   title: "Retail & Environments"
   tag_line: "Project & Program Management"
@@ -26,6 +27,7 @@ retail_environments:
   color_bg: "0xc4f4dc"
 
 events:
+  id: 2
   position: 2
   title: Events
   tag_line: "Event Management"
@@ -53,6 +55,7 @@ events:
   color_bg: "0xc4f4dc"
     
 exhibits:
+  id: 3
   position: 3
   title: Exhibits
   tag_line: "Exhibit & Program Management"
@@ -80,6 +83,7 @@ exhibits:
   color_bg: "0xc4f4dc"
 
 interactive:
+  id: 4
   position: 4
   title: Interactive
   tag_line: "Taylor Interactive Experiences"
@@ -107,6 +111,7 @@ interactive:
   color_bg: "0xc4f4dc"
       
 museums:
+  id: 5
   position: 5
   title: Museums
   tag_line: "Museums"

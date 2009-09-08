@@ -6,7 +6,8 @@ class Section < ActiveRecord::Base
   validates_length_of :title, :within => 2..100
   
   has_attached_file :image,
-                    :styles => { :original => "800x600>", :thumb => "300x300>" },
+                    :styles => { :"1080" => "1920x1080#", :"720" => "1280x720#", :small => "240x150#", :thumb => "180x113#" },
+                    :default_style => :"720",
                     :path => ":rails_root/public/attachments/sections/:id/:style_:basename.:extension",
                     :url => "/attachments/sections/:id/:style_:basename.:extension"
   

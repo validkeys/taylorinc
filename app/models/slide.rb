@@ -7,12 +7,14 @@ class Slide < ActiveRecord::Base
   validates_length_of :url, :within => 2..255
   
   has_attached_file :image,
-                    :styles => { :original => "800x600>", :thumb => "300x300>" },
+                    :styles => { :"1080" => "1920x1080#", :"720" => "1280x720#", :small => "240x150#", :thumb => "180x113#" },
+                    :default_style => :"720",
                     :path => ":rails_root/public/attachments/slides/:id/:style_:basename.:extension",
                     :url => "/attachments/slides/:id/:style_:basename.:extension"
   
   has_attached_file :transition_image,
-                    :styles => { :original => "800x600>", :thumb => "300x300>" },
+                    :styles => { :"1080" => "1920x1080#", :"720" => "1280x720#", :small => "240x150#", :thumb => "180x113#" },
+                    :default_style => :"720",
                     :path => ":rails_root/public/attachments/slides/:id/:style_transition_:basename.:extension",
                     :url => "/attachments/slides/:id/:style_transition_:basename.:extension"
   

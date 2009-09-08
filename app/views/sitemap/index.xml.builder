@@ -97,64 +97,28 @@ xml.urlset "xmlns" => "http://www.google.com/schemas/sitemap/0.84" do
     end
   end
   
-  #-- Services
+  #-- Sections
   xml.url do
-    xml.loc         section_pages_url(@services)
+    xml.loc         sections_url
     xml.lastmod     w3c_date(Time.now)
     xml.changefreq  "weekly"
   end
-  for page in @services.pages
+  for section in @sections
     xml.url do
-      xml.loc         section_page_url(@services, page)
-      xml.lastmod     w3c_date(page.updated_at)
+      xml.loc         section_url(section)
+      xml.lastmod     w3c_date(section.updated_at)
       xml.changefreq  "weekly"
       xml.priority    0.8
+    end
+    for page in section.pages
+      xml.url do
+        xml.loc         section_page_url(section, page)
+        xml.lastmod     w3c_date(page.updated_at)
+        xml.changefreq  "weekly"
+        xml.priority    0.8
+      end
     end
   end
   
-  #-- News
-  xml.url do
-    xml.loc         section_pages_url(@news)
-    xml.lastmod     w3c_date(Time.now)
-    xml.changefreq  "weekly"
-  end
-  for page in @news.pages
-    xml.url do
-      xml.loc         section_page_url(@news, page)
-      xml.lastmod     w3c_date(page.updated_at)
-      xml.changefreq  "weekly"
-      xml.priority    0.8
-    end
-  end
-  
-  #-- About Us
-  xml.url do
-    xml.loc         section_pages_url(@about)
-    xml.lastmod     w3c_date(Time.now)
-    xml.changefreq  "weekly"
-  end
-  for page in @about.pages
-    xml.url do
-      xml.loc         section_page_url(@about, page)
-      xml.lastmod     w3c_date(page.updated_at)
-      xml.changefreq  "weekly"
-      xml.priority    0.8
-    end
-  end
-  
-  #-- Legal
-  xml.url do
-    xml.loc         section_pages_url(@legal)
-    xml.lastmod     w3c_date(Time.now)
-    xml.changefreq  "weekly"
-  end
-  for page in @about.pages
-    xml.url do
-      xml.loc         section_page_url(@legal, page)
-      xml.lastmod     w3c_date(page.updated_at)
-      xml.changefreq  "weekly"
-      xml.priority    0.8
-    end
-  end
   
 end

@@ -1,17 +1,21 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 services:
+  id: 1
   permalink: $LABEL
   title: Services
 
 news:
+  id: 2
   permalink: $LABEL
   title: News
 
 about:
+  id: 3
   permalink: $LABEL
   title: About Us
 
 legal:
+  id: 4
   permalink: $LABEL
   title: Legal

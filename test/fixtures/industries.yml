@@ -1,41 +1,51 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 automotive:
+  id: 1
   position: 1
   title: Automotive
 
 finance:
+  id: 2
   position: 2
   title: Finance
 
 healthcare:
+  id: 3
   position: 3
   title: Healthcare
 
 government:
+  id: 4
   position: 4
   title: Government
 
 manufacturing:
+  id: 5
   position: 5
   title: Manufacturing
 
 technology:
+  id: 6
   position: 6
   title: Technology
 
 museums:
+  id: 7
   position: 7
   title: Museums
 
 consumer_goods_services:
+  id: 8
   position: 8
   title: Consumer Goods and Services
 
 real_estate:
+  id: 9
   position: 9
   title: Real Estate
 
 aviation:
+  id: 10
   position: 10
   title: Aviation

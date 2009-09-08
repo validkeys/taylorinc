@@ -1,6 +1,6 @@
-<tr class="<%= cycle("even_row", "odd_row") -%>">
-  <td><%=h row.title %></td>
-  <td><%= link_to 'Preview', photo_path(row) %></td>
-  <td><%= link_to 'Edit', edit_object_path(row) %></td>
-  <td><%= link_to 'Delete', object_path(row), :confirm => 'Are you sure?', :method => :delete %></td>
-</tr>
+<li class="photo" id="photo_<%= row.id %>">
+  <%= image_tag(row.image(:thumb), :alt => row.title) %><br />
+  <%= link_to('Preview', row.image.url, :class => 'thumb', :title => row.title) %> | 
+  <%= link_to('Edit', edit_object_path(row)) %> | 
+  <%= link_to 'Delete', object_path(row), :confirm => 'Are you sure? This cannot be undone!', :method => :delete %>
+</li>

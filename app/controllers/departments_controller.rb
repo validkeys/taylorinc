@@ -3,8 +3,8 @@ class DepartmentsController < ApplicationController
   
   actions :index, :show #only handle index and show actions
   
-  index.wants.xml { render :xml => @collection }
-  show.wants.xml { render :xml => @object }
+  index.wants.xml { render  :template => "departments/index.xml" }
+  show.wants.xml { render  :template => "departments/show.xml" }
 end
 
 

@@ -1,6 +1,6 @@
-<h1>Pages</h1>
-<ul>
-  <% for page in @pages -%>
-    <li><%= link_to h(page.title), object_path(page), :title => h(page.title) %></li>
-  <% end -%>
-</ul>
+<h1><%= parent_object.title %></h1>
+<% for page in @pages -%>
+  <p>
+    <%= link_to page.title, object_path %>
+  </p>
+<% end -%>

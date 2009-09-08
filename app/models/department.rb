@@ -1,6 +1,9 @@
 class Department < ActiveRecord::Base
   
   has_many :projects, :order => 'title'
+  #has_many :featured_projects, :class_name => "project", :foreign_key => "department_id", :conditions => "featured = true", :order => 'title'
+  has_many :categories, :through => :projects
+  has_many :industries, :through => :projects
   
   acts_as_list
   
@@ -9,7 +12,8 @@ class Department < ActiveRecord::Base
   
   # acts_as_list
   has_attached_file :image,
-                    :styles => { :original => "800x600>", :thumb => "300x300>" },
+                    :styles => { :"1080" => "1920x1080#", :"720" => "1280x720#", :small => "240x150#", :thumb => "180x113#" },
+                    :default_style => :"720",
                     :path => ":rails_root/public/attachments/departments/:id/:style_:basename.:extension",
                     :url => "/attachments/departments/:id/:style_:basename.:extension"
   

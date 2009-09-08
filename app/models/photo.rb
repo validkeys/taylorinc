@@ -7,7 +7,8 @@ class Photo < ActiveRecord::Base
   validates_length_of :title, :within => 5..128, :allow_nil => true, :allow_blank => true
   
   has_attached_file :image,
-                    :styles => { :original => "700x466", :cover => "150x100!", :thumb => "68x50!" },
+                    :styles => { :"1080" => "1920x1080#", :"720" => "1280x720#", :small => "240x150#", :thumb => "180x113#" },
+                    :default_style => :"720",
                     :path => ":rails_root/public/attachments/:id/:style_:basename.:extension",
                     :url => "/attachments/:id/:style_:basename.:extension"
                     

@@ -5,8 +5,8 @@ class ProjectsController < ApplicationController
   
   actions :index, :show #only handle index and show actions
   
-  index.wants.xml { render :xml => @collection }
-  show.wants.xml { render :xml => @object }
+  index.wants.xml { render  :template => "projects/index.xml" }
+  show.wants.xml { render  :template => "projects/show.xml" }
 end
 
 

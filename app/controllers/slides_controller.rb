@@ -3,8 +3,8 @@ class SlidesController < ApplicationController
   
   actions :index, :show #only handle index and show actions
   
-  index.wants.xml { render :xml => @collection }
-  show.wants.xml { render :xml => @object }
+  index.wants.xml { render  :template => "slides/index.xml" }
+  show.wants.xml { render  :template => "slides/show.xml" }
 end
 
 

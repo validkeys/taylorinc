@@ -11,7 +11,7 @@ class Admin::LocationsController < Admin::MainController
     begin
       location = Location.find(params[:id])
       location.insert_at(params[:position].to_i)
-      render :json => {:title => 'Success', :message => 'The location order was moved successfuly.'}
+      render :json => {:title => 'Success', :message => 'The location order was updated successfuly.'}
     rescue
       render :json => {:title => 'Error', :message => 'We ran into an error updating the location order.'}
     end

@@ -1,6 +1,7 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 sikorsky:
+  id: 1
   position: 1
   url: http://someurl
   title: Sikorsky
@@ -8,6 +9,7 @@ sikorsky:
     "We had a very ambitious design and amazingly tight timelines but Taylor pulled it off and mage it look easy"
 
 aldar:
+  id: 2
   position: 2
   url: http://someurl
   title: Aldar
@@ -16,18 +18,21 @@ aldar:
     "Taylor meets our international tradeshow program needs and exceeds our expectations everytime"
 
 rim_ces_rfid:
+  id: 3
   position: 3
   url: http://someurl
   title: RIM CES RFID Project
   summary: (Best of CES) - Best use of Technology CES Las Vegas 2009
 
 automotive:
+  id: 4
   position: 4
   url: http://someurl
   title: Automotive
   summary: Auto season is fast approaching. Check out the automotive section of our Portfolio for project examples.
 
 taylor_awarded:
+  id: 5
   position: 5
   url: http://someurl
   title: Taylor Awarded
@@ -35,6 +40,7 @@ taylor_awarded:
     "One of Canada's Best 50 Managed Companies"
 
 telus_koodo:
+  id: 6
   position: 6
   url: http://someurl
   title: Telus Koodo
@@ -43,6 +49,7 @@ telus_koodo:
     "The quality of work and seamless integration of technology was astounding"
 
 honda:
+  id: 7
   position: 7
   url: http://someurl
   title: Honda

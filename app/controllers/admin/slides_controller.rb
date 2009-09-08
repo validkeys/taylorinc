@@ -11,7 +11,7 @@ class Admin::SlidesController < Admin::MainController
     begin
       slide = Slide.find(params[:id])
       slide.insert_at(params[:position].to_i)
-      render :json => {:title => 'Success', :message => 'The slide order was moved successfuly.'}
+      render :json => {:title => 'Success', :message => 'The slide order was updated successfuly.'}
     rescue
       render :json => {:title => 'Error', :message => 'We ran into an error updating the slide order.'}
     end

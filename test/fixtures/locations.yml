@@ -1,6 +1,7 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 toronto:
+  id: 1
   position: 1
   title: Toronto
   street_1: 255 Biscayne Crescent
@@ -18,6 +19,7 @@ toronto:
     Email: "info@taylorinc.com":mailto:info@taylorinc.com  
 
 boston:
+  id: 2
   position: 2
   title: Boston
   street_1: 12 Forge Park
@@ -31,6 +33,7 @@ boston:
     Email: "info@taylorinc.com":mailto:info@taylorinc.com  
 
 las_vegas:
+  id: 3
   position: 3
   title: "Las Vegas"
   street_1: 4850 Statz Avenue
@@ -43,6 +46,7 @@ las_vegas:
     Email: "info@taylorinc.com":mailto:info@taylorinc.com  
 
 dallas:
+  id: 4
   position: 4
   title: Dallas
   street_1: 8701 Sterling Drive

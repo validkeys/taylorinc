@@ -2,49 +2,6 @@
 
 <ul>
   <li>
-    <%= link_to "Main XML", "main.xml", :title => 'Main XML' %>
-  </li>
-  <li>
-    <%= link_to "Categories", categories_path, :title => 'Categories' %> (<%= link_to 'xml', "#{categories_path}.xml" %>)
-    <ul>
-      <% for category in @categories -%>
-        <li><%= link_to h(category.title), category, :title => h(category.title) %> (<%= link_to 'xml', "#{category_path(category)}.xml" %>)</li>
-      <% end -%>
-    </ul>
-  </li>
-  <li>
-    <%= link_to "Departments", departments_path, :title => 'Departments' %> (<%= link_to 'xml', "#{departments_path}.xml" %>)
-    <ul>
-      <% for department in @departments -%>
-        <li><%= link_to h(department.title), department, :title => h(department.title) %> (<%= link_to 'xml', "#{department_path(department)}.xml" %>)</li>
-      <% end -%>
-    </ul>
-  </li>
-  <li>
-    <%= link_to "Industries", industries_path, :title => 'Industries' %> (<%= link_to 'xml', "#{industries_path}.xml" %>)
-    <ul>
-      <% for industry in @industries -%>
-        <li><%= link_to h(industry.title), industry, :title => h(industry.title) %> (<%= link_to 'xml', "#{industry_path(industry)}.xml" %>)</li>
-      <% end -%>
-    </ul>
-  </li>
-  <li>
-    <%= link_to "Contact", locations_path, :title => 'Contact' %> (<%= link_to 'xml', "#{locations_path}.xml" %>)
-    <ul>
-      <% for location in @locations -%>
-        <li><%= link_to h(location.title), location, :title => h(location.title) %> (<%= link_to 'xml', "#{location_path(location)}.xml" %>)</li>
-      <% end -%>
-    </ul>
-  </li>
-  <li>
-    <%= link_to "Projects", projects_path, :title => 'Projects' %> (<%= link_to 'xml', "#{projects_path}.xml" %>)
-    <ul>
-      <% for project in @projects -%>
-        <li><%= link_to "#{h(project.client)} #{h(project.title)}", project, :title => "#{h(project.client)} #{h(project.title)}" %> (<%= link_to 'xml', "#{project_path(project)}.xml" %>)</li>
-      <% end -%>
-    </ul>
-  </li>
-  <li>
     <%= link_to "Slides", slides_path, :title => 'Slides' %> (<%= link_to 'xml', "#{slides_path}.xml" %>)
     <ul>
       <% for slide in @slides -%>
@@ -53,34 +10,55 @@
     </ul>
   </li>
   <li>
-    <%= link_to "Services", section_pages_path(@services), :title => @services.title %> (<%= link_to 'xml', "#{section_pages_path(@services)}.xml" %>)
+    <%= link_to "Departments", departments_path, :title => 'Departments' %>
     <ul>
-      <% for page in @services.pages -%>
-        <li><%= link_to h(page.title), section_page_path(@services, page), :title => h(page.title) %> (<%= link_to 'xml', "#{section_page_path(@services, page)}.xml" %>)</li>
+      <% for department in @departments -%>
+        <li><%= link_to h(department.title), department, :title => h(department.title) %> (<%= link_to 'xml', "#{department_path(department)}.xml" %>)</li>
       <% end -%>
     </ul>
   </li>
   <li>
-    <%= link_to "News", section_pages_path(@news), :title => @news.title %> (<%= link_to 'xml', "#{section_pages_path(@news)}.xml" %>)
+    <%= link_to "Main XML", "main.xml", :title => 'Main XML' %>
+  </li>
+  <li>
+    <%= link_to "Categories", categories_path, :title => 'Categories' %> (<%= link_to 'xml', "#{categories_path}.xml" %>)
     <ul>
-      <% for page in @news.pages -%>
-        <li><%= link_to h(page.title), section_page_path(@news, page), :title => h(page.title) %> (<%= link_to 'xml', "#{section_page_path(@news, page)}.xml" %>)</li>
+      <% for category in @categories -%>
+        <li><%= link_to h(category.title), category, :title => h(category.title) %></li>
       <% end -%>
     </ul>
   </li>
   <li>
-    <%= link_to "About Us", section_pages_path(@about), :title => @about.title %> (<%= link_to 'xml', "#{section_pages_path(@about)}.xml" %>)
+    <%= link_to "Industries", industries_path, :title => 'Industries' %> (<%= link_to 'xml', "#{industries_path}.xml" %>)
     <ul>
-      <% for page in @about.pages -%>
-        <li><%= link_to h(page.title), section_page_path(@about, page), :title => h(page.title) %> (<%= link_to 'xml', "#{section_page_path(@about, page)}.xml" %>)</li>
+      <% for industry in @industries -%>
+        <li><%= link_to h(industry.title), industry, :title => h(industry.title) %></li>
       <% end -%>
     </ul>
   </li>
   <li>
-    <%= link_to "Legal", section_pages_path(@legal), :title => @legal.title %> (<%= link_to 'xml', "#{section_pages_path(@legal)}.xml" %>)
+    <%= link_to "Projects", projects_path, :title => 'Projects' %>
     <ul>
-      <% for page in @legal.pages -%>
-        <li><%= link_to h(page.title), section_page_path(@legal, page), :title => h(page.title) %> (<%= link_to 'xml', "#{section_page_path(@legal, page)}.xml" %>)</li>
+      <% for project in @projects -%>
+        <li><%= link_to "#{h(project.client)} #{h(project.title)}", project, :title => "#{h(project.client)} #{h(project.title)}" %> (<%= link_to 'xml', "#{project_path(project)}.xml" %>)</li>
+      <% end -%>
+    </ul>
+  </li>
+  <li>
+    <%= link_to "Contact", locations_path, :title => 'Contact' %> (<%= link_to 'xml', "#{locations_path}.xml" %>)
+  </li>
+  <li>
+    <%= link_to "Sections", sections_path, :title => 'Sections' %>
+    <ul>
+      <% for section in @sections -%>
+        <li>
+          <%= link_to h(section.title), section, :title => h(section.title) %> (<%= link_to 'xml', "#{section_path(section)}.xml" %>)
+          <ul>
+            <% for page in section.pages -%>
+              <li><%= link_to h(page.title), section_page_path(section, page), :title => h(page.title) %></li>
+            <% end -%>
+          </ul>
+        </li>
       <% end -%>
     </ul>
   </li>

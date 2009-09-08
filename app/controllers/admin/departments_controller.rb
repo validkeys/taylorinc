@@ -11,7 +11,7 @@ class Admin::DepartmentsController < Admin::MainController
     begin
       department = Department.find(params[:id])
       department.insert_at(params[:position].to_i)
-      render :json => {:title => 'Success', :message => 'The department order was moved successfuly.'}
+      render :json => {:title => 'Success', :message => 'The department order was updated successfuly.'}
     rescue
       render :json => {:title => 'Error', :message => 'We ran into an error updating the department order.'}
     end

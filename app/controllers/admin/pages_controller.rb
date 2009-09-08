@@ -14,7 +14,7 @@ class Admin::PagesController < Admin::MainController
       section = Section.find(params[:section_id])
       page = section.pages.find(params[:id])
       page.insert_at(params[:position].to_i)
-      render :json => {:title => 'Success', :message => 'The page order was moved successfuly.'}
+      render :json => {:title => 'Success', :message => 'The page order was updated successfuly.'}
     rescue
       render :json => {:title => 'Error', :message => 'We ran into an error updating the page position.'}
     end

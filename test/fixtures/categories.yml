@@ -1,49 +1,61 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 product_launches:
+  id: 1
   position: 1
   title: Product Launches
 
 themed_environments:
+  id: 2
   position: 2
   title: Themed Environments
 
 retail:
+  id: 3
   position: 3
   title: Retail
 
 mobile:
+  id: 4
   position: 4
   title: Mobile
 
 corporate_theatre:
+  id: 5
   position: 5
   title: Corporate Theatre
 
 tours_meetings:
+  id: 6
   position: 6
   title: Tours and Meetings
 
 graphics_wayfinding:
+  id: 7
   position: 7
   title: Graphics and Way-Finding
 
 museums:
+  id: 8
   position: 8
   title: Museums
 
 exhibits_over_1000_feet:
+  id: 9
   position: 9
   title: Exhibits (Over 1000 feet)
 
 exhibits_under_1000_feet:
+  id: 10
   position: 10
   title: Exhibits (Under 1000 feet)
 
 exhibits_custom_rentals:
+  id: 11
   position: 11
   title: Exhibits (Custom Rentals)
 
 interiors:
+  id: 12
   position: 12
   title: Interiors
