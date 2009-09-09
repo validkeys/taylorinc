@@ -19,7 +19,7 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
-  config.gem 'will_paginate', :source => 'http://gems.github.com'
+  # config.gem 'will_paginate', :source => 'http://gems.github.com'
   config.gem 'friendly_id', :source => 'http://gems.github.com'
   config.gem 'RedCloth'
   #config.gem 'resource_controller'
