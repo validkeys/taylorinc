@@ -14,9 +14,13 @@ xml.section do
         xml.title category.title
       end
     end
+    # luk's xml doesn't account for industries
+    for industry in @department.industries
+      xml.item :href => industry_path(industry) do
+        xml.title industry.title
+      end
+    end
   end
-  # TODO
-  # we have categories, but what about industries?
   xml.featured do
     for project in @department.featured_projects
       xml.item :href => project_path(project)

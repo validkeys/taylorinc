@@ -1,6 +1,7 @@
 XML Files for Flash:
 
-departments/show.xml.builder
+slides/index.xml.builder (maps to main.xml)
 locations/index.xml.builder
-sections/show.xml.builder
-projects/show.xml.builder
+departments/[department].xml.builder
+sections/[section].xml.builder
+projects/[project].xml.builder

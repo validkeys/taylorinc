@@ -3,7 +3,7 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => 'slides'
   
   map.resources :main
-  map.resources :sitemap
+  map.resources :sitemap, :collection => {:flash => :get }
     
   map.resources :sections, :has_many => :pages
   map.resources :photos

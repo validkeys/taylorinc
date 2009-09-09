@@ -1,0 +1,26 @@
+<h1>XML Paths for Flash App</h1>
+
+<ul>
+  <li><%= link_to 'Main (Slides)', "#{slides_path}.xml" %></li>
+  <li>
+    Departments
+    <ul>
+      <% for department in @departments -%>
+        <li><%= link_to department.title, "#{department_path(department)}.xml", :title => department.title %></li>
+      <% end -%>
+    </ul>
+  </li>
+  <li><%= link_to 'Contact', "#{locations_path}.xml" %></li>
+  <li><%= link_to 'Services', "#{section_path('services')}.xml" %></li>
+  <li><%= link_to 'News', "#{section_path('news')}.xml" %></li>
+  <li><%= link_to 'About', "#{section_path('about')}.xml" %></li>
+  <li><%= link_to 'Legal', "#{section_path('legal')}.xml" %></li>
+  <li>
+    Projects
+    <ul>
+      <% for project in @projects -%>
+        <li><%= link_to project.title, "#{project_path(project)}.xml", :title => project.title %></li>
+      <% end -%>
+    </ul>
+  </li>
+</ul>
