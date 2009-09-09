@@ -26,3 +26,6 @@ config.action_view.cache_template_loading            = true
 
 # Enable threaded mode
 # config.threadsafe!
+
+# path where image magic is installed
+IMAGE_MAGICK_PATH = "/usr/bin"
