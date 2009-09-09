@@ -4,8 +4,8 @@ class Admin::PhotosController < Admin::MainController
   
   actions :all, :except => :show
   
-  # redirect to edit path on create and update instead of show
-  [create, update].each { |action| action.wants.html { redirect_to edit_object_path } }
+  # redirect to index path on create and update instead of show
+  [create, update].each { |action| action.wants.html { redirect_to collection_path } }
   
   # update an individual photo's position
   def update_position
