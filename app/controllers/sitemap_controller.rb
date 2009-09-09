@@ -1,7 +1,7 @@
 class SitemapController < ApplicationController
   
   layout nil
-  caches_page :index
+  #caches_page :index
   
   def index
     load_data
