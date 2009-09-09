@@ -7,7 +7,7 @@
 </div>
 <div id="resources">
   <%= image_tag(@project.image.url(:small), :alt => @project.title, :style => 'margin-bottom: 10px;') if @project.image? %>
-  <h3><%= h(@project.title) %></h3>
+  <h1><%= h(@project.title) %></h1>
   <p>
     <%=h @project.description %>
   </p>

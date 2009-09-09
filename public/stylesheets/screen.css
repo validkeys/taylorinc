@@ -15,8 +15,10 @@
 /* Page
 -------------------------------------------------------------- */
 
-h1 h2 { color: #444;}
-h3, h4, h5, h6 { color: #be7503; }
+h1, h2, h3, h4, h5, h6 { color: #be7503; }
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.3em; }
+h3 { font-size: 1.1em; }
 #page {
 	margin: 0 auto; 
 	width: 950px; 
@@ -67,7 +69,7 @@ a:hover, a:active {
 #content { float: left; width: 620px; margin-right: 80px;}
 
 #resources { float: left; width: 250px; }
-#resources h3 { color: #888; }
+#resources h1 { color: #888; }
 #resources p { color: #888; }
 #resources li { color: #888; }
 

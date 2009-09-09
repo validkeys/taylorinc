@@ -1,24 +1,24 @@
 <div id="content">
-  <h3><%=h @department.title %></h3>
+  <h1><%=h @department.title %></h1>
   <p>
     <%= link_to(image_tag(@department.image.url(:small), :class => 'inline'), @department.image.url(:"640"), :class => 'thumb', :title => @department.title) if @department.image? %>
     <%= RedCloth.new(@department.description).to_html %>
   </p>
 </div>
 <div id="resources">
-  <h3>Related Projects</h3>
+  <h1>Related Projects</h1>
   <ul>
   <% for project in @department.projects -%>
     <li><%= link_to project.title, project_path(project) %></li>
   <% end -%>
   </ul>
-  <h3>Related Categories</h3>
+  <h1>Related Categories</h1>
   <ul>
   <% for category in @department.categories -%>
     <li><%= link_to category.title, category_projects_path(category) %></li>
   <% end -%>
   </ul>
-  <h3>Related Industries</h3>
+  <h1>Related Industries</h1>
   <ul>
   <% for industry in @department.industries -%>
     <li><%= link_to industry.title, industry_projects_path(industry) %></li>

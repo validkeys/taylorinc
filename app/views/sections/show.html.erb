@@ -5,7 +5,7 @@
   </p>
 </div>
 <div id="resources">
-  <h3><%=h @section.title %></h3>
+  <h1><%=h @section.title %></h1>
   <ul>
   <% for page in @section.pages -%>
     <li><%= link_to page.title, section_page_path(@section, page) %></li>

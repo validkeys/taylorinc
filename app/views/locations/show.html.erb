@@ -1,5 +1,5 @@
 <div id="content">
-  <h3><%= @location.title %></h3>
+  <h1><%= @location.title %></h1>
   <%= link_to(image_tag(@location.image.url(:small), :class => 'inline'), @location.image.url(:"640"), :class => 'thumb', :title => @location.title) if @location.image? %>
   <p>
     <%= @location.street_1 %><br />
@@ -12,7 +12,7 @@
   </p>
 </div>
 <div id="resources">
-  <h3>Contact Us</h3>
+  <h1>Contact Us</h1>
   <ul>
   <% for location in @locations -%>
     <li><%= (@location.id == location.id) ? location.title : link_to(location.title, location_path(location)) %></li>
