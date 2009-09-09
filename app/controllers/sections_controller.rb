@@ -5,6 +5,8 @@ class SectionsController < ApplicationController
   
   index.wants.xml { render  :template => "sections/index.xml" }
   show.wants.xml { render  :template => "sections/show.xml" }
+  
+  show.wants.html { redirect_to section_page_path(@section, @section.pages.first) }
 end
 
 

@@ -1,7 +1,37 @@
-<h1>Projects</h1>
-<ul>
-  <% for project in @projects -%>
-    <li><%= link_to "#{h(project.client)} #{h(project.title)}", object_path(project), :title => "#{h(project.client)} #{h(project.title)}" %></li>
+<div id="content">
+  <ul id="photos">
+    <% for project in @projects -%>
+      <li style="height: 113px; margin-right: 15px;">
+        <a href="<%= project_path(project) %>" title="<%= project.title %>">
+        <% if project.image? -%>
+          <%= image_tag(project.image.url(:thumb), :alt => project.title) %>
+        <% elsif project.photo -%>
+          <%= image_tag(project.photo.image.url(:thumb), :alt => project.title) %>
+        <% end -%>
+        </a>
+      </li>
+    <% end -%>
+  </ul>
+  <div style="float: left; width: 100%;">
+    <strong><%= will_paginate collection %></strong>
+  </div>
+</div>
+<div id="resources">
+  <h3>Categories</h3>
+  <ul>
+  <% for category in @categories -%>
+    <li>
+      <%= (parent? and parent_object.is_a?(Category) and parent_object.id == category.id) ? category.title : link_to(category.title, category_projects_path(category)) -%>
+    </li>
   <% end -%>
-</ul>
+  </ul>
+  <h3>Industries</h3>
+  <ul>
+  <% for industry in @industries -%>
+    <li>
+      <%= (parent? and parent_object.is_a?(Industry) and parent_object.id == industry.id) ? industry.title : link_to(industry.title, industry_projects_path(industry)) -%>
+    </li>
+  <% end -%>
+  </ul>
+</div>
 

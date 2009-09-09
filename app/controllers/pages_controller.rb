@@ -3,10 +3,7 @@ class PagesController < ApplicationController
   
   belongs_to :section
   
-  actions :index, :show #only handle index and show actions
-  
-  index.wants.xml { render :xml => @collection }
-  show.wants.xml { render :xml => @object }
+  actions :show # only handle the show action
 end
 
 

@@ -5,6 +5,8 @@ class DepartmentsController < ApplicationController
   
   index.wants.xml { render  :template => "departments/index.xml" }
   show.wants.xml { render  :template => "departments/show.xml" }
+  
+  show.wants.html { @departments = Department.find :all, :order => 'position'  }
 end
 
 

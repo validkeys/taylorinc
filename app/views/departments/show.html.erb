@@ -1,11 +1,27 @@
-<h1><%=h @department.title %></h1>
-<p>
-  <%= @department.description %>
-</p>
-<p>
-  <%= link_to 'Projects', department_projects_path(@department) %> |
-  <%= link_to 'Categories', department_categories_path(@department) %> |
-  <%= link_to 'Industries', department_industries_path(@department) %> |
-</p>
-
-<%= link_to 'Back', collection_path %>
+<div id="content">
+  <h3><%=h @department.title %></h3>
+  <p>
+    <%= link_to(image_tag(@department.image.url(:small), :class => 'inline'), @department.image.url(:"640"), :class => 'thumb', :title => @department.title) if @department.image? %>
+    <%= RedCloth.new(@department.description).to_html %>
+  </p>
+</div>
+<div id="resources">
+  <h3>Related Projects</h3>
+  <ul>
+  <% for project in @department.projects -%>
+    <li><%= link_to project.title, project_path(project) %></li>
+  <% end -%>
+  </ul>
+  <h3>Related Categories</h3>
+  <ul>
+  <% for category in @department.categories -%>
+    <li><%= link_to category.title, category_projects_path(category) %></li>
+  <% end -%>
+  </ul>
+  <h3>Related Industries</h3>
+  <ul>
+  <% for industry in @department.industries -%>
+    <li><%= link_to industry.title, industry_projects_path(industry) %></li>
+  <% end -%>
+  </ul>
+</div>

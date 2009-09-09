@@ -1,6 +1,0 @@
-<h1>Departments</h1>
-<ul>
-  <% for department in @departments -%>
-    <li><%= link_to h(department.title), object_path(department), :title => h(department.title) %></li>
-  <% end -%>
-</ul>

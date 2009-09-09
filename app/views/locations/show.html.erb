@@ -1,12 +1,22 @@
-<h1><%=h @location.title %></h1>
-<p>
-  <%=h @location.street_1 %><br />
-  <%=h @location.street_2 %><br />
-  <%=h @location.city %>, <%=h @location.province %><br />
-  <%=h @location.country %>, <%=h @location.postal_code %>
-</p>
-<p>
-  <%= @location.contact_info %>
-</p>
+<div id="content">
+  <h3><%= @location.title %></h3>
+  <%= link_to(image_tag(@location.image.url(:small), :class => 'inline'), @location.image.url(:"640"), :class => 'thumb', :title => @location.title) if @location.image? %>
+  <p>
+    <%= @location.street_1 %><br />
+    <%= "#{@location.street_2}<br />" unless @location.street_2.blank? %>
+    <%= @location.city %>, <%=h @location.province %><br />
+    <%= @location.country %>, <%=h @location.postal_code %>
+  </p>
+  <p>
+    <%= RedCloth.new(@location.contact_info).to_html %>
+  </p>
+</div>
+<div id="resources">
+  <h3>Contact Us</h3>
+  <ul>
+  <% for location in @locations -%>
+    <li><%= (@location.id == location.id) ? location.title : link_to(location.title, location_path(location)) %></li>
+  <% end -%>
+  </ul>
+</div>
 
-<%= link_to 'Back', collection_path %>

@@ -1,5 +1,6 @@
 class SitemapController < ApplicationController
   
+  layout nil
   caches_page :index
   
   def index
@@ -9,7 +10,10 @@ class SitemapController < ApplicationController
     @industries = Industry.find :all, :order => 'position'
     @locations = Location.find :all, :order => 'position'
     @projects = Project.find :all, :order => 'title'
-    @sections = Section.find :all, :order => 'title'
+    @services = Section.find 'services'
+    @about = Section.find 'about'
+    @news = Section.find 'news'
+    @legal = Section.find 'legal'
     
     respond_to do |format|
       format.html

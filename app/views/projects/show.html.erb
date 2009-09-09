@@ -1,6 +1,14 @@
-<h1><%= "#{h(@project.client)} #{h(@project.title)}" %></h1>
-<p>
-  <%=h @project.description %>
-</p>
-
-<%= link_to 'Back', collection_path %>
+<div id="content">
+  <ul id="photos">
+  <% for photo in @project.photos -%>
+    <li style="height: 113px; margin-right: 15px;"><%= link_to image_tag(photo.image.url(:thumb), :alt => photo.title), photo.image.url(:"640"), :title => photo.title, :class => 'thumb' %></li>
+  <% end -%>
+  </ul>
+</div>
+<div id="resources">
+  <%= link_to(image_tag(@project.image.url(:small), :alt => @project.title, :style => 'margin-bottom: 10px;'), @project.image.url(:"640"), :title => @project.title, :class => 'thumb') if @project.image? %>
+  <h3><%= h(@project.title) %></h3>
+  <p>
+    <%=h @project.description %>
+  </p>
+</div>

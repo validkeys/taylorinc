@@ -1,9 +1,15 @@
-<h1><%=h @slide.title %></h1>
-<p>
-  <%= link_to h(@slide.url), h(@slide.url) %>
-</p>
-<p>
-  <%=h @slide.description %>
-</p>
-
-<%= link_to 'Back', collection_path %>
+<div id="content" style="text-align:center;">
+  <%= image_tag(@slide.image.url(:"640"), :size => '640x360', :alt => @slide.title, :style => 'margin-bottom: 10px;') %><br />
+  <% @slides.each_with_index do |slide, index| -%>
+    <%= " | " if index > 0 %>
+    <%= (@slide.id == slide.id) ? slide.title : link_to(slide.title, slide_path(slide)) %>
+  <% end -%>
+</div>
+<div id="resources">
+  <h3>Departments</h3>
+  <ul>
+  <% for department in @departments -%>
+    <li><%= link_to department.title, department_path(department) %></li>
+  <% end -%>
+  </ul>
+</div>

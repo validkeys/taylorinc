@@ -1,6 +1,0 @@
-<h1>Categories</h1>
-<ul>
-  <% for category in @categories -%>
-    <li><%= link_to h(category.title), object_path(category), :title => h(category.title) %></li>
-  <% end -%>
-</ul>

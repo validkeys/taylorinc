@@ -6,9 +6,6 @@ $(document).ready(function() {
   
 	// validate all forms
 	$('form').validate();
-	
-	// lightbox thumbnails
-  $('a.thumb').lightBox();
 
 	// use markitup for editing textareas with a class of markup
 	$('textarea.markup').markItUp(mySettings);

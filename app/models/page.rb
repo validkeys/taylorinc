@@ -7,7 +7,7 @@ class Page < ActiveRecord::Base
   validates_length_of :title, :within => 2..100
   
   has_attached_file :image,
-                    :styles => { :"1080" => "1920x1080#", :"720" => "1280x720#", :small => "240x150#", :thumb => "180x113#" },
+                    :styles => { :"1080" => "1920x1080#", :"720" => "1280x720#", :"640" => "640x360#", :small => "240x150#", :thumb => "180x113#" },
                     :default_style => :"720",
                     :path => ":rails_root/public/attachments/pages/:id/:style_:basename.:extension",
                     :url => "/attachments/pages/:id/:style_:basename.:extension"

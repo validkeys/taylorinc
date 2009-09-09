@@ -8,6 +8,12 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
   
+  before_filter :load_globals
+  
+  def load_globals
+    @legal = Section.find('legal')
+  end
+  
   protected
     def correct_safari_and_ie_accept_headers
       ajax_request_types = ['text/javascript', 'application/json', 'text/xml']

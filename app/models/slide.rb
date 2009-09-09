@@ -7,7 +7,7 @@ class Slide < ActiveRecord::Base
   validates_length_of :url, :within => 2..255
   
   has_attached_file :image,
-                    :styles => { :"1080" => "1920x1080#", :"720" => "1280x720#", :small => "240x150#", :thumb => "180x113#" },
+                    :styles => { :"1080" => "1920x1080#", :"720" => "1280x720#", :"640" => "640x360#", :small => "240x150#", :thumb => "180x113#" },
                     :default_style => :"720",
                     :path => ":rails_root/public/attachments/slides/:id/:style_:basename.:extension",
                     :url => "/attachments/slides/:id/:style_:basename.:extension"

@@ -81,14 +81,16 @@ img.thumb {
 	display: block;
 	margin-top: 10px;
 }
-
+img.inline {
+	float: right;
+	margin: 0px 0px 10px 10px;
+}
 tr.row_drag {
 	background-color: #be7503;
 }
 
 #photos {
   margin: 0px;
-  height: 600px;
 }
 #photos li {
   list-style-type: none;
