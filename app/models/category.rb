@@ -11,8 +11,8 @@ class Category < ActiveRecord::Base
   has_attached_file :image,
                     :styles => { :"1080" => "1920x1080#", :"720" => "1280x720#", :"640" => "640x360#", :small => "240x150#", :thumb => "180x113#" },
                     :default_style => :"720",
-                    :storage => :s3,
-                    :s3_credentials => "#{RAILS_ROOT}/config/s3.yml"
+                    :path => ":rails_root/public/attachments/categories/:id/:style_:basename.:extension",
+                    :url => "/attachments/categories/:id/:style_:basename.:extension"
   
   has_attached_file :photo, :storage => :s3, :s3_credentials => "#{RAILS_ROOT}/config/s3.yml"
   
