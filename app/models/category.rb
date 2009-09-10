@@ -1,8 +1,8 @@
 class Category < ActiveRecord::Base
   
-  has_many :projects, :order => 'title'
-  has_many :departments, :through => :projects, :uniq => true
-  has_many :industries, :through => :projects, :uniq => true
+  has_many :projects, :order => 'title', :include => 'slugs'
+  has_many :departments, :through => :projects, :uniq => true, :include => 'slugs'
+  has_many :industries, :through => :projects, :uniq => true, :include => 'slugs'
   
   validates_presence_of :title
   validates_length_of :title, :within => 2..100

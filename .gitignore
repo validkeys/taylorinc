@@ -7,3 +7,4 @@ db/*.bz2
 doc/api
 doc/app
 public/attachments
+config/s3.yml
