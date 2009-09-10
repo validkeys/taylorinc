@@ -14,8 +14,6 @@ class Category < ActiveRecord::Base
                     :path => ":rails_root/public/attachments/categories/:id/:style_:basename.:extension",
                     :url => "/attachments/categories/:id/:style_:basename.:extension"
   
-  has_attached_file :photo, :storage => :s3, :s3_credentials => "#{RAILS_ROOT}/config/s3.yml"
-  
   validates_attachment_content_type :image, :content_type => ['image/jpeg', 'image/gif', 'image/png', 'image/pjpeg', 'image/x-png']
   
   has_friendly_id :title, :use_slug => true

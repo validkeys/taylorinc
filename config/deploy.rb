@@ -1,7 +1,7 @@
-set :application, "taylor-group"
+set :application, "taylorinc"
 set :user, "deploy"
 
-set :repository,  "git@github.com:validkeys/taylor-group.git"
+set :repository,  "git@github.com:validkeys/#{application}.git"
 
 set :deploy_to, "/var/www/#{application}"
 
