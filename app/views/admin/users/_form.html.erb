@@ -15,11 +15,11 @@
 </p>
 <p>
   <%= f.label :password %>
-  <%= f.password_field :password, :class => 'text', :minlength => '6', :maxlength => '100' %>
+  <%= f.password_field :password, :class => 'text', :minlength => '5', :maxlength => '40' %>
 </p>
 <p>
   <%= f.label(:password_confirmation, 'Confirm Password') %>
-  <%= f.password_field :password_confirmation, :class => 'text', :minlength => '6', :maxlength => '100' %>
+  <%= f.password_field :password_confirmation, :class => 'text', :minlength => '5', :maxlength => '40' %>
 </p>
 
 <%= render :partial => "admin/shared/buttons" %>

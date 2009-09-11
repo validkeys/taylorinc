@@ -1,5 +1,8 @@
 # This controller handles the login/logout function of the site.  
-class Admin::SessionsController < Admin::MainController
+class SessionsController < ApplicationController
+  resource_controller
+  
+  include AuthenticatedSystem # for restul_authentication plugin (used for site administration)
 
   def new
   end

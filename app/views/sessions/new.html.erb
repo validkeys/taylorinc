@@ -1,0 +1,21 @@
+<h1>Log In</h1>
+
+<% form_tag session_path do -%>
+  <p>
+    <%= label_tag 'login' %>
+    <%= text_field_tag 'login', @login, :class => 'text required', :minlength => '3', :maxlength => '40' %>
+  </p>
+  <p>
+    <%= label_tag 'password' %>
+    <%= password_field_tag 'password', nil, :class => 'text required', :minlength => '5', :maxlength => '40' %>
+  </p>
+  <p>
+    <%= label_tag 'remember_me' %>
+    <%= check_box_tag 'remember_me', '1', @remember_me %>
+  </p>
+  <p class="buttons">
+    <button type="submit" class="button positive">
+      <%= image_tag 'icons/key.png' %> Log In
+    </button>
+  </p>
+<% end %>
