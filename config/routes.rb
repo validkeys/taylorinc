@@ -15,9 +15,13 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :departments, :has_many => [:projects, :categories, :industries]
   
   map.admin '/admin', :controller => 'admin/main'
+  map.logout '/admin/logout', :controller => 'sessions', :action => 'destroy'
+  map.login '/admin/login', :controller => 'sessions', :action => 'new'
   
   # routes for the administration area
   map.namespace :admin do |admin|
+    admin.resources :users
+    admin.resource :session
     admin.resources :main, :collection => { :textile_preview => :post }
     admin.resources :sections do |section|
       section.resources :pages, :member => { :update_position => :put }

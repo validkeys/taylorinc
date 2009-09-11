@@ -1,0 +1,5 @@
+<h1>Editing Administrator</h1>
+
+<% form_for(@object, :url => object_path, :html => { :method => :put }) do |f| %>
+  <%= render :partial => "form", :locals => { :f => f } %>
+<% end %>

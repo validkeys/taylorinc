@@ -1,0 +1,5 @@
+<h1>New Administrator</h1>
+
+<% form_for(@object, :url => collection_path) do |f| %>
+  <%= render :partial => "form", :locals => { :f => f } %>
+<% end %>

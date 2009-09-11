@@ -1,0 +1,9 @@
+rapind:
+  id:                        1
+  login:                     rapind
+  email:                     dave@rapin.com
+  salt:                      c4ea14fb557d48ba89514c21e9787478d0a3e789
+  crypted_password:          2ae415e534fe81fafa70ce5502fb1b84395fc9b3
+  created_at:                <%= 5.days.ago.to_s :db  %>
+  remember_token_expires_at: <%= 1.days.from_now.to_s %>
+  remember_token:            77de68daecd823babbb58edb1c8e14d7106e83bb

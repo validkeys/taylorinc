@@ -1,0 +1,25 @@
+<% @user.password = @user.password_confirmation = nil %>
+
+<%= f.error_messages %>
+<p>
+  <%= f.label :name %>
+  <%= f.text_field :name, :class => 'text required', :minlength => '3', :maxlength => '100' %>
+</p>
+<p>
+  <%= f.label :login %>
+    <%= f.text_field :login, :class => 'text required', :minlength => '3', :maxlength => '40', :disabled => !@user.login.blank? %>
+</p>
+<p>
+  <%= f.label :email %>
+  <%= f.text_field :email, :class => 'text required', :minlength => '4', :maxlength => '100' %>
+</p>
+<p>
+  <%= f.label :password %>
+  <%= f.password_field :password, :class => 'text', :minlength => '6', :maxlength => '100' %>
+</p>
+<p>
+  <%= f.label(:password_confirmation, 'Confirm Password') %>
+  <%= f.password_field :password_confirmation, :class => 'text', :minlength => '6', :maxlength => '100' %>
+</p>
+
+<%= render :partial => "admin/shared/buttons" %>
