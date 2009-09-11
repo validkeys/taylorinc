@@ -16,4 +16,4 @@ test:
 production:
   <<: *login
   socket: /var/run/mysqld/mysqld.sock
-  password: 
+  password: gl0b@c0r3

@@ -12,7 +12,7 @@ set :deploy_via, :remote_cache
 
 ssh_options[:port] = 30000
 
-set :domain, "#{application}.rapin.com" #"#{application}.com"
+set :domain, "#{application}.globacore.com" #"#{application}.com"
 role :app, domain
 role :web, domain
 role :db, domain, :primary => true
