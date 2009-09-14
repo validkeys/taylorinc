@@ -7,8 +7,10 @@ class Admin::ProjectsController < Admin::MainController
   
   before_filter :build_selects, :only => [:new, :edit, :create, :update]
   
-  # redirect to edit path on create and update instead of show
-  [create, update].each { |action| action.wants.html { redirect_to edit_object_path } }
+  # redirect to collection path on create and update instead of show
+  [create, update].each { |action| action.wants.html { 
+    params[:page].blank? ? redirect_to(collection_path) : redirect_to("#{collection_path}?page=#{params[:page]}")
+  } }
   
   #[new_action, edit].each { |action| action.wants.html { build_selects }}
   

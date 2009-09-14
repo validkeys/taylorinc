@@ -5,8 +5,8 @@ class Admin::PagesController < Admin::MainController
   
   actions :all, :except => :show
   
-  # redirect to edit path on create and update instead of show
-  [create, update].each { |action| action.wants.html { redirect_to edit_object_path } }
+  # redirect to collection path on create and update instead of show
+  [create, update].each { |action| action.wants.html { redirect_to collection_path } }
   
   # update an individual page's position
   def update_position

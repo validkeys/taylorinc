@@ -3,7 +3,7 @@
     <%= image_tag 'icons/key.png' %> <%= (controller.action_name == 'new') ? 'Create' : 'Update' %>
   </button>
   <% if !collection_path.blank? -%>
-    <a class="button negative" href="<%= collection_path %>" id="cancel">
+    <a class="button negative" href="<%= params[:page].blank? ? collection_path : "#{collection_path}?page=#{params[:page]}" %>" id="cancel">
       <%= image_tag 'icons/cross.png' %> Cancel
     </a>
   <% end -%>
