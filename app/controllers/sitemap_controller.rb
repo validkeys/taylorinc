@@ -26,6 +26,7 @@ class SitemapController < ApplicationController
       @industries = Industry.find :all, :order => 'position'
       @locations = Location.find :all, :order => 'position'
       @projects = Project.find :all, :order => 'title'
+      @sections = Section.find :all, :order => 'title'
       @services = Section.find 'services'
       @about = Section.find 'about'
       @news = Section.find 'news'

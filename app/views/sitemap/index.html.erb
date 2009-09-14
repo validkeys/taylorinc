@@ -13,7 +13,7 @@
     <h3>Departments</h3>
     <ul>
       <% for department in @departments -%>
-        <li><%= link_to h(department.title), department, :title => h(department.title) %> (<%= link_to 'xml', "#{department_path(department)}.xml" %>)</li>
+        <li><%= link_to h(department.title), department_path(department), :title => h(department.title) %> (<%= link_to 'xml', "#{department_path(department)}.xml" %>)</li>
       <% end -%>
     </ul>
   </li>

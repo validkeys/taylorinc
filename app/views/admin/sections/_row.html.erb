@@ -1,6 +1,6 @@
 <tr class="<%= cycle("even_row", "odd_row") -%>">
   <td><%=h row.title %></td>
   <td><%= link_to "Pages (#{row.pages.size})", admin_section_pages_path(row) %></td>
-  <td><%= link_to 'Preview', section_pages_path(row) %></td>
+  <td><%= link_to 'Preview', section_path(row) %></td>
   <td><%= link_to 'Edit', edit_object_path(row) %></td>
 </tr>
