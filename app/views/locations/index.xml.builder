@@ -15,6 +15,7 @@ xml.section do
         xml.province location.province
         xml.country location.country
         xml.postal_code location.postal_code
+        xml.email location.email
         xml.contact_info do
           xml.cdata!(location.contact_info)
         end
