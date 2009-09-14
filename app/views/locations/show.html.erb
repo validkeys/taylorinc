@@ -10,6 +10,7 @@
   <p>
     <%= RedCloth.new(@location.contact_info).to_html %>
   </p>
+  <%= "<p>Email: #{enkode_mail(@location.email, @location.email, title_text=nil, subject=nil)}</p>" unless @location.email.blank? %>
 </div>
 <div id="resources">
   <h1>Contact Us</h1>

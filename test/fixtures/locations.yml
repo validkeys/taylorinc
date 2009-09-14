@@ -9,6 +9,7 @@ toronto:
   province: "ON"
   country: Canada
   postal_code: L6W 4R2
+  email: info@taylorinc.com
   contact_info: |
     Toll free: (800) 605-6519
     Tel: (905) 451-5800
@@ -16,7 +17,6 @@ toronto:
     Management, Sales, Design, Engineering
     Fax: (905) 451-3338
     Project Mgmt, Fabrication, Graphics, I&D, Warehouse, Admin.
-    Email: "info@taylorinc.com":mailto:info@taylorinc.com  
 
 boston:
   id: 2
@@ -27,10 +27,10 @@ boston:
   province: MA
   country: U.S.A.
   postal_code: "02038"
+  email: info@taylorinc.com
   contact_info: |
     Tel: (508) 488-1800
     Fax: (508) 528-8947
-    Email: "info@taylorinc.com":mailto:info@taylorinc.com  
 
 las_vegas:
   id: 3
@@ -41,9 +41,9 @@ las_vegas:
   province: NV
   country: U.S.A.
   postal_code: "89081"
+  email: info@taylorinc.com
   contact_info: |
     Tel: (800) 605-6519
-    Email: "info@taylorinc.com":mailto:info@taylorinc.com  
 
 dallas:
   id: 4
@@ -55,7 +55,7 @@ dallas:
   province: TX
   country: U.S.A.
   postal_code: "75063"
+  email: info@taylorinc.com
   contact_info: |
     Tel: (214) 277-8000
     Fax: (214) 277-8012
-    Email: "info@taylorinc.com":mailto:info@taylorinc.com  
