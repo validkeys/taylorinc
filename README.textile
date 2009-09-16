@@ -1,72 +1,22 @@
 h1. Taylor Group Website Redesign
-http://as3.globacore.com/taylor/
 
-h2. Slide
+h2. URLs
+* http://taylorinc.globacore.com
+* http://as3.globacore.com/taylor/
 
-h3. Fields
-* position (for ordering)
-* url (where it links to)
-* title
-* tag_line
-* summary
+h2. Setting up the environment for local development.
+I highly recommend you use the following articles to setup your environment. You end up with a very clean system, and the ability to update your libraries to the latest versions without waiting on mac port compiles etc.
+* Install MySQL if you don't have it already. http://hivelogic.com/articles/installing-mysql-on-mac-os-x/
+* Install the latest version of Ruby, RoR, MySQL, Git, etc. http://hivelogic.com/articles/ruby-rails-leopard
 
+h3. Running the application.
+* Use the git clone url / command listed by github for the project.
+* cd to the app dir you cloned to.
+* sudo rake gems:install
+* rake db:create
+* rake db:migrate
+* rake db:fixtures:load
+* rake friendly_id:make_all_slugs
+* ./script/server
+* Go to http://localhost:3000 or http://localhost:3000/admin
 
-h2. Department
-
-h3. Fields
-* position (for ordering)
-* title
-* description
-* testimonial (string)
-* has many projects (one to many)
-* retrieve industry list via products table (department has many industries through projects, many to many)
-* retrieve category list via products table (department has many categories through projects, many to many)
-
-
-h2. Project
-
-h3. Fields
-* belongs to industry (industry_id)
-* belongs to category (category_id)
-* belongs to department (department_id)
-* featured flag
-* client
-* title
-* tag_line
-* description
-* image (web size, mobile size)
-* image thumb (just one size. same image but potentially different aspect ratio)
-
-h2. Category
-
-h3. Fields
-* position (for ordering)
-* title
-* has many projects
-* (category has many departments through projects, many to many)
-
-
-h2. Industry
-
-h3. Fields
-* position (for ordering)
-* title
-* has many projects
-* (industry has many departments through projects, many to many)
-
-
-h2. Section
-
-h3. Fields
-* permalink (we don't want this to change often, so we're storing it in the section itself)
-* title
-* has many pages
-
-
-h2. Page
-
-h3. Fields
-* belongs to section
-* position (for ordering within section scope)
-* title
-* body (supports markup)
