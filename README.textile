@@ -1,15 +1,19 @@
 h1. Taylor Group Website Redesign
 
 h2. URLs
-* http://taylorinc.globacore.com
-* http://as3.globacore.com/taylor/
+
+* "http://taylorinc.globacore.com":http://taylorinc.globacore.com
+* "http://as3.globacore.com/taylor/":http://as3.globacore.com/taylor/
 
 h2. Setting up the environment for local development.
+
 I highly recommend you use the following articles to setup your environment. You end up with a very clean system, and the ability to update your libraries to the latest versions without waiting on mac port compiles etc.
-* Install MySQL if you don't have it already. http://hivelogic.com/articles/installing-mysql-on-mac-os-x/
-* Install the latest version of Ruby, RoR, MySQL, Git, etc. http://hivelogic.com/articles/ruby-rails-leopard
+
+* Install MySQL if you don't have it already. "http://hivelogic.com/articles/installing-mysql-on-mac-os-x/":http://hivelogic.com/articles/installing-mysql-on-mac-os-x/
+* Install the latest version of Ruby, RoR, MySQL, Git, etc. "http://hivelogic.com/articles/ruby-rails-leopard":http://hivelogic.com/articles/ruby-rails-leopard
 
 h3. Running the application.
+
 * Use the git clone url / command listed by github for the project.
 * cd to the app dir you cloned to.
 * sudo rake gems:install
@@ -18,5 +22,5 @@ h3. Running the application.
 * rake db:fixtures:load
 * rake friendly_id:make_all_slugs
 * ./script/server
-* Go to http://localhost:3000 or http://localhost:3000/admin
+* Go to "http://localhost:3000":http://localhost:3000 or "http://localhost:3000/admin":http://localhost:3000/admin
 
