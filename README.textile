@@ -7,20 +7,29 @@ h2. URLs
 
 h2. Setting up the environment for local development.
 
+h3. OSX
+
 I highly recommend you use the following articles to setup your environment. You end up with a very clean system, and the ability to update your libraries to the latest versions without waiting on mac port compiles etc.
 
-* Install MySQL if you don't have it already. "http://hivelogic.com/articles/installing-mysql-on-mac-os-x/":http://hivelogic.com/articles/installing-mysql-on-mac-os-x/
-* Install the latest version of Ruby, RoR, MySQL, Git, etc. "http://hivelogic.com/articles/ruby-rails-leopard":http://hivelogic.com/articles/ruby-rails-leopard
+# Install MySQL if you don't have it already. "http://hivelogic.com/articles/installing-mysql-on-mac-os-x/":http://hivelogic.com/articles/installing-mysql-on-mac-os-x/
+# Install the latest version of Ruby, RoR, MySQL, Git, etc. "http://hivelogic.com/articles/ruby-rails-leopard":http://hivelogic.com/articles/ruby-rails-leopard
 
-h3. Running the application.
+h3. Windoze
 
-* Use the git clone url / command listed by github for the project.
-* cd to the app dir you cloned to.
-* sudo rake gems:install
-* rake db:create
-* rake db:migrate
-* rake db:fixtures:load
-* rake friendly_id:make_all_slugs
-* ./script/server
-* Go to "http://localhost:3000":http://localhost:3000 or "http://localhost:3000/admin":http://localhost:3000/admin
+# Uninstall windows
+# Install OSx86 (Hackintosh) "http://wiki.osx86project.org/wiki/index.php/Main_Page":http://wiki.osx86project.org/wiki/index.php/Main_Page
+# Or I guess you can use the ruby on click installer. You can find a link to the latest one here: "http://rubyonrails.org/download":http://rubyonrails.org/download
+
+
+h2. Running the application.
+
+# Use the git clone url / command listed by github for the project.
+# cd to the app dir you cloned to.
+# sudo rake gems:install
+# rake db:create
+# rake db:migrate
+# rake db:fixtures:load
+# rake friendly_id:make_all_slugs
+# ./script/server
+# Go to "http://localhost:3000":http://localhost:3000 or "http://localhost:3000/admin":http://localhost:3000/admin
 
