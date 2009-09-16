@@ -1,7 +1,5 @@
 h1. Taylor Group Website Redesign
 
-h2. URLs
-
 * "http://taylorinc.globacore.com":http://taylorinc.globacore.com
 * "http://as3.globacore.com/taylor/":http://as3.globacore.com/taylor/
 
