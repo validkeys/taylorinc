@@ -17,9 +17,9 @@ ActionController::Routing::Routes.draw do |map|
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.resource :session
-  map.admin '/admin', :controller => 'admin/main'
   
   # routes for the administration area
+  map.admin '/admin', :controller => 'admin/main'
   map.namespace :admin do |admin|
     admin.resources :users
     admin.resources :main, :collection => { :textile_preview => :post }
