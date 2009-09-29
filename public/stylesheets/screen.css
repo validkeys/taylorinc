@@ -76,6 +76,9 @@ a:hover, a:active {
 .odd_row {
 	background: #eeedeb; 
 }
+.over_row {
+	background: #dddcda;
+}
 td, th {
 	padding-left: 3px;
 }

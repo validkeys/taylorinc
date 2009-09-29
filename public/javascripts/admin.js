@@ -4,6 +4,13 @@ jQuery.ajaxSetup({
 
 $(document).ready(function() {
   
+	$('tr').mouseover(function(){
+		$(this).addClass('over_row');
+	});
+	$('tr').mouseout(function(){
+		$(this).removeClass('over_row');
+	});
+
 	// validate all forms
 	$('form').validate();
 
