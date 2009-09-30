@@ -28,7 +28,7 @@ class Location < ActiveRecord::Base
     "#{street_1} #{street_2}, #{city}, #{province}, #{country}, #{postal_code}"
   end
   
-  describe_attr(
+  self.describe_attr(
     :title => 'The title should be a short but descriptive summary.',
     :street_1 => 'The street address.',
     :street_2 => 'The unit or suite number. I.e. Suite #303',
