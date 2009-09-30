@@ -15,7 +15,7 @@ class Section < ActiveRecord::Base
   
   has_friendly_id :permalink
   
-  describe_attr(
+  attr_descriptions(
     :title => 'The title should be a short but descriptive summary.',
     :image => 'Upload an image for the section.'
   )

@@ -26,7 +26,7 @@ class Project < ActiveRecord::Base
     self.photos.find :first
   end
   
-  describe_attr(
+  attr_descriptions(
     :category => 'Select the category the project should appear within.',
     :industry => 'Select the industry the project should appear within.',
     :department => 'Select the department the project should appear within.',

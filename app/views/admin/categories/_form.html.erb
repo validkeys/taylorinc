@@ -1,8 +1,6 @@
 <%= f.error_messages %>
 <%= link_to image_tag('icons/help.png'), '', :id => 'admin_help', :title => 'Display field instructions' %>
 <p>
-  <%= f.object.class.attr_description(:title) %>
-  <%= f.object.class.attr_description(:image) %>
   <%= f.label :title %>
   <%= describe_attr(f, :title) %>
   <%= f.text_field :title, :class => 'text', :minlength => '2', :maxlength => '100' %>

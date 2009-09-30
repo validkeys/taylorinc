@@ -16,7 +16,7 @@ class Page < ActiveRecord::Base
   
   has_friendly_id :title, :use_slug => true
   
-  describe_attr(
+  attr_descriptions(
     :section => 'Select the section the page should appear within.',
     :title => 'The title should be a short but descriptive summary.',
     :body => 'Descriptive body text content for the page. May contain a limited amount of html markup as indicated in the editor below.',

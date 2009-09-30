@@ -3,7 +3,7 @@ module ApplicationHelper
 
   # assume you have a style defined for attr_description
   def describe_attr(form, attribute)
-    "<span class='attr_description'>#{form.object.class.describe_attr(attribute)}</span>"
+    "<span class='attr_description'>#{form.object.class.attr_description(attribute)}</span>"
   end
   
 end

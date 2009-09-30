@@ -45,7 +45,7 @@ class User < ActiveRecord::Base
     write_attribute :email, (value ? value.downcase : nil)
   end
 
-  describe_attr(
+  attr_descriptions(
     :name => 'The full name of the administrator. I.e. John Doe',
     :login => 'A unique login / username for the administrator. All lowercase with no spaces. I.e. johndoe',
     :email => "The administrator's unique email address. I.e. johndoe@taylorinc.com",

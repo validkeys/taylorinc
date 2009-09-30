@@ -22,7 +22,7 @@ class Department < ActiveRecord::Base
   
   has_friendly_id :title, :use_slug => true
   
-  describe_attr(
+  attr_descriptions(
     :title => 'The title should be a short but descriptive summary.',
     :tag_line => 'Give the department a descriptive tag line that describes it with a little more detail than the title.',
     :testimonial => 'A brief client testimonial related to the department.',

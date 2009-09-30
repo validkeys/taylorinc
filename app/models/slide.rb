@@ -24,7 +24,7 @@ class Slide < ActiveRecord::Base
   
   has_friendly_id :title, :use_slug => true
   
-  describe_attr(
+  attr_descriptions(
     :title => 'The title should be a short but descriptive summary.',
     :url => "Paste in the URL the slide will take user's to when they click on it.",
     :tag_line => 'Give the slide a descriptive tag line that describes it with a little more detail than the title.',

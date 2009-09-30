@@ -17,12 +17,7 @@ class Category < ActiveRecord::Base
   validates_attachment_content_type :image, :content_type => ['image/jpeg', 'image/gif', 'image/png', 'image/pjpeg', 'image/x-png']
   
   has_friendly_id :title, :use_slug => true
-  
-  describe_attr(
-    :title => 'The title should be a short but descriptive summary.',
-    :image => 'Upload an image for the category.'
-  )
-  
+
   attr_descriptions(
     :title => 'The title should be a short but descriptive summary.', 
     :image => 'Upload an image for the category.'
