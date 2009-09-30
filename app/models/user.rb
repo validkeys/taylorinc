@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   include Authentication::ByCookieToken
 
   validates_presence_of     :login
-  validates_length_of       :login,    :within => 3..40
+  validates_length_of       :login,    :within => 5..40
   validates_uniqueness_of   :login
   validates_format_of       :login,    :with => Authentication.login_regex, :message => Authentication.bad_login_message
 
@@ -49,7 +49,7 @@ class User < ActiveRecord::Base
     :name => 'The full name of the administrator. I.e. John Doe',
     :login => 'A unique login / username for the administrator. All lowercase with no spaces. I.e. johndoe',
     :email => "The administrator's unique email address. I.e. johndoe@taylorinc.com",
-    :password => 'The password used to log into the admin site. Should be at least 6 characters, contain no spaces, and a mix of letters and numbers. I.e. sn0w3d1n',
+    :password => 'The password used to log into the admin site. Should be at least 5 characters, contain no spaces, and a mix of letters and numbers. I.e. sn0w3d1n',
     :password_confirmation => 'Confirm the password entered above.'
   )
   

@@ -74,10 +74,10 @@ a:hover, a:active {
 #resources li { color: #888; }
 
 .odd_row {
-	background: #eeedeb; 
+	background: #eee; 
 }
 .over_row {
-	background: #dddcda;
+	background: #ddd;
 }
 td, th {
 	padding-left: 3px;
@@ -91,7 +91,7 @@ img.inline {
 	margin: 0px 0px 10px 10px;
 }
 tr.row_drag {
-	background-color: #be7503;
+	background-color: #bbb;
 }
 
 #photos {
