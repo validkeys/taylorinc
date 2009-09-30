@@ -23,4 +23,9 @@ class Category < ActiveRecord::Base
     :image => 'Upload an image for the category.'
   )
   
+  attr_descriptions(
+    :title => 'The title should be a short but descriptive summary.', 
+    :image => 'Upload an image for the category.'
+  )
+  
 end
