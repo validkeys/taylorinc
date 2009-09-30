@@ -45,4 +45,12 @@ class User < ActiveRecord::Base
     write_attribute :email, (value ? value.downcase : nil)
   end
 
+  describe_attr(
+    :name => 'The full name of the administrator. I.e. John Doe',
+    :login => 'A unique login / username for the administrator. All lowercase with no spaces. I.e. johndoe',
+    :email => "The administrator's unique email address. I.e. johndoe@taylorinc.com",
+    :password => 'The password used to log into the admin site. Should be at least 6 characters, contain no spaces, and a mix of letters and numbers. I.e. sn0w3d1n',
+    :password_confirmation => 'Confirm the password entered above.'
+  )
+  
 end

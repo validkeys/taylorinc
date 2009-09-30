@@ -18,4 +18,9 @@ class Category < ActiveRecord::Base
   
   has_friendly_id :title, :use_slug => true
   
+  describe_attr(
+    :title => 'The title should be a short but descriptive summary.',
+    :image => 'Upload an image for the category.'
+  )
+  
 end

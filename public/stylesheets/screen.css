@@ -108,6 +108,17 @@ tr.row_drag {
 	text-align: center;
 }
 
+#admin_help {
+	float: right;
+}
+span.attr_description {
+	display: none;
+	color: #225381;
+	padding-left: 0px;
+	padding-right: 30px;
+	font-size: .9em;
+}
+
 /* Notices and Alerts
 -------------------------------------------------------------- */
 div.flash {

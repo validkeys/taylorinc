@@ -1,25 +1,35 @@
 <% @user.password = @user.password_confirmation = nil %>
-
+<%= link_to image_tag('icons/help.png'), '', :id => 'admin_help', :title => 'Display field instructions' %>
 <%= f.error_messages %>
-<p>
-  <%= f.label :name %>
-  <%= f.text_field :name, :class => 'text required', :minlength => '3', :maxlength => '100' %>
-</p>
-<p>
-  <%= f.label :login %>
-  <%= f.text_field :login, :class => 'text required', :minlength => '3', :maxlength => '40' %>
-</p>
-<p>
-  <%= f.label :email %>
-  <%= f.text_field :email, :class => 'text required', :minlength => '4', :maxlength => '100' %>
-</p>
-<p>
-  <%= f.label :password %>
-  <%= f.password_field :password, :class => 'text', :minlength => '5', :maxlength => '40' %>
-</p>
-<p>
-  <%= f.label(:password_confirmation, 'Confirm Password') %>
-  <%= f.password_field :password_confirmation, :class => 'text', :minlength => '5', :maxlength => '40' %>
-</p>
-
-<%= render :partial => "admin/shared/buttons" %>
+<div style="width:40%; float:left;">
+  <p>
+    <%= f.label :name %>
+    <%= describe_attr(f, :name) %>
+    <%= f.text_field :name, :class => 'text required', :minlength => '3', :maxlength => '100' %>
+  </p>
+  <p>
+    <%= f.label :login %>
+    <%= describe_attr(f, :login) %>
+    <%= f.text_field :login, :class => 'text required', :minlength => '3', :maxlength => '40' %>
+  </p>
+  <p>
+    <%= f.label :email %>
+    <%= describe_attr(f, :email) %>
+    <%= f.text_field :email, :class => 'text required', :minlength => '4', :maxlength => '100' %>
+  </p>
+</div>
+<div style="width:50%; float:left;">
+  <p>
+    <%= f.label :password %>
+    <%= describe_attr(f, :password) %>
+    <%= f.password_field :password, :class => 'text', :minlength => '5', :maxlength => '40' %>
+  </p>
+  <p>
+    <%= f.label(:password_confirmation, 'Confirm Password') %>
+    <%= describe_attr(f, :password_confirmation) %>
+    <%= f.password_field :password_confirmation, :class => 'text', :minlength => '5', :maxlength => '40' %>
+  </p>
+</div>
+<div style="width:100%; float:left;">
+  <%= render :partial => "admin/shared/buttons" %>
+</div>

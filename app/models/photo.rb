@@ -14,5 +14,10 @@ class Photo < ActiveRecord::Base
                     
   validates_attachment_presence :image
   validates_attachment_content_type :image, :content_type => ['image/jpeg', 'image/gif', 'image/png', 'image/pjpeg', 'image/x-png'] 
-    
+  
+  describe_attr(
+    :title => 'The title should be a short but descriptive summary.',
+    :image => 'Upload the image.'
+  )
+  
 end

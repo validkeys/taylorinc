@@ -1,32 +1,37 @@
 <%= f.error_messages %>
+<%= link_to image_tag('icons/help.png'), '', :id => 'admin_help', :title => 'Display field instructions' %>
 <div style="width:40%; float:left;">
   <p>
     <%= f.label :title %>
+    <%= describe_attr(f, :title) %>
     <%= f.text_field :title, :class => 'text required', :minlength => '2', :maxlength => '100' %>
   </p>
   <%= render :partial => "admin/shared/image_upload", :locals => { :f => f } %>
 </div>
-<div style="width:60%; float:left;">
+<div style="width:50%; float:left;">
   <p>
     <%= f.label :url %>
+    <%= describe_attr(f, :url) %>
     <%= f.text_field :url, :class => 'text required', :minlength => '2', :maxlength => '255' %>
   </p>
   <p>
+    <%= f.label :transition_image, 'Upload Transition Image' %>
+    <%= describe_attr(f, :transition_image) %>
+    <%= f.file_field :transition_image, :class => 'text', :style => 'vertical-align:top;margin-bottom:5px;' %>
     <% if @object.transition_image.file? -%>
       <%= link_to image_tag(@object.transition_image.url(:small), :class => 'thumb'), @object.transition_image.url(:"640"), :class => 'thumb' %>
-    <% else -%>
-      <%= f.label :transition_image, 'Upload Transition Image' %>
     <% end -%>
-    <%= f.file_field :transition_image, :class => 'text', :style => 'vertical-align:top;margin-top:10px;' %>
   </p>
 </div>
 <div style="width:100%; float:left;">
   <p>
     <%= f.label :tag_line %>
+    <%= describe_attr(f, :tag_line) %>
     <%= f.text_field :tag_line, :class => 'text long', :minlength => '2', :maxlength => '128' %>
   </p>
   <p>
     <%= f.label :summary %>
+    <%= describe_attr(f, :summary) %>
     <%= f.text_area :summary, :minlength => '2', :maxlength => '1000' %>
   </p>
   <%= render :partial => "admin/shared/buttons" %>

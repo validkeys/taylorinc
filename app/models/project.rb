@@ -26,4 +26,16 @@ class Project < ActiveRecord::Base
     self.photos.find :first
   end
   
+  describe_attr(
+    :category => 'Select the category the project should appear within.',
+    :industry => 'Select the industry the project should appear within.',
+    :department => 'Select the department the project should appear within.',
+    :client => 'The client the project was completed for. I.e. Bell Canada.',
+    :title => 'Give the project a descriptive but short title that sufficiently sums it up. I.e. RIM Wireless Enterprise Symposium.',
+    :tag_line => 'Give the project a descriptive tag line that describes it with a little more detail than the title.',
+    :featured => 'The featured flag determines whether or not the project will show up within the featured list.',
+    :description => 'Describe the project in detail.',
+    :image => 'Upload an image for the project.'
+  )
+  
 end

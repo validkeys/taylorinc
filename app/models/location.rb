@@ -28,4 +28,17 @@ class Location < ActiveRecord::Base
     "#{street_1} #{street_2}, #{city}, #{province}, #{country}, #{postal_code}"
   end
   
+  describe_attr(
+    :title => 'The title should be a short but descriptive summary.',
+    :street_1 => 'The street address.',
+    :street_2 => 'The unit or suite number. I.e. Suite #303',
+    :city => 'The city. I.e. Toronto',
+    :province => 'Two letter province or state code.',
+    :country => 'The full country name. I.e. Canada',
+    :postal_code => 'The postal or zip code. I.e. 90210',
+    :email => 'The primary email address for this location. I.e. info@taylorinc.com',
+    :contact_info => 'The contact details for this location, like phone and fax numbers. May contain a limited amount of html markup as indicated in the editor below.',
+    :image => 'Upload an image for the location. Ideally a picture of a map.'
+  )
+  
 end

@@ -4,6 +4,13 @@ jQuery.ajaxSetup({
 
 $(document).ready(function() {
   
+	// displays field description on forms
+	$('#admin_help').click(function() {
+		$('.attr_description').css('display', 'block');
+		return false;
+	});
+
+	// add hover styles to table rows in the admin area
 	$('tr').mouseover(function(){
 		$(this).addClass('over_row');
 	});

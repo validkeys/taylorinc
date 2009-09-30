@@ -1,20 +1,29 @@
 <%= f.error_messages %>
+<%= link_to image_tag('icons/help.png'), '', :id => 'admin_help', :title => 'Display field instructions' %>
 <div style="width:40%; float:left;">
   <p>
     <%= f.label :title %>
+    <%= describe_attr(f, :title) %>
     <%= f.text_field :title, :class => 'text required', :minlength => '2', :maxlength => '100' %>
   </p>
   <p>
     <%= f.label :tag_line %>
+    <%= describe_attr(f, :tag_line) %>
     <%= f.text_field :tag_line, :class => 'text required', :minlength => '2', :maxlength => '100' %>
   </p>
 </div>
-<div style="width:60%; float:left;">
+<div style="width:50%; float:left;">
   <%= render :partial => "admin/shared/image_upload", :locals => { :f => f } %>
 </div>
 <div style="width:100%; float:left;">
   <p>
+    <%= f.label :testimonial %>
+    <%= describe_attr(f, :testimonial) %>
+    <%= f.text_area :testimonial %>
+  </p>
+  <p>
     <%= f.label :description %>
+    <%= describe_attr(f, :description) %>
     <%= f.text_area :description, :class => 'long markup' %>
   </p>
   <%= render :partial => "admin/shared/buttons" %>

@@ -1,9 +1,8 @@
 <p>
   <%= f.label :image, 'Upload Image' %>
+  <%= describe_attr(f, :image) %>
   <%= f.file_field :image, :class => 'text', :style => 'vertical-align:top;margin-bottom:5px;' %>
   <% if @object.image.file? -%>
     <%= link_to image_tag(@object.image.url(:small), :class => 'thumb'), @object.image.url(:"640"), :class => 'thumb' %>
-  <% else -%>
-    
   <% end -%>
 </p>

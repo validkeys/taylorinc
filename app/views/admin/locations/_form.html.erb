@@ -1,44 +1,54 @@
 <%= f.error_messages %>
+<%= link_to image_tag('icons/help.png'), '', :id => 'admin_help', :title => 'Display field instructions' %>
 <div style="width:40%; float:left;">
   <p>
     <%= f.label :title %>
+    <%= describe_attr(f, :title) %>
     <%= f.text_field :title, :class => 'text required', :minlength => '2', :maxlength => '100' %>
   </p>
   <p>
     <%= f.label :street_1 %>
+    <%= describe_attr(f, :street_1) %>
     <%= f.text_field :street_1, :class => 'text required', :minlength => '2', :maxlength => '100' %>
   </p>
   <p>
     <%= f.label :street_2 %>
+    <%= describe_attr(f, :street_2) %>
     <%= f.text_field :street_2, :class => 'text', :minlength => '2', :maxlength => '100' %>
   </p>
   <%= render :partial => "admin/shared/image_upload", :locals => { :f => f } %>
 </div>
-<div style="width:60%; float:left;">
+<div style="width:50%; float:left;">
   <p>
     <%= f.label :city %>
+    <%= describe_attr(f, :city) %>
     <%= f.text_field :city, :class => 'text required', :minlength => '2', :maxlength => '100' %>
   </p>
   <p>
     <%= f.label :province %>
+    <%= describe_attr(f, :province) %>
     <%= f.text_field :province, :class => 'text numeric required', :minlength => '2', :maxlength => '2' %>
   </p>
   <p>
     <%= f.label :country %>
+    <%= describe_attr(f, :country) %>
     <%= f.text_field :country, :class => 'text required', :minlength => '2', :maxlength => '32' %>
   </p>
   <p>
     <%= f.label :postal_code %>
+    <%= describe_attr(f, :postal_code) %>
     <%= f.text_field :postal_code, :class => 'text numeric required', :minlength => '5', :maxlength => '20' %>
   </p>
 </div>
 <div style="width:100%; float:left;">
   <p>
     <%= f.label :email %>
+    <%= describe_attr(f, :email) %>
     <%= f.text_field :email, :class => 'text email', :minlength => '5', :maxlength => '100' %>
   </p>
   <p>
     <%= f.label :contact_info %>
+    <%= describe_attr(f, :contact_info) %>
     <%= f.text_area :contact_info, :class => 'required markup' %>
   </p>
   <%= render :partial => "admin/shared/buttons" %>
