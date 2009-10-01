@@ -5,13 +5,13 @@ class ProjectsController < ApplicationController
   
   actions :index, :show #only handle index and show actions
   
-  index.wants.xml { render  :template => "projects/index.xml" }
-  show.wants.xml { render  :template => "projects/show.xml" }
-  
   index.wants.html {
     @categories = Category.find :all, :order => 'title'
     @industries = Industry.find :all, :order => 'title'
   }
+  
+  index.wants.xml { render  :template => "projects/index.xml" }
+  show.wants.xml { render  :template => "projects/show.xml" }
   
   private #-------
     # Defining the collection explicitly for paging
