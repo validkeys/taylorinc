@@ -17,7 +17,7 @@
   <div id="page">
     <div id="header">
       <%= link_to image_tag('taylor_group_admin.gif', :size => '84x72', :alt => 'The Taylor Group'), root_path %>
-      <ul class="tabs" style="margin-left:86px; margin-top: -29px;">
+      <ul class="tabs">
         <li><a href="<%= root_path %>"<%= ' class="active"' if controller.controller_name == 'slides' %>>Home</a></li>
         <li><a href="<%= section_path('services') %>"<%= ' class="active"' if (controller.controller_name == 'pages' and parent_object.friendly_id == 'services') or (object and object.friendly_id == 'services') %>>Services</a></li>
         <li><a href="<%= projects_path %>"<%= ' class="active"' if controller.controller_name == 'categories' or controller.controller_name == 'industries' or controller.controller_name == 'departments' or controller.controller_name == 'projects' %>>Our Work</a></li>

@@ -35,10 +35,10 @@ a:hover, a:active {
 
 /* Header
 -------------------------------------------------------------- */
-
+#header { position:relative; }
 #header h1 { margin-bottom: 0px; }
 #header h2 { font-size: 1.3em; }
-#header .tabs { border-bottom: 1px solid #ddd; }
+#header .tabs { position:absolute; top:44px; left:86px; }
 #header .tabs li { margin-right: 1px; }
 #header .tabs a { 
 	padding: 5px 15px; 

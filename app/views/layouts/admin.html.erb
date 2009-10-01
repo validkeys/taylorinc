@@ -45,9 +45,9 @@
 <body>
 
   <div id="page">
-    <div id="header" style="position:relative;">
+    <div id="header">
       <%= link_to image_tag('taylor_group_admin.gif', :size => '84x72', :alt => 'The Taylor Group - Administration'), admin_path %>
-      <ul class="tabs" style="position:absolute; top:43px; left:86px;">
+      <ul class="tabs">
         <li><a href="<%= admin_slides_path %>"<%= ' class="active"' if controller.controller_name == 'slides' %>>Slides</a></li>
         <li><a href="<%= admin_departments_path %>"<%= ' class="active"' if controller.controller_name == 'departments' %>>Departments</a></li>
         <li><a href="<%= admin_projects_path %>"<%= ' class="active"' if controller.controller_name == 'projects' or controller.controller_name == 'photos' %>>Projects</a></li>
